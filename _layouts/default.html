@@ -123,6 +123,11 @@
 	  <script src="js/app/app.js"></script>
 	  <script src="js/app/off-canvas.js"></script>
 	  <script src="js/foundation/foundation.js"></script>
+
+		{% for script in page.vendorScript %}
+			<script src="js/{{ script }}.js"></script>
+		{% endfor %}
+
 	  <script>$(document).foundation();</script>
 
     </body>
