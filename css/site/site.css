@@ -277,13 +277,24 @@ h6 {
 }
 
 @media only screen and (min-width: 48em) {
+
+  .home-page .row.section-2 .columns:first-child {
+    margin-left: 1em;
+  }
+
+  .home-page .row.section-2 .columns:nth-child(2) {
+    margin-left: -1em;
+  }
+
   .home-page .page .section-1 h1 {
     font-size: 3.3em;
   }
+
   .home-page .page .section-2 .wrapper,
   .home-page .page .section-3 .wrapper {
     padding: 1.2em;
   }
+
   .footer a {
     margin: 0;
   }
