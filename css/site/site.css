@@ -39,7 +39,7 @@
 		padding-top: 0;
 	} 
 
-	.home-page.off-canvas .page {
+	.home-page.off-canvas.active-gov-bar .page {
 		top: 88px;
 	}
 }
