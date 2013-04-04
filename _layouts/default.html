@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/off-canvas.css">
 
+		{% for styles in page.customStyles %}
+			<script src="css/site/{{ styles }}.css"></script>
+		{% endfor %}
+
 		<!-- Fav icon -->
 		  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
 		  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
@@ -100,7 +104,7 @@
 			      <ul>
 					<li><a href="#">Buttons</a></li>
 			        <li><a href="#">Easy-Tap Links</a></li>
-			        <li><a href="#">Forms</a></li>
+			        <li><a href="forms.html">Forms</a></li>
 			        <li><a href="#">Touch Actions</a></li>
 			      </ul>
 			    </li>

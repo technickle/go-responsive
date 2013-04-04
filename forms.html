@@ -1,0 +1,148 @@
+---
+layout: default
+title: Forms
+vendorScripts: ['foundation/foundation.forms',foundation/foundation.tooltips', 'foundation/foundation.alerts']
+customScripts: ['js/site/forms.js']
+customStyles: ['forms']
+---
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Forms</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Forms</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-large">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Notice how the labels move above the input fields on smaller screens for easier viewing</li>
+          <li>A tooltip provides additional help for the Street Address field. Tooltips adapt to device size.</li>
+          <li>Modern browsers will validate your input &mdash; try entering an invalid ZIP code.</li>
+          <li class="hide-for-no-touch">The click-to-call and click-to-text buttons launch a call/text</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-small hide-for-no-touch">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Click-to-call and click-to-text buttons launch a call/text</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <form>
+        <fieldset>
+          <legend>Contact Us</legend>
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="name" class="required">Name<span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" name="name" id="name" tabindex="1" value="" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="email">Email</label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="email" name="email" id="email" tabindex="1" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="addr1" class="required"><span data-tooltip class="has-tip tip-right" title="Separate multiple address lines (i.e., apartment number) with a comma">Street address</span><span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" name="addr1" id="addr1" value="" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="zip" class="required"><span data-tooltip class="has-tip tip-right" title="US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)">ZIP</span><span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" required>
+              <div class="form-field-info">
+                <p>US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <div class="large-4 small-12 columns padding-sides-none">
+                <input type="tel" name="phone" id="phone" tabindex="1" value="">
+              </div>
+              <div class="large-8 small-12 columns">
+                <div class="large-4 small-4 columns">
+                  <label for="phone1" class="inline">Mobile <input name="phoneType" type="radio" tabindex="1" id="phone1" checked></label>
+                </div>
+                <div class="large-4 small-4 columns">
+                  <label for="phone2" class="inline">Work <input name="phoneType" type="radio" tabindex="1" id="phone2" checked></label>
+                </div>
+                <div class="large-4 small-4 columns">
+                  <label for="phone3" class="inline">Home <input name="phoneType" type="radio" tabindex="1" id="phone3" checked></label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label class="required" for="comments">Comments<span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <textarea id="comments" required tabindex="1"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns center">
+              <input type="submit" class="button success" value="Submit">
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="immediate-assistance row alert-box radius">
+    <div class="large-12 columns"><h5><strong>Need Immediate Assistance?</strong></h5></div>
+    <div class="row">
+      <div class="large-6 columns">
+        <a href="tel:15184427669" class="call-now large button radius expand"><span class="icon-phone-1"></span>Call 1-518-442-SNOW</a>
+      </div>
+      <div class="large-6 columns">
+        <a href="sms:15184748275" class="large button radius expand"><span class="icon-comment"></span>Txt 1-518-474-8275</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 large-centered small-6 small-centered columns align-center">
+      <a class="button-for-touch" href="https://github.com/nys-its/excelsior-web-framework/wiki/Forms">Developer Documentation</a>
+    </div>
+  </div>
