@@ -220,14 +220,58 @@
 	margin: 0;
 }
 
-/* Section 5 */
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+}
 
 @media only screen and (min-width: 48em) {
-.home-page .page .section-1 h1 {
-	font-size:3.3em;
-}
+	.home-page .page .section-1 h1 {
+		font-size:3.3em;
+	}
 	.footer a {
 		margin: 0;
 	}
+	h1 {
+	  font-size: 2em;
+	}
 
+	h2 {
+	  font-size: 1.75em;
+	}
+
+	h3 {
+	  font-size: 1.5em;
+	}
+
+	h4 {
+	  font-size: 1.25em;
+	}
+
+	h5 {
+	  font-size: 1.125em;
+	}
+
+	h6 {
+	  font-size: 1em;
+	}
 }
