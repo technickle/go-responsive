@@ -1,6 +1,7 @@
 .footer a {
 	color: #797979;
 	text-decoration: none;
+	display: inline-block
 }
 
 .its-footer {
