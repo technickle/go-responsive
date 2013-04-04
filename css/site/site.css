@@ -50,11 +50,11 @@
 }
 
 .home-page .page .section.odd {
-	background: url(images/subtle_grunge_3.png) repeat;
+	background: url(../../images/subtle_grunge_3.png) repeat;
 }
 
 .home-page .page .section.even {
-	background: url(images/mochaGrunge_3.png) repeat;
+	background: url(../../images/mochaGrunge_3.png) repeat;
 }
 
 .home-page .page .content-section {
@@ -177,7 +177,7 @@
 }
 
 .home-page .page .section-2 .wrapper {
-	background: url(images/grid-bg.png) repeat #666;
+	background: url(../../images/grid-bg.png) repeat #666;
 }
 
 .home-page .page .section-2 p, .home-page .page .section-3 p, .home-page .page .section-4 p, .home-page .page .section-8 p {
@@ -192,7 +192,7 @@
 
 /* Section 3 */
 .home-page .page .section-3 .wrapper {
-	background: url(images/grid-bg-2.png) repeat #999;
+	background: url(../../images/grid-bg-2.png) repeat #999;
 }
 
 /* Section 4 */
