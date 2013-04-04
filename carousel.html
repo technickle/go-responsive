@@ -1,0 +1,57 @@
+---
+layout: default
+title: Carousel
+vendorScripts: ['foundation/foundation.alerts','foundation/foundation.orbit']
+---
+
+
+  <script src="../../js/foundation/foundation.orbit.js"></script>
+
+  <div class="row">
+    <div class="large-9 columns">
+      <h1>Carousel</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Carousel</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row hide-for-ie9 hide-for-lt-ie9">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li class="show-for-screen-max-large">At tablet size, the second line of the caption is dropped to show more of the image</li>
+          <li class="show-for-screen-max-large">At mobile sizes, the arrow buttons remaing large and tappable</li>
+          <li class="show-for-touch">Go ahead and swipe through the images</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-9 small-centered columns">
+      <ul data-orbit>
+        <li data-orbit-slide="statue">
+          <img src="images/carousel/demo1.jpg">
+          <div class="orbit-caption"><h4>Statue of Liberty</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/suewaters/">Sue Walters</a></span></div>
+        </li>
+        <li data-orbit-slide="falls">
+          <img src="images/carousel/demo2.jpg">
+          <div class="orbit-caption"><h4>Niagara Falls</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/raresmdutu/">Rares M. Dutu</a></span></div>
+        </li>
+        <li data-orbit-slide="capitol">
+          <img src="images/carousel/demo3.jpg">
+          <div class="orbit-caption"><h4>Capitol Building</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/31451603@N02/">PeteDz Photography</a></span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 large-centered small-6 small-centered columns align-center">
+      <a class="button-for-touch" href="http://foundation.zurb.com/docs/components/orbit.html">Developer Documentation</a>
+    </div>
+  </div>
