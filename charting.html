@@ -2,7 +2,7 @@
 layout: default
 title: Responsive Charts
 vendorScripts: ['vendor/chart.min', 'app/respCharts', 'foundation/foundation.alerts']
-customScripts: ['js/site/charts.js']
+customScripts: ['js/site/charts-line.js']
 ---
 
   <div class="row">
@@ -25,6 +25,11 @@ customScripts: ['js/site/charts.js']
           </div>
         </div>
       </div>
+      <dl class="sub-nav">
+        <dt>Charting:</dt>
+        <dd class="active"><a href="index.html">Line Chart</a></dd>
+        <dd><a href="pie.html">Pie Chart</a></dd>
+      </dl>
 
       <!-- Component code goes here -->
       <div class="row">
@@ -193,3 +198,10 @@ customScripts: ['js/site/charts.js']
         </div>
       </div>
     </div>
+
+
+  <div class="row">
+    <div class="large-4 large-centered small-6 small-centered columns align-center">
+      <a class="button-for-touch" target="_parent" href="https://github.com/nys-its/excelsior-web-framework/wiki/Charting">Developer Documentation</a>
+    </div>
+  </div>
