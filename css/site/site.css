@@ -26,6 +26,13 @@
 		padding-left: 40px;
 	}
 
+	.home-page .page .section-1 .wrapper img {
+		margin: 1em 0 2em 0;
+	}
+
+	.home-page .page .section-1 .wrapper .small-img {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 48em) {
@@ -123,8 +130,8 @@
 	padding-top: 0.3em;
 }
 
-.home-page .page .section-1 .wrapper {
-	padding-bottom: 1em;
+.home-page .page .section-1 .wrapper .text {
+	height: 3em;
 }
 
 .home-page .page h2 {
