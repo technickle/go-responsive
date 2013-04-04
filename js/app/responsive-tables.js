@@ -62,6 +62,7 @@
 
           if ($table.width() >= totalMinWidth && exlsr.$body.width() >= $table.width()) {
             // Don't need to hide any more
+            $table.parent().removeClass('scrollable-x');
             return false;
           }
 
@@ -103,6 +104,9 @@
 
           if ($table.width() <= totalMinWidth) {
             // No room to show any more
+            if (exlsr.$body.width() < $table.width()) {
+              $table.parent().addClass('scrollable-x');
+            }
             return false;
           }
 
