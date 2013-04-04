@@ -1,0 +1,74 @@
+---
+layout: default
+title: Lightbox
+vendorScripts: ['foundation/foundation.clearing', 'foundation/foundation.alerts']
+---
+
+<div class="row">
+    <div class="large-12 columns">
+      <h1>Lightbox</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Lightbox</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-large">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Click on one of the thumbnails to see how smaller screens maximize space by hiding the thumbnails and navigation buttons.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    Clearing, also known as lightbox, requires the use of Foundations carousel and touch events (for mobile). You should check out those prototypes for better understanding of this one.
+  -->
+  <div class="row">
+    <div class="small-centered columns">
+      <div class="clearing-assembled">
+        <div class="">
+          <a href="#" class="clearing-close">&times;</a>
+          <div class="visible-img" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1); display: none;">
+            <img src="http://foundation.zurb.com/docs/images/lightbox/demos/demo1.jpg" style="margin-left: -361.5px; margin-top: -248.5px;">
+            <p class="clearing-caption" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);">caption here...</p>
+            <a href="#" class="clearing-main-left disabled"><span></span></a>
+            <a href="#" class="clearing-main-right"><span></span></a>
+          </div>
+          <div class="carousel">
+            <ul class="clearing-thumbs lbox-no-list" data-clearing="" data-clearing-id="clearing-1364233642145-O5ufm">
+              <li class="fix-height visible">
+                <a class="th" href="images/lightbox/NYC_Empire_State_Building.jpg"><img data-caption="http://commons.wikimedia.org/wiki/File%3ANYC_Empire_State_Building.jpg" src="images/lightbox/NYC_Empire_State_Building-th.jpg"></a>
+              </li>
+              <li class="fix-height">
+                <a class="th" href="images/lightbox/New_York_State_Museum_Albany.jpg"><img data-caption="http://commons.wikimedia.org/wiki/File:New_York_State_Museum,_Albany.jpg" src="images/lightbox/New_York_State_Museum_Albany-th.jpg"></a>
+              </li>
+              <li class="fix-height">
+                <a class="th" href="images/lightbox/New_York_State_Executive_Mansion.jpg"><img data-caption="http://commons.wikimedia.org/wiki/File%3ANew_York_State_Executive_Mansion.jpg" src="images/lightbox/New_York_State_Executive_Mansion-th.jpg"></a>
+              </li>
+              <li class="fix-height">
+                <a class="th" href="images/lightbox/New_York_State_Capitol.jpg"><img data-caption="http://commons.wikimedia.org/wiki/File:New_York_State_Capitol.jpg" src="images/lightbox/New_York_State_Capitol-th.jpg"></a>
+              </li>
+              <li class="fix-height">
+                <a class="th" href="images/lightbox/New_York_State_Capitol_from_Corning_Tower.jpg"><img data-caption="http://commons.wikimedia.org/wiki/File:New_York_State_Capitol_from_Corning_Tower.jpg" src="images/lightbox/New_York_State_Capitol_from_Corning_Tower-th.jpg"></a>
+              </li>
+              <li class="fix-height">
+                <a class="th" href="images/lightbox/Brooklyn-Bridge.jpg"><img data-caption="http://commons.wikimedia.org/wiki/File%3ABrooklyn-Bridge.jpg" src="images/lightbox/Brooklyn-Bridge-th.jpg"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 large-centered small-6 small-centered columns align-center">
+      <a class="button-for-touch" href="http://foundation.zurb.com/docs/components/clearing.html">Developer Documentation</a>
+    </div>
+  </div>
