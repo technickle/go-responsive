@@ -34,6 +34,14 @@
 	.home-page .page .section-1 .wrapper .small-img {
 		display: none;
 	}
+
+	body.home-page.off-canvas {
+		padding-top: 0;
+	} 
+
+	.home-page.off-canvas .page {
+		top: 88px;
+	}
 }
 
 .home-page .page .section {
