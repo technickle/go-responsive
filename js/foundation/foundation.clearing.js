@@ -158,7 +158,6 @@
     },
 
     // event callbacks
-
     open : function ($image, current, target) {
       var root = target.closest('.clearing-assembled'),
           container = root.find('div').first(),
