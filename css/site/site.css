@@ -8,16 +8,6 @@
 		margin: 10px 15px;
 	}
 
-
-
-}
-
-@media only screen and (min-width: 48em) {
-
-	.footer a {
-		margin: 0;
-	}
-
 	.its-footer {
 		background: url(../../images/its-logo-small.png) no-repeat 0 0 transparent;
 		padding-left: 51px;
@@ -35,6 +25,14 @@
 		background-size: 34px;
 		padding-top: 10px;
 		padding-left: 40px;
+	}
+
+}
+
+@media only screen and (min-width: 48em) {
+
+	.footer a {
+		margin: 0;
 	}
 
 }
