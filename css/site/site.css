@@ -1,15 +1,23 @@
 .footer a {
 	color: #797979;
+	text-decoration: none;
 }
 
 .its-footer {
 	background: url(../../images/its-logo-small.png) no-repeat 0 0 transparent;
+	padding-left: 51px;
+	padding-top: 10px;
 }
 
 .ewf-footer {
 	background: url(../../images/octocat-dark.png) no-repeat 0 0 transparent;
+	padding-left: 40px;
+	padding-top: 12px;
 }
 
 .dev-footer {
 	background: url(../../images/code.svg) no-repeat 0 0 transparent;
+	background-size: 34px;
+	padding-top: 10px;
+	padding-left: 40px;
 }
