@@ -1,0 +1,150 @@
+---
+layout: default
+title: Adaptive Tables
+vendorScripts: ['vendor/jquery-ui.widget.min', 'app/responsive-tables', 'foundation/foundation.dropdown', 'foundation/foundation.alerts']
+---
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Adaptive Tables</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Adaptive Tables</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-large">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Watch how smaller screens automatically show fewer columns to keep the contents readable
+            <ul>
+              <li>Notice that less important columns, such as Date Issued, disappear first to allow more space for more important columns</li>
+            </ul>
+          </li>
+          <li>Use the dropdown menu to select which columns you want to view
+            <ul>
+              <li>You can't hide the 'Name' column because the page design requires it to be shown at all times</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-small">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Some columns are hidden because there is not enough space &mdash; use the dropdown menu to select which columns you want to view</li>
+          <li class="show-for-touch">Try rotating your device to see if columns show and hide on their own</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Tax Appeals Tribunal February 2013 Docket</h2>
+      <div class="rt-table-menu" id="tadocket-check-container"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns scrollable-x">
+      <table id="tadocket">
+        <thead>
+          <tr>
+            <th class="rt-persist">Name</th>
+            <th class="rt-p1">DTA #</th>
+            <th class="rt-p2 no-wrap">Date Issued</th>
+            <th class="rt-p1">Corp</th>
+            <th class="rt-p2">Corp #</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>David &amp; Karen Ayoub</td>
+            <td>823894</td>
+            <td>01/22/2013</td>
+            <td>Island Recycling Corporation</td>
+            <td>822193</td>
+          </tr>
+          <tr>
+            <td>Gregg A. &amp; Sharon M. Goettel</td>
+            <td>823895</td>
+            <td>&nbsp;</td>
+            <td>Omni Recycling of Babylon, Inc.</td>
+            <td>822195</td>
+          </tr>
+          <tr>
+            <td>Carl &amp; Barbara Austin</td>
+            <td>823896</td>
+            <td>&nbsp;</td>
+            <td>Daria M. Carnesi</td>
+            <td>822194</td>
+          </tr>
+          <tr>
+            <td>James &amp; Maureen Bowers</td>
+            <td>823897</td>
+            <td>02/21/2013</td>
+            <td>Steven Dvorak</td>
+            <td>822196</td>
+          </tr>
+          <tr>
+            <td>Donald R. &amp; Susan M. Kimber</td>
+            <td>823898</td>
+            <td>&nbsp;</td>
+            <td>Triple C Retail Corporation</td>
+            <td>822197</td>
+          </tr>
+          <tr>
+            <td>David &amp; Kathleen Misner</td>
+            <td>823899</td>
+            <td>&nbsp;</td>
+            <td>Triple C Retail Corp Tinderbox # 362</td>
+            <td>823507</td>
+          </tr>
+          <tr>
+            <td>Gary &amp; Jean Petrick</td>
+            <td>823900</td>
+            <td>&nbsp;</td>
+            <td>IT USA, Inc.</td>
+            <td>823880</td>
+          </tr>
+          <tr>
+            <td>Michael G. D'Avirro</td>
+            <td>823901</td>
+            <td>&nbsp;</td>
+            <td>Manifatture Associate Cashmere</td>
+            <td>823881</td>
+          </tr>
+          <tr>
+            <td>William &amp; Kelley Kriesel</td>
+            <td>824246</td>
+            <td>&nbsp;</td>
+            <td>USA, Inc.</td>
+            <td>823780</td>
+          </tr>
+          <tr>
+            <td>Vatica Diner, Inc.</td>
+            <td>824299</td>
+            <td>02/28/2013</td>
+            <td>Great Bay Marine, Inc.</td>
+            <td>823771</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 large-centered small-6 small-centered columns align-center">
+      <a class="button-for-touch" href="https://github.com/nys-its/excelsior-web-framework/wiki/Adaptive-Tables">Developer Documentation</a>
+    </div>
+  </div>
