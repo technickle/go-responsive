@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/excelsior.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/off-canvas.css">
+		<link rel="stylesheet" href="css/site/site.css">
 
 		{% for styles in page.customStyles %}
 			<link rel="stylesheet" href="css/site/{{ styles }}.css">
@@ -131,7 +132,7 @@
 			</div>
 			<footer role="contentinfo" class="footer">
 				<div class="footer-contents">
-					Test Content
+					{% include footer.html %}
 				</div>
 			</footer>
 		</div>
@@ -156,7 +157,8 @@
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-39880511-1']);
 		  _gaq.push(['_trackPageview']);
-
+		  _gaq.push(['_setDomainName', window.location.host ]);
+		  
 		  (function() {
 		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
