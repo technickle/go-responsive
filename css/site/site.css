@@ -1,5 +1,6 @@
 @media only screen {
 
+	.home-page .footer a,
 	.footer a {
 		color: #797979;
 		display: inline-block;
