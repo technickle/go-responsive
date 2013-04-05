@@ -21,7 +21,7 @@ $(document).ready(function(){
 		if (subMenu.length) {
 
 			// We have a sub menu item so create the click event
-			link.on(exlsr.activateEventName, function(e){
+			link.on('click', function(e){
 
 				// Prevent default link action
 				e.preventDefault();
@@ -54,7 +54,7 @@ $(document).ready(function(){
 					}
 
 					// Add click off event handler on body
-					exlsr.$body.on(exlsr.activateEventName, function(){
+					exlsr.$body.on('click', function(){
 
 						// Find all occurances off active menu, active and active-sub-menu and remove them
 						exlsr.$body.removeClass('active-sub-menu');
@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 				}
 
-				return false;
+				return false; 
 
 			});
 		}
@@ -81,7 +81,7 @@ $(document).ready(function(){
 	});
 
 	// Bind for menu-back
-	$('#menu-back').on(exlsr.activateEventName, function(e){
+	$('#menu-back').on('click', function(e){
 
 		// Prevent element default action
 		e.preventDefault();
