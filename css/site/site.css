@@ -145,6 +145,7 @@ html {
 }
 
 .home-page .content-section {
+  background-color: #ddd;
   background: url(../../images/subtle_grunge_3.png) repeat;
 }
 

@@ -18,11 +18,12 @@
             }
           ]
         },
-        "cOptions":{
+        "options":{
           scaleOverride : true,
           scaleSteps : 6,
           scaleStepWidth : 400,
-          scaleStartValue : 0
+          scaleStartValue : 0,
+          scaleLineWidth: 4
         }
         }];
 
