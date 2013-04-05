@@ -65,7 +65,7 @@
       </div>
       <div class="row section section-2">
         <div class="large-7 small-12 columns">
-          <img src="images/whats-responsive.png" class="large-img" alt="Go responsive">
+          <img src="images/whats-responsive_sm.png" class="large-img" alt="Go responsive">
         </div>
         <div class="large-5 small-12 columns">
           <div class="wrapper">
@@ -135,7 +135,7 @@
             <div class="large-12 columns">
               <div class="title">
                 <h2>Why</h2>
-                <p class="tagline">The web is now everywhere.</p>
+                <p class="tagline">The web is now everywhere. Mobile usage is overtaking desktop usage.</p>
               </div>
             </div>
           </div>
@@ -143,6 +143,10 @@
             <div class="large-8 large-centered small-12 small-centered columns">
               <canvas id="int-trends">
               </canvas>
+              <div id="chart-label-mobile">Mobile</div>
+              <div id="chart-arrow-mobile">&larr;</div>
+              <div id="chart-label-desktop">Desktop</div>
+              <div id="chart-arrow-desktop">&rarr;</div>
             </div>
           </div>
         </div>
@@ -154,6 +158,34 @@
         .home-page .page .columns.small-centered {
           margin-left: auto;
           margin-right: auto;
+        }
+
+        #chart-label-mobile {
+          position: absolute;
+          font-size: 20px;
+          top: 1px;
+          left: 1px;
+        }
+
+        #chart-label-desktop {
+          position: absolute;
+          font-size: 20px;
+          top: 1px;
+          left: 1px;
+        }
+
+        #chart-arrow-mobile {
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          -webkit-transform: rotate(30deg);
+        }
+
+        #chart-arrow-desktop {
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          -webkit-transform: rotate(30deg);
         }
       </style>
 
@@ -167,24 +199,23 @@
             </div>
           </div>
           <div class="row">
-            <div class="large-4 small-6 columns">
-              <a class="button" target="_blank" href="https://developers.google.com/webmasters/smartphone-sites/">Google</a>
-              <!-- <p>Google recommends webmasters follow the industry best practice of using responsive web design, namely serving the same HTML for all devices and using only CSS media queries to decide the rendering on each device.<br/><a href="https://developers.google.com/webmasters/smartphone-sites/" target="_blank">Read more</a>&nbsp;&rarr;</p> -->
+            <div class="large-4 small-6 columns align-center">
+              <a class="button expand" target="_blank" href="https://developers.google.com/webmasters/smartphone-sites/">Google</a>
             </div>
-            <div class="large-4 small-6 columns">
-              <a class="button" target="_blank" href="http://microsoft.com">Microsoft</a>
+            <div class="large-4 small-6 columns align-center">
+              <a class="button expand" target="_blank" href="http://microsoft.com">Microsoft</a>
             </div>
-            <div class="large-4 small-6 columns">
-              <a class="button" target="_blank" href="https://www.ibm.com/developerworks/library/mo-responsive-design-1/index.html">IBM</a>
+            <div class="large-4 small-6 columns align-center">
+              <a class="button expand" target="_blank" href="https://www.ibm.com/developerworks/library/mo-responsive-design-1/index.html">IBM</a>
             </div>
-            <div class="large-4 small-6 columns">
-              <a class="button" target="_blank" href="http://html.adobe.com">Adobe</a>
+            <div class="large-4 small-6 columns align-center">
+              <a class="button expand" target="_blank" href="http://html.adobe.com">Adobe</a>
             </div>
-            <div class="large-4 small-6 columns">
-              <a class="button" target="_blank" href="http://www.ca.gov/">State of California</a>
+            <div class="large-4 small-6 columns align-center">
+              <a class="button expand" target="_blank" href="http://www.ca.gov/">State of California</a>
             </div>
-            <div class="large-4 small-6 columns">
-              <a class="button" target="_blank" href="http://www.dot.gov/">Dept of Transportation</a>
+            <div class="large-4 small-6 columns align-center">
+              <a class="button expand" target="_blank" href="http://www.dot.gov/">Dept of Transportation</a>
             </div>
           </div>
         </div>
