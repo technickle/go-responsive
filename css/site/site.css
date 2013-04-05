@@ -79,9 +79,9 @@
   }
 
   .home-page .page .section-3 .wrapper {
-    border: 1px solid #999;
-    border-radius: 6px;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2),0 0px 1px rgba(0,0,0,0.25);
+    xborder: 1px solid #999;
+    xborder-radius: 6px;
+    xbox-shadow: inset 0 0 0 1px rgba(255,255,255,0.2),0 0px 1px rgba(0,0,0,0.25);
   }
 
   .home-page .page .even .wrapper h2,
@@ -456,10 +456,6 @@ h6 {
 	.home-page .page .section-1 h1 {
 		font-size:3.3em;
 	}
-  .home-page .page .large-img {
-    margin: 0 0 2em 0;
-    display:block;
-  }
 	.footer a {
 		margin: 0;
 	}
