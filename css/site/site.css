@@ -28,6 +28,10 @@ html {
   padding-left: 40px;
 }
 
+#go-responsive-logo {
+  margin-top: 3em;
+}
+
 .home-page .page .large-img {
   margin: 0 auto;
   display:block;
