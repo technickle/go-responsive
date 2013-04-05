@@ -361,6 +361,12 @@ body.off-canvas.home-page.active-gov-bar .page {
   #go-responsive-logo {
     margin-top: 3em;
   }
+
+  .go-responsive-logo-small {
+  text-indent:-9999px;
+  background:transparent url(../images/go-responsive-small.png) no-repeat center center;
+  }
+
   #site-bar, #page {
     background: url(../../images/farmer.jpg) repeat;
   }
@@ -382,7 +388,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   }
   .home-page .page .section-2 {
   padding: 0 0 5em 0;
-}
+  }
 
 
   .home-page .page .even .wrapper h2,
@@ -470,6 +476,26 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .section-6 {
     padding: 0em 0 2em 0;
   }
+    .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 22%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 18%;
+    left: 22%;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 15%;
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 17%;
+    left: 15%;
+  }
+
 }
 
 .home-page .page .column.small-centered,
@@ -545,29 +571,6 @@ body.off-canvas.home-page.active-gov-bar .page {
     top: 18%;
     left: 17%;
     background-color: rgba(221, 39, 49, 0.5);
-  }
-}
-
-@media only screen and (min-width: 48em) {
-
-  .chart-label.chart-label-mobile {
-    top: 6%;
-    left: 22%;
-  }
-
-  .chart-label.chart-label-desktop {
-    top: 18%;
-    left: 22%;
-  }
-
-  .chart-box.chart-box-mobile {
-    top: 5%;
-    left: 15%;
-  }
-
-  .chart-box.chart-box-desktop {
-    top: 17%;
-    left: 15%;
   }
 }
 
