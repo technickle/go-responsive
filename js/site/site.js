@@ -63,8 +63,8 @@ if (curListItem.prev().length === 1 && curListItem.prev().get(0).tagName == "LI"
 
 if (prevlink) {
 	//console.log("back " + prevlink);
-	prev.attr(nextlink.attr('href'));
-	prev.text(nextlink.text());
+	prev.attr(prevlink.attr('href'));
+	prev.text(prevlink.text());
 	prev.show();
 }
 
