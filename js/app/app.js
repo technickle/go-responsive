@@ -3,7 +3,7 @@
 /**
  * Namespace
  */
-var exlsr = {
+var ewf = {
   activateEventName: 'click',
   ua: navigator.userAgent,
   iOS: false,
@@ -15,36 +15,36 @@ var exlsr = {
 /**
  * Init methods
  */
-exlsr.init = function _init () {
+ewf.init = function _init () {
   var screenMax;
 
   // Init code here...
-  exlsr.$body = $('body');
-  exlsr.$html = $('html');
-  exlsr.$window = $(window);
+  ewf.$body = $('body');
+  ewf.$html = $('html');
+  ewf.$window = $(window);
 
   // Monitor-size classes
   screenMax = Math.max(screen.width, screen.height);
   if (screenMax <= 480) {
-    exlsr.$html.addClass('screen-max-tiny');
+    ewf.$html.addClass('screen-max-tiny');
   }
   else if (screenMax > 480 && screenMax < 768) {
     // Only Foundation's `small-` classes will ever take effect
-    exlsr.$html.addClass('screen-max-small');
+    ewf.$html.addClass('screen-max-small');
   }
   else if (screenMax >= 768) {
     // Foundation's `large-` classes may take effect
-    exlsr.$html.addClass('screen-max-large');
+    ewf.$html.addClass('screen-max-large');
   }
 
   // Preload assets
-  exlsr.preloader.add('<img src="images/close.svg">');
-  exlsr.preloader.add('<img src="images/close-x-gray.svg">');
-  exlsr.preloader.add('<img src="images/hamburger-no-dots.svg">');
-  exlsr.preloader.init();
+  ewf.preloader.add('<img src="images/close.svg">');
+  ewf.preloader.add('<img src="images/close-x-gray.svg">');
+  ewf.preloader.add('<img src="images/hamburger-no-dots.svg">');
+  ewf.preloader.init();
 };
 
-$(document).ready(function(){exlsr.init();});
+$(document).ready(function(){ewf.init();});
 
 /**
  * Client- and environment-related properties
@@ -52,7 +52,7 @@ $(document).ready(function(){exlsr.init();});
 (function () {
   // Determine click type
   if (Modernizr.touch) {
-    exlsr.activateEventName = 'tap';
+    ewf.activateEventName = 'tap';
 
     // Zepto.js Touch Events
     // (c) 2010-2012 Thomas Fuchs
@@ -187,8 +187,8 @@ $(document).ready(function(){exlsr.init();});
   } // end if(Modernizr.touch)
 
   // Detect iOS
-  if ( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(exlsr.ua) && exlsr.ua.indexOf( "AppleWebKit" ) > -1 ){
-    exlsr.iOS = true;
+  if ( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(ewf.ua) && ewf.ua.indexOf( "AppleWebKit" ) > -1 ){
+    ewf.iOS = true;
 
     /*! A fix for the iOS orientationchange zoom bug.
      Script by @scottjehl, rebound by @wilto.
@@ -243,18 +243,18 @@ $(document).ready(function(){exlsr.init();});
  */
 $(document).ready(function(){
 
-  if (!exlsr.$body) {
-    exlsr.$body = $('body');
+  if (!ewf.$body) {
+    ewf.$body = $('body');
   }
 
   // Standard Gov Banner display code
-  $('#gov-link-3').on(exlsr.activateEventName, function(e) {
+  $('#gov-link-3').on(ewf.activateEventName, function(e) {
     e.preventDefault();
-    exlsr.$body.addClass('active-gov-bar-search');
+    ewf.$body.addClass('active-gov-bar-search');
   });
 
   // Active Elements
-  $('[data-active]').on(exlsr.activateEventName, function(e) {
+  $('[data-active]').on(ewf.activateEventName, function(e) {
 
     // Prevent Defaults
     e.preventDefault();
@@ -275,7 +275,7 @@ $(document).ready(function(){
       var activeClass = active.attr('data-active');
 
       // Remove the old active class
-      exlsr.$body.removeClass(activeClass);
+      ewf.$body.removeClass(activeClass);
 
       // Remove the active class from the old active item
       active.removeClass('active');
@@ -298,26 +298,26 @@ $(document).ready(function(){
     }
 
     // Check to see if the item is active
-    if (exlsr.$body.hasClass(activeClass)) {
+    if (ewf.$body.hasClass(activeClass)) {
 
       // Remove active state class from header
-      exlsr.$body.removeClass(activeClass);
+      ewf.$body.removeClass(activeClass);
 
       // Remove active state class from the clicked element
       $clickedElm.removeClass(selectedClass);
 
       // Remove any stray body click event
-      exlsr.$body.off(exlsr.activateEventName);
+      ewf.$body.off(ewf.activateEventName);
 
     } else {
       // Add active state class from header
-      exlsr.$body.addClass(activeClass);
+      ewf.$body.addClass(activeClass);
 
       // Add active state class from clicked element
       $clickedElm.addClass(selectedClass);
 
       // Setup the on click function to close open drop down if the user clicks outside the active element.
-      exlsr.$body.on(exlsr.activateEventName, function(e) {
+      ewf.$body.on(ewf.activateEventName, function(e) {
 
         var activeElm = $('.active'),
             clicked = $(this);
@@ -330,13 +330,13 @@ $(document).ready(function(){
           var activeClass = activeElm.attr('data-active');
 
           // Remove the active element class
-          exlsr.$body.removeClass(activeClass);
+          ewf.$body.removeClass(activeClass);
 
           // Remove active from the active element
           activeElm.removeClass('active');
 
           // Remove this click event
-          exlsr.$body.off(exlsr.activateEventName);
+          ewf.$body.off(ewf.activateEventName);
 
         }
 
@@ -354,41 +354,41 @@ $(document).ready(function(){
 /**
  * Asset Preloader
  */
-exlsr.preloader = {
+ewf.preloader = {
   container: null, // The container <div>
   assets: []       // Assets to be preloaded (HTML strings); this can be prepopulated
 };
 
 // Creates an off-screen container for preloaded assets and adds any assets present in the queue
 // Should be called at document.ready
-exlsr.preloader.init = function _exlsr_preloader_init () {
+ewf.preloader.init = function _ewf_preloader_init () {
   // Create container
-  exlsr.preloader.container = document.createElement('div');
-  exlsr.preloader.container.className = 'hide-off-screen';
-  document.body.appendChild(exlsr.preloader.container);
+  ewf.preloader.container = document.createElement('div');
+  ewf.preloader.container.className = 'hide-off-screen';
+  document.body.appendChild(ewf.preloader.container);
 
   // Load anything that's already in the queue
-  exlsr.preloader.assets.forEach(function(i) {
-    exlsr.preloader.add(i);
+  ewf.preloader.assets.forEach(function(i) {
+    ewf.preloader.add(i);
   });
 
   // Empty the queue
-  exlsr.preloader.assets = [];
+  ewf.preloader.assets = [];
 };
 
 // Add an asset to the preload container
 // Argument is an HTML string to be added to the page
 // May be called before or after preload.setup() has run
-exlsr.preloader.add = function _exlsr_preloader_add (html) {
+ewf.preloader.add = function _ewf_preloader_add (html) {
   if (!html || typeof html !== 'string') { return false; }
 
   // If the container has already been set up, add this asset immediately
-  if (exlsr.preloader.container) {
-    exlsr.preloader.container.innerHTML += html;
+  if (ewf.preloader.container) {
+    ewf.preloader.container.innerHTML += html;
   }
   // Otherwise, queue it to load when setup() is run
   else {
-    exlsr.preloader.assets.push(html);
+    ewf.preloader.assets.push(html);
   }
 };
 
@@ -398,3 +398,6 @@ exlsr.preloader.add = function _exlsr_preloader_add (html) {
 
 // Simple array-reversal plugin
 try { $.fn.reverse = [].reverse; } catch (e) { }
+
+//TEMP TEMP TEMP!!!!!!!!!!!
+exlsr = ewf;
