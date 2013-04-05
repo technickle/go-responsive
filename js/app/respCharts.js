@@ -5,7 +5,11 @@
         var chartObj = chartObj;
 
         // Function for building the default charts
-        function chartBuilder(canvasElm, chartType, chartData) {
+        function chartBuilder(canvasElm, chartType, chartData, chartOptions) {
+
+          if ( typeof(chartOptions) != "object") {
+            chartOptions = {};
+          }
 
           // Select the canvas element in that is being used
           var $graph = $(canvasElm),
@@ -24,22 +28,22 @@
           // Draw the Chart based on the chartType variable passed
           switch (chartType) {
             case "line":
-              myNewChart.Line(chartData,{});
+              myNewChart.Line(chartData,chartOptions);
               break;
             case "bar":
-              myNewChart.Bar(chartData,{});
+              myNewChart.Bar(chartData,chartOptions);
               break;
             case "radar":
-              myNewChart.Radar(chartData,{});
+              myNewChart.Radar(chartData,chartOptions);
               break;
             case "polarArea":
-              myNewChart.PolarArea(chartData,{});
+              myNewChart.PolarArea(chartData,chartOptions);
               break;
             case "pie":
-               myNewChart.Pie(chartData,{});
+               myNewChart.Pie(chartData,chartOptions);
               break;
             case "doughnut":
-              myNewChart.Doughnut(chartData,{});
+              myNewChart.Doughnut(chartData,chartOptions);
               break;
           }
 
