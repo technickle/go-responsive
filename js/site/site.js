@@ -63,15 +63,18 @@ if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
   }
 }
 
-if (prevlink || prevlink.length === 0) {
-  //console.log("back " + prevlink);
-  previous.attr('href', prevlink.attr('href'));
-  previous.addClass('button icon-left-dir');
-  showBreadcrumbs = true;
+if (url != "carousel.html") {
+  if (prevlink) {
+    //console.log("back " + prevlink);
+    previous.attr('href', prevlink.attr('href'));
+    previous.addClass('button icon-left-dir');
+    showBreadcrumbs = true;
+  } else {
+    previous.hide();
+  }
 } else {
   previous.hide();
 }
-
 
 
 // Find Next Linkis another
