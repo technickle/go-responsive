@@ -193,7 +193,7 @@
 }
 
 .breadcrumbs a {
-
+  display: none;
 }
 
 .breadcrumbs a.prev {
