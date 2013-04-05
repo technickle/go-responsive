@@ -9578,34 +9578,31 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
 }
 
 /* line 24, ../scss/excelsior/components/_lists.scss */
-.image-to-list .has-video a span {
-  bottom: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
+.image-to-list .video-container .has-video a span {
+  display: none !important;
 }
 
 @media only screen and (min-width: 24em) {
-  /* line 32, ../scss/excelsior/components/_lists.scss */
+  /* line 29, ../scss/excelsior/components/_lists.scss */
   .image-to-list a {
     color: #efefef;
     display: block;
     text-decoration: none;
   }
 
-  /* line 39, ../scss/excelsior/components/_lists.scss */
+  /* line 36, ../scss/excelsior/components/_lists.scss */
   .image-to-list a img,
   .image-to-list .has-video iframe {
     display: block;
     speak: normal;
   }
 
-  /* line 44, ../scss/excelsior/components/_lists.scss */
+  /* line 41, ../scss/excelsior/components/_lists.scss */
   .image-to-list a iframe {
     height: 100%;
   }
 
-  /* line 48, ../scss/excelsior/components/_lists.scss */
+  /* line 45, ../scss/excelsior/components/_lists.scss */
   .image-to-list a span {
     background: rgba(0, 0, 0, 0.7);
     display: block;
@@ -9614,19 +9611,14 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     margin-top: -40px;
   }
 
-  /* line 56, ../scss/excelsior/components/_lists.scss */
-  .image-to-list .has-video a span {
-    display: none;
-  }
-
-  /* line 61, ../scss/excelsior/components/_lists.scss */
+  /* line 54, ../scss/excelsior/components/_lists.scss */
   .image-to-list li.large-3:nth-child(5n),
   .image-to-list li.small-3:nth-child(5n) {
     float: left;
     clear: both !important;
   }
 
-  /* line 67, ../scss/excelsior/components/_lists.scss */
+  /* line 60, ../scss/excelsior/components/_lists.scss */
   .image-to-list li[class*="large-"]:last-child,
   .image-to-list li[class*="small-"]:last-child {
     float: left;
