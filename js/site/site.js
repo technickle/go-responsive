@@ -65,6 +65,7 @@ if (prevlink) {
 	//console.log("back " + prevlink);
 	prev.attr(nextlink.attr('href'));
 	prev.text(nextlink.text());
+	prev.show();
 }
 
 // Find Next Linkis another 
@@ -117,4 +118,5 @@ if (nextlink) {
 	//console.log("next " + nextlink);
 	next.attr(nextlink.attr('href'));
 	next.text(nextlink.text());
+	next.show();
 }
