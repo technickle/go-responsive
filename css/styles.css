@@ -191,3 +191,15 @@
 .govurl a:hover{
   color: #ff0;
 }
+
+.breadcrumb a {
+  display: inline-block;
+}
+
+.breadcrumb a.previous {
+  float: right;
+}
+
+.breadcrumb a.next {
+  float: left;
+}
