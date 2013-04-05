@@ -18,9 +18,8 @@
             }
           ]
         },
-        {
-          
-        }}];
+        {}
+        }];
 
       // Call the responsive plugin
       $.respCharts(chartObj);
