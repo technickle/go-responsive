@@ -445,10 +445,10 @@ h6 {
   display: inline-block;
 }
 
-.breadcrumb a.prev {
+.breadcrumb a#prev {
   float: left;
 }
 
-.breadcrumb a.next {
+.breadcrumb a#next {
   float: right;
 }
