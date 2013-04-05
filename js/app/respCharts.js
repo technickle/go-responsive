@@ -7,7 +7,7 @@
         // Function for building the default charts
         function chartBuilder(canvasElm, chartType, chartData, chartOptions) {
 
-          if ( typeof(chartOptions) != "object") {
+          if ( typeof(chartOptions) !== "Object") {
             chartOptions = {};
           }
 
@@ -55,7 +55,7 @@
           for (var i=0, len = chartObj.length; i < len; i++) {
 
              // For each chart object found call the build function
-             chartBuilder(chartObj[i].cId, chartObj[i].cType, chartObj[i].cData);
+             chartBuilder(chartObj[i].cId, chartObj[i].cType, chartObj[i].cData, chartObj[i].cOptions);
 
           }
         }
