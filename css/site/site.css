@@ -145,6 +145,7 @@ html {
 }
 
 .home-page .content-section {
+  background-color: #ddd;
   background: url(../../images/subtle_grunge_3.png) repeat;
 }
 
@@ -363,6 +364,24 @@ body.off-canvas.home-page {
 body.off-canvas.home-page.active-gov-bar .page {
   top: 88px;
 }
+.alert-box {
+  background-color:rgb(231, 235, 247);
+  border-color: #d0d0d0;
+  color: #777;
+}
+
+.alert-box h4{
+  color:#555;
+}
+
+.alert-box p {
+  margin-bottom:0.25em;
+}
+
+.alert-box ul {
+  padding-left:1.5em;
+}
+
 @media only screen and (min-width: 48em) {
   .home-page .page .button.big {
     padding: 1.25em 1.5em;
@@ -445,4 +464,44 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .section-6 {
     padding: 0em 0 2em 0;
   }
+}
+
+.home-page .page .column.small-centered,
+.home-page .page .columns.small-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+#chart-label-mobile {
+  position: absolute;
+  font-size: 28px;
+  top: 9%;
+  right: 20%;
+}
+
+#chart-arrow-mobile {
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  font-size: 40px;
+  -webkit-transform: rotate(150deg);
+}
+
+#chart-label-desktop {
+  position: absolute;
+  font-size: 28px;
+  top: 32%;
+  left: 29%;
+}
+
+#chart-arrow-desktop {
+  position: absolute;
+  top: 34%;
+  left: 47%;
+  font-size: 40px;
+  -webkit-transform: rotate(30deg);
 }
