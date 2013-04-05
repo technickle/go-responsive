@@ -8587,6 +8587,7 @@ input[type="color"]:focus,
 /* line 128, ../scss/excelsior/components/_forms.scss */
 input[type="radio"],
 input[type="checkbox"] {
+  background-color:transparent;
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */

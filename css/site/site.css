@@ -321,6 +321,16 @@ h6 {
   display: inline-block;
 }
 
+  .home-page .page .section-4 .wr1 {
+    display: none;
+    margin: auto;
+  }
+
+  .home-page .page .section-4 .wr2 {
+    display: block;
+    margin: auto;
+  }
+
 .breadcrumbs a#prev {
   float: left;
   padding:6px 12px 4px 3px;
@@ -357,14 +367,34 @@ body.off-canvas.home-page.active-gov-bar .page {
   padding-left:1.5em;
 }
 
+.home-page .page .section-4 {
+  background: #182F41;
+}
+
+.home-page .page .section-4 h2 {
+  color: #fff;
+  text-shadow: 0 2px rgba(0,0,0,0.6);
+}
+
 @media only screen and (min-width: 48em) {
   #go-responsive-logo {
     margin-top: 3em;
   }
-
+  
+  .site-bar a.site-logo {
+    margin-left:0;
+  }
+  .site-bar .site-functions .site-search form {
+    padding-right:0!important;
+  }
+  .site-bar .site-functions .site-search .search-container {
+    padding-right:0!important;
+  }
   .go-responsive-logo-small {
   text-indent:-9999px;
-  background:transparent url(../images/go-responsive-small.png) no-repeat center center;
+  background:transparent url(../../images/go-responsive-small.png) no-repeat center center;
+  display: block;
+  min-width: 8em;
   }
 
   #site-bar, #page {
@@ -381,6 +411,10 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page [class*="section-"] h2 {
     font-size: 2.5em;
     color:#333;
+  }
+
+  .home-page .page .section-4 h2 {
+    color: #fff;
   }
 
   .home-page .page .section-3 {
@@ -413,6 +447,14 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .section-8 h2 {
     font-size: 2.5em;
     margin: 0.3em auto 0.4em auto;
+  }
+
+  .home-page .page .section-4 .wr1 {
+    display: block;
+  }
+
+  .home-page .page .section-4 .wr2 {
+    display: none;
   }
 
   .footer a {
@@ -449,15 +491,6 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .odd .wrapper {
     margin: 0 auto 2em auto;
     padding: 2em 0 0 0;
-  }
-
-  .home-page .page .section-4 {
-    background: #182F41;
-  }
-
-  .home-page .page .section-4 h2 {
-    color: #fff;
-    text-shadow: 0 2px rgba(0,0,0,0.6);
   }
 
   .home-page .page .section-2 .wrapper {
