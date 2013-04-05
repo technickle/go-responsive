@@ -16,7 +16,7 @@
 
 @media only screen and (min-width: 24em) {
 
-	.video-container {
+	.video-container { 
 		height: auto;
 		padding-top: inherit;
 		padding-bottom: inherit;
