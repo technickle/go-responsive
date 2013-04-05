@@ -81,7 +81,6 @@ html {
 .home-page .page .wrapper,
 .home-page .page .section-3 .wrapper {
   margin: 0 auto 2em auto;
-  max-width: 21em;
   /*border: 1px solid #555;*/
   /*border-radius: 6px;*/
   font-size: 1.2em;
@@ -431,6 +430,12 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .odd .wrapper {
     margin: 0 auto 2em auto;
     padding: 2em 0 0 0;
+  }
+
+
+  .home-page .page .section-4 .wrapper {
+    margin: 1em auto 1.5em auto;
+    padding: 0;
   }
 
   .home-page .page .section-8 .wrapper {
