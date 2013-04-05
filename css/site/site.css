@@ -203,6 +203,7 @@ html {
 }
 
 .home-page .page .button {
+  width:150px;
   xpadding: 0.5em 0.8em;
   margin: 0.4em 0;
   xfont-size: 1.1em;
@@ -342,8 +343,8 @@ h6 {
 	margin: 0;
 }
 .breadcrumbs {
-  padding-top: 0;
-  margin-bottom:0;
+  padding: 0;
+  margin:0;
   border:none;
   background-color:transparent;
 }
@@ -603,8 +604,4 @@ body.off-canvas.home-page.active-gov-bar .page {
 .logo-button img {
   max-width: 100%;
   max-height: 40px;
-}
-
-.section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
-  background: #FFF;
 }
