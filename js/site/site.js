@@ -120,7 +120,7 @@ if (curListItem.next().length === 1 && curListItem.next().is('li')) {
 if (nextlink) {
 	//console.log("next " + nextlink);
 	next.attr('href', nextlink.attr('href'));
-	next.addClass('button').html(nextlink.text() + '&nbsp; →');
+	next.addClass('button icon-sub-menu').html(nextlink.text());
 	showBreadcrumbs = true;
 } else {
 	previous.hide();
