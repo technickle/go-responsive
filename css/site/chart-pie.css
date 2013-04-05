@@ -1,0 +1,43 @@
+@media only screen {
+	.swatch {
+		border: 1px solid #3c3c3c;
+		display: inline-block;
+		height: 16px;
+		width: 16px;
+		position: absolute;
+		margin-left: 10px;
+		margin-top: -1px;
+	}
+
+	.safari {
+		background: #0088cc;
+	}
+
+	.opera {
+		background: #fbb450;
+	}
+
+	.android {
+		background: #62c462;
+	}
+
+	.symbian {
+		background: #555;
+	}
+
+	.blackberry {
+		background: #ee5f5b;
+	}
+
+	caption {
+		margin-bottom: 10px;rt
+	}
+}
+
+@media only screen and (max-width: 48em) {
+	
+	.graph-table {
+		margin-top: 25px;
+	}
+
+}
