@@ -1,5 +1,6 @@
 @media only screen {
 	.swatch {
+		border: 1px solid #3c3c3c;
 		display: inline-block;
 		height: 16px;
 		width: 16px;
@@ -8,16 +9,16 @@
 		margin-top: -1px;
 	}
 
-	.2012 {
+	.year-2012 {
 		background: #DCDCDC;
 	}
 
-	.2013 {
+	.year-2013 {
 		background: #97BBCD;
 	}
 
 	caption {
-		margin-bottom: 10px;
+		margin-bottom: 10px;rt
 	}
 }
 
