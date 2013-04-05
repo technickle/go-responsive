@@ -441,14 +441,14 @@ h6 {
 	}
 }
 
-.breadcrumb a {
+.breadcrumbs a {
   display: inline-block;
 }
 
-.breadcrumb a#prev {
+.breadcrumbs a#prev {
   float: left;
 }
 
-.breadcrumb a#next {
+.breadcrumbs a#next {
   float: right;
 }
