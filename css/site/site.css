@@ -49,8 +49,13 @@
   top: 0;
 }
 
-.home-page .content-section {
+.home-page .content-section,
+.page .breadcrumbs {
   background: url(../../images/subtle_grunge_3.png) repeat;
+}
+
+.page .breadcrumbs {
+  border-color: #aaa;
 }
 
 .home-page .page .section.odd,
