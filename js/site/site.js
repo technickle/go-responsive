@@ -1,4 +1,4 @@
-/*// get the current page url
+// get the current page url
 var url = window.location.href.toString().split(window.location.host)[1].replace('/go-responsive/','');
 
 // Find the current position in the navigation list
@@ -129,4 +129,3 @@ if (nextlink) {
 if (showBreadcrumbs) {
 	$('.page .breadcrumbs').animate({opacity:1});
 }
-*/ 
