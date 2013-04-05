@@ -363,13 +363,13 @@ body.off-canvas.home-page {
 body.off-canvas.home-page.active-gov-bar .page {
   top: 88px;
 }
-.alert-box .secondary {
+.alert-box {
   background-color: #e9e9e9;
   border-color: #d0d0d0;
   color: #777;
 }
 
-.alert-box .secondary h4{
+.alert-box h4{
   color:#555;
 }
 
