@@ -1,0 +1,4 @@
+#resize-bar-body #wrapper {height:99%;}
+#resize-bar-body section {
+  overflow-y:hidden;
+}
