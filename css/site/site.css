@@ -144,7 +144,7 @@ html {
   top: 0;
 }
 
-.content-section {
+.home-page .content-section, .content-section {
   background-color: #ddd;
   background: url(../../images/farmer.jpg) repeat;
 }
