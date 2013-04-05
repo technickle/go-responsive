@@ -10,7 +10,8 @@ var curListItem = current.parent('li');
 var prevlink,
 	previous = $('#prev'),
 	nextlink,
-	next = $('#next');
+	next = $('#next'),
+	showBreadcrumbs = false;
 
 // Determine if there is a previous and next location
 // Find previous first
@@ -65,6 +66,7 @@ if (prevlink) {
 	//console.log("back " + prevlink);
 	previous.attr('href', prevlink.attr('href'));
 	previous.addClass('button').html("← &nbsp;" + prevlink.text());
+	showBreadcrumbs = true;
 } else {
 	previous.hide();
 }
@@ -119,6 +121,11 @@ if (nextlink) {
 	//console.log("next " + nextlink);
 	next.attr('href', nextlink.attr('href'));
 	next.addClass('button').html(nextlink.text() + '&nbsp; →');
+	showBreadcrumbs = true;
 } else {
 	previous.hide();
+}
+
+if (showBreadcrumbs) {
+	$('.page .breadcrumbs').animate({opacity:1});
 }
