@@ -8,10 +8,10 @@ var current = $('.global-nav').find('a[href="' + url + '"]').addClass('currentPo
 var curListItem = current.parent('li');
 
 var prevlink,
-	previous = $('#prev'),
-	nextlink,
-	next = $('#next'),
-	showBreadcrumbs = false;
+  previous = $('#prev'),
+  nextlink,
+  next = $('#next'),
+  showBreadcrumbs = false;
 
 // Determine if there is a previous and next location
 // Find previous first
@@ -21,111 +21,126 @@ var prevlink,
 // Find Previous Link
 if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
 
-	//console.log('We have a previous sibling list item');
+  //console.log('We have a previous sibling list item');
 
-	// Get the previous sibling
-	prevlink = curListItem.prev().children('a');
+  // Get the previous sibling
+  prevlink = curListItem.prev().children('a');
 
 } else {
 
-	//console.log('We are at the beginning of the list');
+  //console.log('We are at the beginning of the list');
 
-	// Move up to the unorder list
-	var parentUL = curListItem.parent();
+  // Move up to the unorder list
+  var parentUL = curListItem.parent();
 
-	// Check to make sure it item is a ul is needed.
-	if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
+  // Check to make sure it item is a ul is needed.
+  if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
 
-		//console.log("We are nested");
+    //console.log("We are nested");
 
-		// New list item
-		var parentListTopic = parentUL.parent();
+    // New list item
+    var parentListTopic = parentUL.parent();
 
-		// Check to see if there is a previous sibling li
-		if (parentListTopic.prev().length === 1 && parentListTopic.prev().is('li')) {
+    // Check to see if there is a previous sibling li
+    if (parentListTopic.prev().length === 1 && parentListTopic.prev().is('li')) {
 
-			// Get the last item from the previous top
-			prevlink = parentListTopic.prev().children('ul').children('li').last().children('a');
+      // Get the last item from the previous top
+      prevlink = parentListTopic.prev().children('ul').children('li').last().children('a');
 
-		} else {
+    } else {
 
-			//console.log('there is no previous menu item.');
+      //console.log('there is no previous menu item.');
 
-			prevlink = false;
-		}
+      prevlink = false;
+    }
 
-	} else {
+  } else {
 
-		//console.log("We are at the top of the nav. Remove the prev link.");
+    //console.log("We are at the top of the nav. Remove the prev link.");
 
-		prevlink = false;
-	}
+    prevlink = false;
+  }
 }
 
 if (prevlink) {
-	//console.log("back " + prevlink);
-	previous.attr('href', prevlink.attr('href'));
-	previous.addClass('button icon-left-dir');
-	showBreadcrumbs = true;
+  //console.log("back " + prevlink);
+  previous.attr('href', prevlink.attr('href'));
+  previous.addClass('button icon-left-dir');
+  showBreadcrumbs = true;
 } else {
-	previous.hide();
+  previous.hide();
 }
 
 // Find Next Linkis another
 if (curListItem.next().length === 1 && curListItem.next().is('li')) {
 
-	// There is a next link
-	//console.log('There is a next child');
+  // There is a next link
+  //console.log('There is a next child');
 
-	// Get the previous sibling
-	nextlink = curListItem.next().children('a');
+  // Get the previous sibling
+  nextlink = curListItem.next().children('a');
 
 } else {
 
-	//console.log('There are not more li in this list');
+  //console.log('There are not more li in this list');
 
-	// Move up to the unorder list
-	var parentUL = curListItem.parent();
+  // Move up to the unorder list
+  var parentUL = curListItem.parent();
 
-	// Check to make sure it item is a ul is needed.
-	if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
+  // Check to make sure it item is a ul is needed.
+  if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
 
-		//console.log("We are nested");
+    //console.log("We are nested");
 
-		// New list item
-		var parentListTopic = parentUL.parent();
+    // New list item
+    var parentListTopic = parentUL.parent();
 
-		// Check to see if there is a previous sibling li
-		if (parentListTopic.next().length === 1 && parentListTopic.next().is('li')) {
+    // Check to see if there is a previous sibling li
+    if (parentListTopic.next().length === 1 && parentListTopic.next().is('li')) {
 
-			// Get the last item from the previous top
-			nextlink = parentListTopic.next().children('ul').children('li').first().children('a');
+      // Get the last item from the previous top
+      nextlink = parentListTopic.next().children('ul').children('li').first().children('a');
 
-		} else {
+    } else {
 
-			//console.log('there is no previous menu item.');
+      //console.log('there is no previous menu item.');
 
-			nextlink = false;
-		}
+      nextlink = false;
+    }
 
-	} else {
+  } else {
 
-		//console.log("We are at the top of the nav. Remove the prev link.");
+    //console.log("We are at the top of the nav. Remove the prev link.");
 
-		nextlink = false;
-	}
+    nextlink = false;
+  }
 
 }
 
 if (nextlink) {
-	//console.log("next " + nextlink);
-	next.attr('href', nextlink.attr('href'));
-	next.addClass('button').html(nextlink.text() + "&nbsp;<span class='icon-right-dir'></span>");
-	showBreadcrumbs = true;
+  //console.log("next " + nextlink);
+  next.attr('href', nextlink.attr('href'));
+  next.addClass('button').html(nextlink.text() + "&nbsp;<span class='icon-right-dir'></span>");
+  showBreadcrumbs = true;
 } else {
-	previous.hide();
+  previous.hide();
 }
 
 if (showBreadcrumbs) {
-	$('.page .breadcrumbs').animate({opacity:1});
+  $('.page .breadcrumbs').animate({opacity:1});
 }
+
+
+// PNGs for IE8
+try {
+  if (/MSIE\s\d/.test(navigator.userAgent) && parseInt(/MSIE\s(\d+)/.exec(navigator.userAgent)[1], 10) < 9) {
+    $('img').each(function(){
+      var $img, src;
+      if (this.hasAttribute('data-png')) {
+        $img = $(this);
+        src = $img.attr('src');
+        $img.attr('src', src.replace(/\.svg/, '.png'));
+      }
+    });
+  }
+} catch (e) { }
