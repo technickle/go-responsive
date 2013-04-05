@@ -73,8 +73,6 @@ $(document).ready(function(){
 
 				}
 
-				return false; 
-
 			});
 		}
 
@@ -108,9 +106,6 @@ $(document).ready(function(){
 			}
 
 		}
-
-		return false;
-
 
 	});
 
