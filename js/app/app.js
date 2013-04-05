@@ -387,8 +387,8 @@ ewf.preloader.init = function _ewf_preloader_init () {
   document.body.appendChild(ewf.preloader.container);
 
   // Load anything that's already in the queue
-  ewf.preloader.assets.forEach(function(i) {
-    ewf.preloader.add(i);
+  $.each(ewf.preloader.assets, function(i, a) {
+    ewf.preloader.add(a);
   });
 
   // Empty the queue
