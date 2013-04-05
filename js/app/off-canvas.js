@@ -1,4 +1,4 @@
-/*global ewf: false */
+/*global exlsr: false */
 /*
  Additional Login needed for off canvas Menus
 */
@@ -21,7 +21,7 @@ $(document).ready(function(){
 		if (subMenu.length) {
 
 			// We have a sub menu item so create the click event
-			link.on(ewf.activateEventName, function(e){
+			link.on(exlsr.activateEventName, function(e){
 
 				// Prevent default link action
 				e.preventDefault();
@@ -49,15 +49,15 @@ $(document).ready(function(){
 					// Add a class to the menu.
 					subMenu.addClass("active-menu");
 
-					if (!ewf.$body.hasClass('active-sub-menu')) {
-						ewf.$body.addClass('active-sub-menu');
+					if (!exlsr.$body.hasClass('active-sub-menu')) {
+						exlsr.$body.addClass('active-sub-menu');
 					}
 
 					// Add click off event handler on body
-					ewf.$body.on(ewf.activateEventName, function(){
+					exlsr.$body.on(exlsr.activateEventName, function(){
 
 						// Find all occurances off active menu, active and active-sub-menu and remove them
-						ewf.$body.removeClass('active-sub-menu');
+						exlsr.$body.removeClass('active-sub-menu');
 						$('#global-nav .active').removeClass('active');
 						$('#global-nav .active-menu').removeClass('active-menu');
 
@@ -73,13 +73,15 @@ $(document).ready(function(){
 
 				}
 
+				return false;
+
 			});
 		}
 
 	});
 
 	// Bind for menu-back
-	$('#menu-back').on(ewf.activateEventName, function(e){
+	$('#menu-back').on(exlsr.activateEventName, function(e){
 
 		// Prevent element default action
 		e.preventDefault();
@@ -102,10 +104,12 @@ $(document).ready(function(){
 				$('#sub-menu-title').text("");
 
 				// Remove the active-sub-menu class from the body
-				ewf.$body.removeClass('active-sub-menu');
+				exlsr.$body.removeClass('active-sub-menu');
 			}
 
 		}
+
+		return false;
 
 
 	});
