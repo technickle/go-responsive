@@ -92,8 +92,11 @@
   margin: 0;
   padding: 0;
   font-weight: normal;
-  text-transform: uppercase;
   text-align: center;
+}
+
+.home-page .page h2 {
+  text-transform: uppercase;
 }
 
 .home-page .page .button {
@@ -155,7 +158,7 @@
   text-shadow: 0 1px rgba(255,255,255,0.4);
 }
 
-.home-page .page .big-p {
+.home-page .page .tagline {
   padding: 0.8em 0 0.6em 0;
   margin: 0 auto 0.3em auto;
   font-size: 1.5em;
@@ -321,9 +324,13 @@ h6 {
 }
 
 .home-page .page [class*="section-"] p {
-	color: #222;
-	margin: 0.3em auto 0.5em auto;
-	line-height: 1.15em;
+  color: #222;
+  margin: 0.3em auto 0.5em auto;
+  line-height: 1.15em;
+}
+
+.home-page .page .section-3 .wrapper p {
+  min-height: 4.125em;
 }
 
 .home-page .page .section-2 p,
