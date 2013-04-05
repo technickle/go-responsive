@@ -17,6 +17,7 @@
 @media only screen and (max-width: 24em) {
 
 	.video-container {
+		height: auto;
 		padding: 0;
 	}
 
