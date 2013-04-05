@@ -457,3 +457,43 @@ body.off-canvas.home-page.active-gov-bar .page {
     padding: 0em 0 2em 0;
   }
 }
+
+.home-page .page .column.small-centered,
+.home-page .page .columns.small-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+#chart-label-mobile {
+  position: absolute;
+  font-size: 28px;
+  top: 9%;
+  right: 20%;
+}
+
+#chart-arrow-mobile {
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  font-size: 40px;
+  -webkit-transform: rotate(150deg);
+}
+
+#chart-label-desktop {
+  position: absolute;
+  font-size: 28px;
+  top: 32%;
+  left: 29%;
+}
+
+#chart-arrow-desktop {
+  position: absolute;
+  top: 34%;
+  left: 47%;
+  font-size: 40px;
+  -webkit-transform: rotate(30deg);
+}
