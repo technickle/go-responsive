@@ -211,6 +211,7 @@
     background: #454545 !important;
     /* M */
     border-radius: 4px !important;
+    left: 0;
     top: 50px !important;
     position: absolute;
     overflow: hidden;
@@ -218,25 +219,25 @@
     -webkit-transition: left 0;
     transition: left 0s;
   }
-  /* line 239, ../scss/off-canvas.scss */
+  /* line 240, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu {
     visibility: visible;
   }
-  /* line 243, ../scss/off-canvas.scss */
+  /* line 244, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu li {
     padding: 0 !important;
   }
-  /* line 247, ../scss/off-canvas.scss */
+  /* line 248, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li {
     padding-left: 0;
     border-bottom: 0;
   }
-  /* line 252, ../scss/off-canvas.scss */
+  /* line 253, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li a {
     border-radius: 4px;
     background: #454545 !important;
   }
-  /* line 257, ../scss/off-canvas.scss */
+  /* line 258, ../scss/off-canvas.scss */
   .off-canvas .page {
     min-height: auto;
     top: -23px;
