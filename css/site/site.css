@@ -470,12 +470,12 @@ body.off-canvas.home-page.active-gov-bar .page {
 
 .chart-label.chart-label-mobile {
   top: 6%;
-  left: 23%;
+  left: 33%;
 }
 
 .chart-label.chart-label-desktop {
-  top: 19%;
-  left: 23%;
+  top: 21%;
+  left: 33%;
 }
 
 .chart-box {
@@ -486,13 +486,13 @@ body.off-canvas.home-page.active-gov-bar .page {
 
 .chart-box.chart-box-mobile {
   top: 5%;
-  left: 17%;
+  left: 25%;
   background-color: rgba(0, 71, 204, 0.5);
 }
 
 .chart-box.chart-box-desktop {
-  top: 18%;
-  left: 17%;
+  top: 20%;
+  left: 25%;
   background-color: rgba(221, 39, 49, 0.5);
 }
 
