@@ -5,8 +5,8 @@
 		height: 16px;
 		width: 16px;
 		position: absolute;
-		margin-left: 10px;
-		margin-top: -1px;
+		margin-left: 25px;
+		left: 0;
 	}
 
 	.safari {
@@ -31,6 +31,10 @@
 
 	caption {
 		margin-bottom: 10px;rt
+	}
+
+	table tbody tr th {
+		padding-left: 20px;
 	}
 }
 
