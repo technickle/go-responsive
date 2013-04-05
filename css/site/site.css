@@ -385,16 +385,17 @@ body.off-canvas.home-page.active-gov-bar .page {
     margin-left:0;
   }
   .site-bar .site-functions .site-search form {
-    padding-right:0!important;
+    xpadding-right:0!important;
   }
   .site-bar .site-functions .site-search .search-container {
-    padding-right:0!important;
+    xpadding-right:0!important;
   }
   .go-responsive-logo-small {
   text-indent:-9999px;
-  background:transparent url(../../images/go-responsive-small.png) no-repeat center center;
+  background:transparent url(../../images/go-responsive-small.png) no-repeat;
   display: block;
   min-width: 8em;
+  margin-left:0.5em;
   }
 
   #site-bar, #page {
