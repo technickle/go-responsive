@@ -510,3 +510,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   font-size: 40px;
   -webkit-transform: rotate(30deg);
 }
+
+.section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
+  background: #FFF;
+}
