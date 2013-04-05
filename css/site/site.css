@@ -488,52 +488,116 @@ body.off-canvas.home-page.active-gov-bar .page {
   margin-bottom: 0 !important;
 }
 
-#chart-label-mobile {
+.chart-label {
   position: absolute;
-  font-size: 28px;
+  font-size: 20px;
+}
+
+.chart-label.chart-label-mobile {
   top: 6%;
-  left: 18%;
+  left: 23%;
 }
 
-#chart-arrow-mobile {
-  position: absolute;
-  top: 5%;
-  right: 12%;
-  font-size: 40px;
-  -webkit-transform: rotate(150deg);
+.chart-label.chart-label-desktop {
+  top: 19%;
+  left: 23%;
 }
 
-#chart-box-mobile {
+.chart-box {
   position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+.chart-box.chart-box-mobile {
   top: 5%;
-  left: 12%;
-  height: 28px;
-  width: 28px;
+  left: 17%;
   background-color: rgba(0, 71, 204, 0.5);
 }
 
-#chart-label-desktop {
-  position: absolute;
-  font-size: 28px;
-  top: 15%;
-  left: 18%;
-}
-
-#chart-arrow-desktop {
-  position: absolute;
-  top: 34%;
-  left: 47%;
-  font-size: 40px;
-  -webkit-transform: rotate(30deg);
-}
-
-#chart-box-desktop {
-  position: absolute;
-  top: 14%;
-  left: 12%;
-  height: 28px;
-  width: 28px;
+.chart-box.chart-box-desktop {
+  top: 18%;
+  left: 17%;
   background-color: rgba(221, 39, 49, 0.5);
+}
+
+@media only screen and (min-width: 460px) {
+  .chart-label {
+    font-size: 28px;
+  }
+
+  .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 25%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 19%;
+    left: 25%;
+  }
+
+  .chart-box {
+    height: 28px;
+    width: 28px;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 17%;
+    background-color: rgba(0, 71, 204, 0.5);
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 18%;
+    left: 17%;
+    background-color: rgba(221, 39, 49, 0.5);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+
+  .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 22%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 18%;
+    left: 22%;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 15%;
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 17%;
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 18%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 15%;
+    left: 18%;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 12%;
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 14%;
+    left: 12%;
+  }
 }
 
 .logo-button img {
