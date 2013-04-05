@@ -6,7 +6,7 @@
  * Based on https://github.com/filamentgroup/RWD-Table-Patterns
  */
 (function() {
-  $.widget('exlsr.responsiveTable', {
+  $.widget('ewf.responsiveTable', {
     options: {},
 
     // Set up the widget
@@ -60,7 +60,7 @@
 
         $.each(selectors, function(j, selector) {
 
-          if ($table.width() >= totalMinWidth && exlsr.$body.width() >= $table.width()) {
+          if ($table.width() >= totalMinWidth && ewf.$body.width() >= $table.width()) {
             // Don't need to hide any more
             $table.parent().removeClass('scrollable-x');
             return false;
@@ -104,7 +104,7 @@
 
           if ($table.width() <= totalMinWidth) {
             // No room to show any more
-            if (exlsr.$body.width() < $table.width()) {
+            if (ewf.$body.width() < $table.width()) {
               $table.parent().addClass('scrollable-x');
             }
             return false;

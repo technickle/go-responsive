@@ -1,4 +1,4 @@
-/*global Modernizr: false, exlsr: false */
+/*global Modernizr: false, ewf: false */
 
 $(document).ready(function() {
   var $html = $('html');
@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('.custom-show-for-no-touch').show();
   }
 
-  $('.toggle-section').on(exlsr.activateEventName, function (evt) {
+  $('.toggle-section').on(ewf.activateEventName, function (evt) {
     // Cannot determine which check box is checked because that doesn't change until after this event
     if ($(evt.target).closest('.mobile-label').length) {
       $html
