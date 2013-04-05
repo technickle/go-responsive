@@ -4,7 +4,7 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
-        '<\/title><link rel="stylesheet" href="css/excelsior.css"><link rel="stylesheet" href="css/styles.css">  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">  <link rel="shortcut icon" href="images/apple-touch-icon.png">  <link rel="icon" href="images/favicon.ico"><\/head>' +
+        '<\/title><link rel="stylesheet" href="css/excelsior.css"><link rel="stylesheet" href="css/demo-bar.css">  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">  <link rel="shortcut icon" href="images/apple-touch-icon.png">  <link rel="icon" href="images/favicon.ico"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
         //'<div class="close"><a href="#">X<\/a><\/div>' +
