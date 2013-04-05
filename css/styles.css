@@ -203,3 +203,11 @@
 .breadcrumbs a#next {
   float: right;
 }
+
+body.off-canvas.home-page {
+  padding-top: 0;
+}
+
+body.off-canvas.home-page.active-gov-bar .page {
+  top: 88px;
+}
