@@ -364,7 +364,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   top: 88px;
 }
 .alert-box {
-  background-color: #e9e9e9;
+  background-color:rgb(231, 235, 247);
   border-color: #d0d0d0;
   color: #777;
 }
@@ -373,6 +373,13 @@ body.off-canvas.home-page.active-gov-bar .page {
   color:#555;
 }
 
+.alert-box p {
+  margin-bottom:0.25em;
+}
+
+.alert-box ul {
+  padding-left:1.5em;
+}
 
 @media only screen and (min-width: 48em) {
   .home-page .page .button.big {
