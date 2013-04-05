@@ -9831,6 +9831,12 @@ a:focus {
   transition: top 0.2s ease;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .gov-pull-down {
+    background-image: url(../images/nys-small@2x.png);
+  }
+}
+
 /* line 68, ../scss/excelsior/components/_navigation.scss */
 .gov-bar {
   background: #036;
