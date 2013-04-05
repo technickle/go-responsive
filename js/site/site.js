@@ -16,27 +16,17 @@ var prevlink,
 // Determine if there is a previous and next location
 // Find previous first
 
-//console.log(curListItem.prev().get(0));
-
 // Find Previous Link
 if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
-
-  //console.log('We have a previous sibling list item');
-
   // Get the previous sibling
   prevlink = curListItem.prev().children('a');
-
-} else {
-
-  //console.log('We are at the beginning of the list');
-
+}
+else {
   // Move up to the unorder list
   var parentUL = curListItem.parent();
 
   // Check to make sure it item is a ul is needed.
   if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
-
-    //console.log("We are nested");
 
     // New list item
     var parentListTopic = parentUL.parent();
@@ -47,32 +37,27 @@ if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
       // Get the last item from the previous top
       prevlink = parentListTopic.prev().children('ul').children('li').last().children('a');
 
-    } else {
-
-      //console.log('there is no previous menu item.');
-
+    }
+    else {
       prevlink = false;
     }
-
-  } else {
-
-    //console.log("We are at the top of the nav. Remove the prev link.");
-
+  }
+  else {
     prevlink = false;
-
   }
 }
 
-if (url != "carousel.html") {
+if (url !== "carousel.html") {
   if (prevlink) {
-    //console.log("back " + prevlink);
     previous.attr('href', prevlink.attr('href'));
     previous.addClass('button icon-left-dir');
     showBreadcrumbs = true;
-  } else {
+  }
+  else {
     previous.hide();
   }
-} else {
+}
+else {
   previous.hide();
 }
 
@@ -81,14 +66,13 @@ if (url != "carousel.html") {
 if (curListItem.next().length === 1 && curListItem.next().is('li')) {
 
   // There is a next link
-  //console.log('There is a next child');
 
   // Get the previous sibling
   nextlink = curListItem.next().children('a');
 
-} else {
+}
+else {
 
-  //console.log('There are not more li in this list');
 
   // Move up to the unorder list
   var parentUL = curListItem.parent();
@@ -96,39 +80,31 @@ if (curListItem.next().length === 1 && curListItem.next().is('li')) {
   // Check to make sure it item is a ul is needed.
   if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
 
-    //console.log("We are nested");
 
     // New list item
     var parentListTopic = parentUL.parent();
 
     // Check to see if there is a previous sibling li
     if (parentListTopic.next().length === 1 && parentListTopic.next().is('li')) {
-
       // Get the last item from the previous top
       nextlink = parentListTopic.next().children('ul').children('li').first().children('a');
-
-    } else {
-
-      //console.log('there is no previous menu item.');
-
+    }
+    else {
       nextlink = false;
     }
-
-  } else {
-
-    //console.log("We are at the top of the nav. Remove the prev link.");
-
+  }
+  else {
     nextlink = false;
   }
 
 }
 
 if (nextlink) {
-  //console.log("next " + nextlink);
   next.attr('href', nextlink.attr('href'));
   next.addClass('button').html(nextlink.text() + "&nbsp;<span class='icon-right-dir'></span>");
   showBreadcrumbs = true;
-} else {
+}
+else {
   previous.hide();
 }
 
