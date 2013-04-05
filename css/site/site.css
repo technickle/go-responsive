@@ -563,6 +563,7 @@ body.off-canvas.home-page.active-gov-bar .page {
 .logo-button img {
   max-width: 100%;
   max-height: 40px;
+  margin: 0.5em auto;
 }
 
 .section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
