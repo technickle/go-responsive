@@ -343,6 +343,7 @@ h6 {
 }
 .breadcrumbs {
   padding-top: 0;
+  margin-bottom:0;
   border:none;
   background-color:transparent;
 }
@@ -490,8 +491,8 @@ body.off-canvas.home-page.active-gov-bar .page {
 #chart-label-mobile {
   position: absolute;
   font-size: 28px;
-  top: 9%;
-  right: 20%;
+  top: 6%;
+  left: 18%;
 }
 
 #chart-arrow-mobile {
@@ -502,11 +503,20 @@ body.off-canvas.home-page.active-gov-bar .page {
   -webkit-transform: rotate(150deg);
 }
 
+#chart-box-mobile {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  height: 28px;
+  width: 28px;
+  background-color: rgba(0, 71, 204, 0.5);
+}
+
 #chart-label-desktop {
   position: absolute;
   font-size: 28px;
-  top: 32%;
-  left: 29%;
+  top: 15%;
+  left: 18%;
 }
 
 #chart-arrow-desktop {
@@ -515,4 +525,18 @@ body.off-canvas.home-page.active-gov-bar .page {
   left: 47%;
   font-size: 40px;
   -webkit-transform: rotate(30deg);
+}
+
+#chart-box-desktop {
+  position: absolute;
+  top: 14%;
+  left: 12%;
+  height: 28px;
+  width: 28px;
+  background-color: rgba(221, 39, 49, 0.5);
+}
+
+.logo-button img {
+  max-width: 100%;
+  max-height: 40px;
 }
