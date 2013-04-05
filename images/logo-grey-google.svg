@@ -16,7 +16,10 @@
    version="1.1"
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="logo-grey-google.svg"
-   style="display:inline">
+   style="display:inline"
+   inkscape:export-filename="/Users/craig/Dropbox/ITS/go-responsive/images/logo-grey-google.png"
+   inkscape:export-xdpi="19.544039"
+   inkscape:export-ydpi="19.544039">
   <defs
      id="defs4">
     <linearGradient
@@ -255,7 +258,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
