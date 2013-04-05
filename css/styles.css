@@ -41,7 +41,7 @@
 .li-sub {
   margin: 0;
 }
-/* Orbit Carousel */ 
+/* Orbit Carousel */
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit; }
@@ -53,7 +53,7 @@
   padding: 10px;
   color: #fff;
 }
-.orbit-container .orbit-slides-container .orbit-caption .hide-for-small, 
+.orbit-container .orbit-slides-container .orbit-caption .hide-for-small,
 .orbit-container .orbit-slides-container .orbit-caption .hide-for-small a{
   color: #aaa;
 }
@@ -113,7 +113,7 @@
   border: 1px solid #222;
 }
 .button:hover{
-  background-color: #162252;
+  background-color: #e6e6e6;
   border: 1px solid #444;
 }
 .govheading span{
