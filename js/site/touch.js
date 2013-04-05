@@ -1,4 +1,4 @@
-/*global Modernizr: false, exlsr: false */
+/*global Modernizr: false, ewf: false */
 
 $(document).ready(function() {
   var $out = $('#out'),
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   // Playground demo only
   if (/Chrome\/\d+/.test(navigator.userAgent)) {
-    exlsr.$html.addClass('chrome');
+    ewf.$html.addClass('chrome');
   }
 
   // Touch is supported
@@ -23,7 +23,7 @@ $(document).ready(function() {
   }
 
   $('#in')
-    .on('tap', function (evt) { // exlsr.activateEventName
+    .on('tap', function (evt) { // ewf.activateEventName
       if (!hastapped) { $('#out-container').slideDown(); }
       hastapped = true;
       $out.text('You tapped!').addClass('alert-box success');
@@ -46,14 +46,14 @@ $(document).ready(function() {
 
   // Tap Targets
 
-  $('.switch').on(exlsr.activateEventName, function (evt) {
+  $('.switch').on(ewf.activateEventName, function (evt) {
     if ($mobile.is(':checked')) {
-      exlsr.$html
+      ewf.$html
         .addClass('touch')
         .removeClass('no-touch');
     }
     else {
-      exlsr.$html
+      ewf.$html
         .removeClass('touch')
         .addClass('no-touch');
     }
