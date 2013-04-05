@@ -343,6 +343,7 @@ h6 {
 }
 .breadcrumbs {
   padding-top: 0;
+  margin-bottom:0;
   border:none;
   background-color:transparent;
 }
