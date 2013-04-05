@@ -146,7 +146,7 @@ html {
 
 .home-page .content-section {
   background-color: #ddd;
-  background: url(../../images/subtle_grunge_3.png) repeat;
+  background: url(../../images/farmer.jpg) repeat;
 }
 
 .home-page .page .section.odd,
@@ -340,6 +340,11 @@ h6 {
 	color: #333;
 	padding-top: 0.5em;
 	margin: 0;
+}
+.breadcrumbs {
+  padding-top: 0;
+  border:none;
+  background-color:none;
 }
 
 .breadcrumbs a {
