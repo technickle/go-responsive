@@ -4,7 +4,7 @@
         "cId": "#canvasTest-1",
         "cType": "line",
         "cData": {
-          labels : ["January","February","March","April","May","June","July"],
+          labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul"],
           datasets : [
             {
               fillColor : "rgba(220,220,220,0.5)",
