@@ -47,9 +47,6 @@ html {
 .home-page .page .section-2 {
   padding: 0 0 2em 0;
 }
-.home-page .page .section-3 {
-  padding: 1.5em 1em;
-}
 .home-page .page .section-3 .wrapper {
   padding:0;
   margin: 0 auto;
@@ -258,13 +255,6 @@ html {
   text-align: left;
 }
 
-/* Section 4 */
-.home-page .page .section-4 .row,
-.home-page .page .section-8 .row {
-  width: 95%;
-  margin: auto;
-}
-
 .home-page .page .odd p {
   color: #333;
   padding-top: 0.5em;
@@ -306,11 +296,6 @@ h6 {
 }
 
 /* Section 4 */
-.home-page .page .odd .row {
-	width: 95%;
-	margin: auto;
-}
-
 .home-page .page .odd p {
 	color: #333;
 	padding-top: 0.5em;
