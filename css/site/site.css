@@ -321,15 +321,20 @@ h6 {
   display: inline-block;
 }
 
-  .home-page .page .section-4 .wr1 {
-    display: none;
-    margin: auto;
-  }
+.home-page .page .section-4 .wr1 {
+  display: none;
+  margin: auto;
+}
 
-  .home-page .page .section-4 .wr2 {
-    display: block;
-    margin: auto;
-  }
+.home-page .page .section-4 .wr2 {
+  display: block;
+  margin: auto;
+}
+
+/* Overwrites section-3 bottom border so section-4 doesn't look weird since it has a blue background */
+.home-page .page .section-3 {
+  border-bottom: 1px solid #CCC !important;
+}
 
 .breadcrumbs a#prev {
   float: left;
