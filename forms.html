@@ -71,7 +71,7 @@ customStyles: ['forms']
               <label for="addr1" class="required"><span data-tooltip class="has-tip tip-right" title="Separate multiple address lines (i.e., apartment number) with a comma">Street address</span><span class="hide"> Required field.</span></label>
             </div>
             <div class="large-9 small-12 columns">
-              <input type="text" name="addr1" id="addr1" value="" required>
+              <input type="text" name="addr1" id="addr1" value="" tabindex="1" required>
             </div>
           </div>
 
@@ -80,7 +80,7 @@ customStyles: ['forms']
               <label for="zip" class="required"><span data-tooltip class="has-tip tip-right" title="US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)">ZIP</span><span class="hide"> Required field.</span></label>
             </div>
             <div class="large-9 small-12 columns">
-              <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" required>
+              <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" tabindex="1" required>
               <div class="form-field-info">
                 <p>US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)</p>
               </div>
@@ -120,7 +120,7 @@ customStyles: ['forms']
 
           <div class="row">
             <div class="small-12 columns center">
-              <input type="submit" class="button success" value="Submit">
+              <input type="submit" class="button success" tabindex="1" value="Submit">
             </div>
           </div>
 
