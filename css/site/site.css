@@ -579,3 +579,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   max-width: 100%;
   max-height: 40px;
 }
+
+.section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
+  background: #FFF;
+}
