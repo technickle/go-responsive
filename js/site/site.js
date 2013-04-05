@@ -65,7 +65,7 @@ if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
 if (prevlink) {
 	//console.log("back " + prevlink);
 	previous.attr('href', prevlink.attr('href'));
-	previous.addClass('button').html("← &nbsp;" + prevlink.text());
+	previous.addClass('button icon-left-dir');
 	showBreadcrumbs = true;
 } else {
 	previous.hide();
@@ -120,7 +120,7 @@ if (curListItem.next().length === 1 && curListItem.next().is('li')) {
 if (nextlink) {
 	//console.log("next " + nextlink);
 	next.attr('href', nextlink.attr('href'));
-	next.addClass('button').html(nextlink.text() + "<span class='.icon-right-dir'></span>");
+	next.addClass('button').html(nextlink.text() + "&nbsp;<span class='icon-right-dir'></span>");
 	showBreadcrumbs = true;
 } else {
 	previous.hide();
