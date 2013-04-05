@@ -1,5 +1,5 @@
 // get the current page url
-var url = window.location.href.toString().split(window.location.host)[1].replace('/go-responsive/','');
+var url = window.location.href.toString().split(window.location.host)[1].replace('/go-responsive/','').replace('#','');
 
 // Find the current position in the navigation list
 var current = $('.global-nav').find('a[href="' + url + '"]').addClass('currentPos');
@@ -59,10 +59,11 @@ if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
     //console.log("We are at the top of the nav. Remove the prev link.");
 
     prevlink = false;
+
   }
 }
 
-if (prevlink) {
+if (prevlink || prevlink.length === 0) {
   //console.log("back " + prevlink);
   previous.attr('href', prevlink.attr('href'));
   previous.addClass('button icon-left-dir');
@@ -70,6 +71,8 @@ if (prevlink) {
 } else {
   previous.hide();
 }
+
+
 
 // Find Next Linkis another
 if (curListItem.next().length === 1 && curListItem.next().is('li')) {
