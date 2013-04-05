@@ -31,7 +31,8 @@
   }
 
   .home-page .page .large-img {
-    margin: 1em 0 2em 0;
+    margin: 0 auto;
+    display:block;
   }
 
   .home-page .page .small-img {
@@ -128,6 +129,11 @@
   background-position: 0 -22px;
 }
 
+.home-page .page .button.big {
+  padding: 0.75em 2em 0.75em 2em;
+  font-size: 1.3em;
+}
+
 .home-page .page a {
   color: #2795b6;
   text-decoration: none;
@@ -196,7 +202,7 @@
 
 .home-page .page .wrapper,
 .home-page .page .section-3 .wrapper {
-  margin: 3em auto;
+  margin: 1em auto;
   padding: 0.5em;
   max-width: 21em;
   /*border: 1px solid #555;*/
@@ -216,7 +222,6 @@
 }
 
 .home-page .page .section-2 p,
-.home-page .page .section-3 p,
 .home-page .page .section-8 p {
   text-align: left;
 }
@@ -285,6 +290,9 @@ h6 {
 }
 
 @media only screen and (min-width: 48em) {
+  .home-page .page .section-3 .wrapper {
+    margin: 3em auto;
+  }
 
   .home-page .row.section-2 .columns:first-child {
     margin-left: 1em;
@@ -342,7 +350,6 @@ h6 {
 }
 
 .home-page .page .section-2 p,
-.home-page .page .section-3 p,
 .home-page .page .section-8 p {
 	text-align: left;
 }
