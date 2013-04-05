@@ -243,18 +243,18 @@ $(document).ready(function(){ewf.init();});
  */
 $(document).ready(function(){
 
-  if (!ewf.$body) {
-    ewf.$body = $('body');
+  if (!exlsr.$body) {
+    exlsr.$body = $('body');
   }
 
   // Standard Gov Banner display code
-  $('#gov-link-3').on(ewf.activateEventName, function(e) {
+  $('#gov-link-3').on('click', function(e) {
     e.preventDefault();
-    ewf.$body.addClass('active-gov-bar-search');
+    exlsr.$body.addClass('active-gov-bar-search');
   });
 
   // Active Elements
-  $('[data-active]').on(ewf.activateEventName, function(e) {
+  $('[data-active]').on('click', function(e) {
 
     // Prevent Defaults
     e.preventDefault();
@@ -275,7 +275,7 @@ $(document).ready(function(){
       var activeClass = active.attr('data-active');
 
       // Remove the old active class
-      ewf.$body.removeClass(activeClass);
+      exlsr.$body.removeClass(activeClass);
 
       // Remove the active class from the old active item
       active.removeClass('active');
@@ -287,6 +287,25 @@ $(document).ready(function(){
       if (activeElm === 'active-site-search') {
         $('#site-search-box').focus();
       }
+
+      if (activeElm === 'active-site-menu') {
+
+
+        // Check to see if off canvas is being used
+        if (exlsr.$body.hasClass('off-canvas') && exlsr.$body.hasClass('active-site-menu')) {
+
+          // Get the screen size and set it has a min-height
+          //document.getElementsByTagName("body").style.minHeight = screen.height + "px";
+          exlsr.$body.css('min-height',screen.height+'px');
+
+        }
+        else {
+          // Remove min height
+          exlsr.$body.css('min-height','');
+        }
+
+      }
+
     }
 
     // Check to see if there is already and active item
@@ -298,26 +317,26 @@ $(document).ready(function(){
     }
 
     // Check to see if the item is active
-    if (ewf.$body.hasClass(activeClass)) {
+    if (exlsr.$body.hasClass(activeClass)) {
 
       // Remove active state class from header
-      ewf.$body.removeClass(activeClass);
+      exlsr.$body.removeClass(activeClass);
 
       // Remove active state class from the clicked element
       $clickedElm.removeClass(selectedClass);
 
       // Remove any stray body click event
-      ewf.$body.off(ewf.activateEventName);
+      exlsr.$body.off('click');
 
     } else {
       // Add active state class from header
-      ewf.$body.addClass(activeClass);
+      exlsr.$body.addClass(activeClass);
 
       // Add active state class from clicked element
       $clickedElm.addClass(selectedClass);
 
       // Setup the on click function to close open drop down if the user clicks outside the active element.
-      ewf.$body.on(ewf.activateEventName, function(e) {
+      exlsr.$body.on('click', function(e) {
 
         var activeElm = $('.active'),
             clicked = $(this);
@@ -330,13 +349,13 @@ $(document).ready(function(){
           var activeClass = activeElm.attr('data-active');
 
           // Remove the active element class
-          ewf.$body.removeClass(activeClass);
+          exlsr.$body.removeClass(activeClass);
 
           // Remove active from the active element
           activeElm.removeClass('active');
 
           // Remove this click event
-          ewf.$body.off(ewf.activateEventName);
+          exlsr.$body.off('click');
 
         }
 
