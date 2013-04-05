@@ -63,9 +63,9 @@ if (curListItem.prev().length === 1 && curListItem.prev().get(0).tagName == "LI"
 
 if (prevlink) {
 	//console.log("back " + prevlink);
-	prev.attr(prevlink.attr('href'));
-	prev.text(prevlink.text());
-	prev.show();
+	previous.attr('href', prevlink.attr('href'));
+	previous.text("Previous: " + prevlink.text());
+	previous.show();
 }
 
 // Find Next Linkis another 
@@ -116,7 +116,7 @@ if (curListItem.next().length === 1 && curListItem.next().get(0).tagName == "LI"
 
 if (nextlink) {
 	//console.log("next " + nextlink);
-	next.attr(nextlink.attr('href'));
-	next.text(nextlink.text());
+	next.attr('href', nextlink.attr('href'));
+	next.text("Next: " + nextlink.text());
 	next.show();
 }

@@ -196,10 +196,10 @@
   display: none;
 }
 
-.breadcrumbs a.prev {
+.breadcrumbs a#prev {
   float: left;
 }
 
-.breadcrumbs a.next {
+.breadcrumbs a#next {
   float: right;
 }
