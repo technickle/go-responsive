@@ -144,7 +144,7 @@ html {
   top: 0;
 }
 
-.home-page .content-section {
+.content-section {
   background-color: #ddd;
   background: url(../../images/farmer.jpg) repeat;
 }
@@ -344,7 +344,7 @@ h6 {
 .breadcrumbs {
   padding-top: 0;
   border:none;
-  background-color:none;
+  background-color:transparent;
 }
 
 .breadcrumbs a {
@@ -388,6 +388,12 @@ body.off-canvas.home-page.active-gov-bar .page {
 }
 
 @media only screen and (min-width: 48em) {
+  #site-bar, #page {
+    background: url(../../images/farmer.jpg) repeat;
+  }
+  .site-bar a.site-logo {
+    color:#222;
+  }
   .home-page .page .button.big {
     padding: 1.25em 1.5em;
     font-size: 1.5em;
