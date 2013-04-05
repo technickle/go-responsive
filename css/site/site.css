@@ -57,8 +57,6 @@ html {
 
 .home-page .row,
 .home-page .columns {
-  xpadding: 0;
-  xmargin: 0;
   max-width: 100%;
 }
 .home-page .page .button.big {
@@ -82,7 +80,6 @@ html {
 .home-page .page .wrapper,
 .home-page .page .section-3 .wrapper {
   margin: 0 auto 2em auto;
-  xpadding: 0.5em 1em;
   max-width: 21em;
   /*border: 1px solid #555;*/
   /*border-radius: 6px;*/
@@ -92,11 +89,6 @@ html {
   /*box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2),0 1px 3px rgba(0,0,0,0.25);*/
 }
 
-.home-page .page .section-3 .wrapper {
-  xborder: 1px solid #999;
-  xborder-radius: 6px;
-  xbox-shadow: inset 0 0 0 1px rgba(255,255,255,0.2),0 0px 1px rgba(0,0,0,0.25);
-}
 
 .home-page .page .even .wrapper h2,
 .home-page .page .odd .wrapper h2 {
@@ -203,30 +195,13 @@ html {
 }
 
 .home-page .page .button {
-  width:150px;
-  xpadding: 0.5em 0.8em;
+  min-width:8em;
   margin: 0.4em 0;
-  xfont-size: 1.1em;
-  xfont-weight: bold;
-  xborder: 1px solid #505050;
-  xcolor: #2D2200;
-  xbox-shadow: inset 0 0 0 1px rgba(255,255,255,0.5),0 1px 3px rgba(0,0,0,0.25);
- x background-color: rgb(99,147,193);
-  xbackground-image: -webkit-linear-gradient(rgba(207,231,250,1), rgba(99,147,193,1));
-  xbackground-image: linear-gradient(rgba(207,231,250,1), rgba(99,147,193,1));
- x -webkit-transition: background-position 0.15s linear, box-shadow 0.15s linear;
-         x transition: background-position 0.15s linear, box-shadow 0.15s linear;
- x background-position: 0 0;
 }
 
-.home-page .page .button:hover {
-  xbox-shadow: inset 0 0 0 1px rgba(255,255,255,0.55), 0 1px 2px rgba(0,0,0,0.3);
-  xbackground-position: 0 -22px;
-}
 
 
 .home-page .page a {
-  xcolor: #2795b6;
   text-decoration: none;
 }
 
@@ -262,7 +237,6 @@ html {
 }
 
 .home-page .page .section-2 .wrapper p {
-  xwidth: 75%;
   font-size: 1.1em;
   margin-left: auto;
   text-align: center;
