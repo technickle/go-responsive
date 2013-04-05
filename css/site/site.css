@@ -380,10 +380,21 @@ body.off-canvas.home-page.active-gov-bar .page {
   #go-responsive-logo {
     margin-top: 3em;
   }
-
+  
+  .site-bar a.site-logo {
+    margin-left:0;
+  }
+  .site-bar .site-functions .site-search form {
+    padding-right:0!important;
+  }
+  .site-bar .site-functions .site-search .search-container {
+    padding-right:0!important;
+  }
   .go-responsive-logo-small {
   text-indent:-9999px;
-  background:transparent url(../images/go-responsive-small.png) no-repeat center center;
+  background:transparent url(../../images/go-responsive-small.png) no-repeat center center;
+  display: block;
+  min-width: 8em;
   }
 
   #site-bar, #page {
