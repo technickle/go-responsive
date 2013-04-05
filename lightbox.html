@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Image Gallery
-vendorScripts: ['foundation/foundation.clearing', 'foundation/foundation.alerts']
+vendorScripts: ['foundation/foundation.clearing', 'foundation/foundation.alerts', 'foundation/foundation.reveal']
 customStyles: ['lightbox']
 ---
 
@@ -65,7 +65,28 @@ customStyles: ['lightbox']
   </div>
 
   <div class="row">
-    <div class="large-4 small-6 columns">
-      <a class="button-for-touch" target="_parent" href="http://foundation.zurb.com/docs/components/clearing.html">Developer Documentation</a>
+    <div class="large-4 small-12 columns">
+      <a class="button" target="_parent" href="http://foundation.zurb.com/docs/components/clearing.html">Developer Documentation</a>
     </div>
+  </div>
+
+ <div class="row">
+    <div class="small-12 columns">
+      <a href="#" data-reveal-id="myModal">Photo Credits</a>
+    </div>
+  </div>
+
+
+  <!-- Overlay Windows -->
+  <div id="myModal" class="reveal-modal">
+    <p><b>Photo Credits:</b></p>
+      <ul class="bullets-inside">
+        <li><a target="_parent" href="http://commons.wikimedia.org/wiki/File%3ANYC_Empire_State_Building.jpg">http://commons.wikimedia.org/wiki/File%3ANYC_Empire_State_Building.jpg</a></li>
+        <li><a target="_parent" href="http://commons.wikimedia.org/wiki/File:New_York_State_Museum,_Albany.jpg">http://commons.wikimedia.org/wiki/File:New_York_State_Museum,_Albany.jpg</a></li>
+        <li><a target="_parent" href="http://commons.wikimedia.org/wiki/File%3ANew_York_State_Executive_Mansion.jpg">http://commons.wikimedia.org/wiki/File%3ANew_York_State_Executive_Mansion.jpg</a></li>
+        <li><a target="_parent" href="http://commons.wikimedia.org/wiki/File:New_York_State_Capitol.jpg">http://commons.wikimedia.org/wiki/File:New_York_State_Capitol.jpg</a></li>
+        <li><a target="_parent" href="http://commons.wikimedia.org/wiki/File:New_York_State_Capitol_from_Corning_Tower.jpg">http://commons.wikimedia.org/wiki/File:New_York_State_Capitol_from_Corning_Tower.jpg</a></li>
+        <li><a target="_parent" href="http://commons.wikimedia.org/wiki/File:Brooklyn-Bridge.JPG">http://commons.wikimedia.org/wiki/File:Brooklyn-Bridge.JPG</a></li>
+      </ul>
+    <a class="close-reveal-modal">&times;</a>
   </div>
