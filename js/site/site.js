@@ -1,4 +1,132 @@
+ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
+  var $previous = $('#prev'),
+      $next = $('#next'),
+      $current, $currentListItem,
+      currentUrl, $prevlink, $nextlink, $parentList, $parentListTopic;
+
+  // Check optional sub directory path
+  if (!subdir || typeof subdir !== 'string') { console.log('no subdir given'); subdir = ''; }
+
+  // Get the current page url
+  currentUrl = window.location.href.split(window.location.host)[1].replace(subdir, '');
+  console.log('currentUrl, with hash: ', currentUrl);
+  // Clear hash
+  currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
+  console.log('currentUrl, no hash: ', currentUrl);
+
+  // Find the current position in the navigation list
+  $current = $('.global-nav').find('a[href="' + currentUrl + '"]');
+  console.log('current link in nav: ', $current);
+  // $current.addClass('currentPos');
+
+  // Get all of the previous links
+  $currentListItem = $current.parent('li');
+  console.log('all previous links: ', $currentListItem);
+
+  // Determine if there is a previous and next location
+
+  // Find Previous Link first
+  $prevlink = $currentListItem.prev().children('a');
+  if ($prevlink.length === 1 && $prevlink.is('li')) {
+    // Get the previous sibling
+    $prevlink = $prevlink.children('a');
+    console.log('previous link [A]: ', $prevlink);
+  }
+  else {
+    // Move up to the unordered list
+    // New list item
+    $parentListTopic = $currentListItem.parent().parent();
+
+    // Check to make sure it item is a ul is needed.
+    if ($parentListTopic.length === 1 && $parentListTopic.is('li')) {
+      // Check to see if there is a previous sibling li
+      if ($parentListTopic.prev().length === 1 && $parentListTopic.prev().is('li')) {
+        // Get the last item from the previous top
+        $prevlink = $parentListTopic.prev().children('ul').children('li').last().children('a');
+        console.log('previous link [B]: ', $prevlink);
+      }
+      else {
+        console.log('nulling prev link [A]');
+        $prevlink = $();
+      }
+    }
+    else {
+      console.log('nulling prev link [B]');
+      $prevlink = $();
+    }
+  }
+
+  if (currentUrl !== 'carousel.html') {
+    if ($prevlink.length) {
+      console.log('found previous button:', $previous);
+      // $previous.attr('href', $prevlink.attr('href'));
+      // $previous.addClass('button icon-left-dir');
+    }
+    else {
+      console.log('could not find previous button');
+      // $previous.hide();
+    }
+  }
+  else {
+    console.log('carousel page, hiding prev link');
+    // $previous.hide();
+  }
+
+  // Find Next Link
+  if ($currentListItem.next().length === 1 && $currentListItem.next().is('li')) {
+    // There is a next link
+    // Get the previous sibling
+    $nextlink = $currentListItem.next().children('a');
+    console.log('next link [A]: ', $prevlink);
+  }
+  else {
+    // Move up to the unordered list
+    $parentList = $currentListItem.parent();
+
+    // Check to make sure it item is a ul is needed.
+    if ($parentList.parent().length === 1 && $parentList.parent().is('li')) {
+
+      // New list item
+      $parentListTopic = $parentList.parent();
+
+      // Check to see if there is a previous sibling li
+      if ($parentListTopic.next().length === 1 && $parentListTopic.next().is('li')) {
+        // Get the last item from the previous top
+        $nextlink = $parentListTopic.next().children('ul').children('li').first().children('a');
+        console.log('next link [B]: ', $prevlink);
+      }
+      else {
+        console.log('nulling next link [A]');
+        $nextlink = $();
+      }
+    }
+    else {
+      console.log('nulling next link [B]');
+      $nextlink = $();
+    }
+  }
+
+  if ($nextlink.length) {
+    console.log('found next link: ', $nextlink);
+    // $next.attr('href', $nextlink.attr('href'));
+    // $next.addClass('button').html($nextlink.text() + '&nbsp;<span class="icon-right-dir"></span>');
+  }
+  else {
+    // $next.hide();
+  }
+
+  // Reveal container
+  if ($nextlink.length || $prevlink.length) {
+    console.log('would have displayed breadcrumb row');
+    // $('.page .breadcrumbs').animate({opacity:1});
+  }
+};
+
 $(document).ready(function() {
+
+  ewf.autoBreadcrumbs('/go-responsive/');
+
+
   // get the current page url
   var url = window.location.href.toString().split(window.location.host)[1].replace('/go-responsive/','').replace('#','');
 
