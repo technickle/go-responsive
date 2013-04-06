@@ -1,114 +1,121 @@
-/*global ewf: false */
-ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
-  var $previous = $('#prev'),
-      $next = $('#next'),
-      $current, $currentListItem,
-      currentUrl, $prevlink, $nextlink, $parentList, $parentListTopic;
-
-  // Check optional sub directory path
-  if (!subdir || typeof subdir !== 'string') { subdir = ''; }
-
-  // Get the current page url
-  currentUrl = window.location.href.split(window.location.host)[1].replace(subdir, '');
-  // Clear hash
-  currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
+$(document).ready(function() {
+  // get the current page url
+  var url = window.location.href.toString().split(window.location.host)[1].replace('/go-responsive/','').replace('#','');
 
   // Find the current position in the navigation list
-  $current = $('.global-nav').find('a[href="' + currentUrl + '"]');
-  $current.addClass('currentPos');
+  var current = $('.global-nav').find('a[href="' + url + '"]').addClass('currentPos');
 
-  // Get all of the previous links
-  $currentListItem = $current.parent('li');
+  //Get all of the previous links
+  var curListItem = current.parent('li');
+
+  var prevlink,
+    previous = $('#prev'),
+    nextlink,
+    next = $('#next'),
+    showBreadcrumbs = false;
 
   // Determine if there is a previous and next location
+  // Find previous first
 
-  // Find Previous Link first
-  $prevlink = $currentListItem.prev().children('a');
-  if ($prevlink.length === 1 && $prevlink.is('li')) {
+  // Find Previous Link
+  if (curListItem.prev().length === 1 && curListItem.prev().is('li')) {
     // Get the previous sibling
-    $prevlink = $prevlink.children('a');
+    prevlink = curListItem.prev().children('a');
   }
   else {
-    // Move up to the unordered list
-    $parentList = $currentListItem.parent();
-    // New list item
-    $parentListTopic = $parentList.parent();
+    // Move up to the unorder list
+    var parentUL = curListItem.parent();
 
     // Check to make sure it item is a ul is needed.
-    if ($parentListTopic.length === 1 && $parentListTopic.is('li')) {
+    if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
+
+      // New list item
+      var parentListTopic = parentUL.parent();
+
       // Check to see if there is a previous sibling li
-      if ($parentListTopic.prev().length === 1 && $parentListTopic.prev().is('li')) {
+      if (parentListTopic.prev().length === 1 && parentListTopic.prev().is('li')) {
+
         // Get the last item from the previous top
-        $prevlink = $parentListTopic.prev().children('ul').children('li').last().children('a');
+        prevlink = parentListTopic.prev().children('ul').children('li').last().children('a');
+
       }
       else {
-        $prevlink = $();
+        prevlink = false;
       }
     }
     else {
-      $prevlink = $();
+      prevlink = false;
     }
   }
 
-  if (currentUrl !== 'carousel.html') {
-    if ($prevlink.length) {
-      $previous.attr('href', $prevlink.attr('href'));
-      $previous.addClass('button icon-left-dir');
+  if (url !== "carousel.html") {
+
+    if (prevlink) {
+      previous.attr('href', prevlink.attr('href'));
+      previous.addClass('button icon-left-dir');
+      showBreadcrumbs = true;
+
+    } else {
+      previous.hide();
     }
-    else {
-      $previous.hide();
-    }
-  }
-  else {
-    $previous.hide();
+
+  } else {
+    previous.hide();
   }
 
-  // Find Next Link
-  if ($currentListItem.next().length === 1 && $currentListItem.next().is('li')) {
+
+  // Find Next Linkis another
+  if (curListItem.next().length === 1 && curListItem.next().is('li')) {
+
     // There is a next link
+
     // Get the previous sibling
-    $nextlink = $currentListItem.next().children('a');
+    nextlink = curListItem.next().children('a');
+
   }
   else {
-    // Move up to the unordered list
-    $parentList = $currentListItem.parent();
-    // New list item
-    $parentListTopic = $parentListTopic;
+
+
+    // Move up to the unorder list
+    var parentUL = curListItem.parent();
 
     // Check to make sure it item is a ul is needed.
-    if ($parentListTopic.length === 1 && $parentListTopic.is('li')) {
+    if (parentUL.parent().length === 1 && parentUL.parent().is('li')) {
+
+
+      // New list item
+      var parentListTopic = parentUL.parent();
+
       // Check to see if there is a previous sibling li
-      $nextlink = $parentListTopic.next();
-      if ($nextlink.length === 1 && $nextlink.is('li')) {
+      if (parentListTopic.next().length === 1 && parentListTopic.next().is('li')) {
         // Get the last item from the previous top
-        $nextlink = $nextlink.children('ul').children('li').first().children('a');
+        nextlink = parentListTopic.next().children('ul').children('li').first().children('a');
       }
       else {
-        $nextlink = $();
+        nextlink = false;
       }
     }
     else {
-      $nextlink = $();
+      nextlink = false;
     }
+
   }
 
-  if ($nextlink.length) {
-    $next.attr('href', $nextlink.attr('href'));
-    $next.addClass('button').html($nextlink.text() + '&nbsp;<span class="icon-right-dir"></span>');
-  }
-  else {
-    $next.hide();
+
+
+  if (nextlink) {
+    next.attr('href', nextlink.attr('href'));
+    next.addClass('button').html(nextlink.text() + "&nbsp;<span class='icon-right-dir'></span>");
+    showBreadcrumbs = true;
+
+  } else {
+    next.hide();
   }
 
-  // Reveal container
-  if ($nextlink.length || $prevlink.length) {
+  if (showBreadcrumbs) {
     $('.page .breadcrumbs').animate({opacity:1});
   }
-};
 
-$(document).ready(function() {
-  // Generate prev/next links
-  ewf.autoBreadcrumbs('/go-responsive/');
 
   // PNGs for IE8
   try {
