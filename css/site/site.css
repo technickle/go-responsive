@@ -1,14 +1,16 @@
 html {
   -webkit-font-smoothing: subpixel-antialiased;
 }
-
+.footer {
+  padding-top:2em;
+}
 .home-page .page .footer a,
 .footer a {
   color: #797979;
   display: inline-block;
   height: 34px;
   text-decoration: none;
-  margin: 10px 15px;
+  margin: 10px 0;
   padding-top: 13px;
 }
 
@@ -353,6 +355,9 @@ body.off-canvas.home-page {
 
 body.off-canvas.home-page.active-gov-bar .page {
   top: 88px;
+}
+.gov-bar input[type=submit] {
+  line-height:1.7em;
 }
 .alert-box {
   background-color:rgb(231, 235, 247);
