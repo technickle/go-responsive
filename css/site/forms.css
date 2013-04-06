@@ -4,3 +4,7 @@
 @media screen and (max-width: 768px) {
   .immediate-assistance .call-now {
     margin-bottom: 15px; } }
+
+textarea {
+  resize: vertical;
+}
