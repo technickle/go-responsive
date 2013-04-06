@@ -114,9 +114,23 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   }
 };
 
+// Close certain alert boxes (e.g. Media List) when phone is no longer in landscape mode
+ewf.mediaListWatchFor = function () {
+  if (ewf.$body.width() > ewf.$body.height()) {
+    // Landscape mode
+    $('.show-for-phone-portrait').slideUp().remove();
+  }
+};
+
 $(document).ready(function() {
   // Create breadcrumb links
   ewf.autoBreadcrumbs('/go-responsive/');
+
+  // Narrow phone in portrait mode (e.g. media list page)
+  if ($('.show-for-phone-portrait').length && ewf.$body.width() <= 384 && ewf.$body.width() < ewf.$body.height()) {
+    $('.show-for-phone-portrait').slideDown();
+    ewf.$window.on('orientationchange', ewf.mediaListWatchFor);
+  }
 
   // PNGs for IE8
   if (ewf.$html.is('.lt-ie9')) {
