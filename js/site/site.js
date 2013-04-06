@@ -5,8 +5,6 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       currentUrl, $current, $currentListItem, $test,
       $prevlink, $nextlink, $parentList, $parentListTopic;
 
-  $('.nav-container').find('li').first().remove();
-
   // Check optional sub directory path
   if (!subdir || typeof subdir !== 'string') { console.log('no subdir given'); subdir = ''; }
 
@@ -27,7 +25,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   // Determine if there is a previous and next location
 
   // Find Previous Link first
-  $test = $currentListItem.prev().children('a');
+  $test = $currentListItem.prev();
   if ($test.length === 1 && $test.is('li')) {
     // Get the previous sibling
     $prevlink = $test.children('a');
