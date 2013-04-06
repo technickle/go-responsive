@@ -659,3 +659,9 @@ body.off-canvas.home-page.active-gov-bar .page {
 textarea {
   resize: vertical;
 }
+
+#mapcanvas {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 2em;
+}
