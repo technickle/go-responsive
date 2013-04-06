@@ -32,7 +32,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if ($prevlink.length === 1 && $prevlink.is('li')) {
     // Get the previous sibling
     $prevlink = $prevlink.children('a');
-    console.log('previous link [A]: ', $prevlink);
+    console.log('previous link [A]: ', $prevlink.get(0));
   }
   else {
     // Move up to the unordered list
@@ -60,7 +60,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
 
   if (currentUrl !== 'carousel.html') {
     if ($prevlink.length) {
-      console.log('found previous button:', $previous);
+      console.log('found previous button:', $prevlink.get(0));
       // $previous.attr('href', $prevlink.attr('href'));
       // $previous.addClass('button icon-left-dir');
     }
@@ -79,7 +79,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
     // There is a next link
     // Get the previous sibling
     $nextlink = $currentListItem.next().children('a');
-    console.log('next link [A]: ', $prevlink);
+    console.log('next link [A]: ', $nextlink.get(0));
   }
   else {
     // Move up to the unordered list
@@ -95,7 +95,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       if ($parentListTopic.next().length === 1 && $parentListTopic.next().is('li')) {
         // Get the last item from the previous top
         $nextlink = $parentListTopic.next().children('ul').children('li').first().children('a');
-        console.log('next link [B]: ', $prevlink);
+        console.log('next link [B]: ', $nextlink.get(0));
       }
       else {
         console.log('nulling next link [A]');
