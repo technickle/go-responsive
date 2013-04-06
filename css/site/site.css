@@ -390,7 +390,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   #go-responsive-logo {
     margin-top: 3em;
   }
-  
+
   .site-bar a.site-logo {
     margin-left:0;
   }
@@ -649,4 +649,8 @@ body.off-canvas.home-page.active-gov-bar .page {
 
 .section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
   background: #FFF;
+}
+
+textarea {
+  resize: vertical;
 }
