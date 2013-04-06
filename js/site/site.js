@@ -45,7 +45,11 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       if ($test.length === 1 && $test.is('li')) {
         // Get the last item from the previous top
         $prevlink = $test.children('ul').children('li').last().children('a');
-        console.log('prevlink [B]: ', $prevlink.get(0).href);
+        console.log('ul: ', $test.children('ul').get(0));
+        console.log('li: ', $test.children('ul').children('li').get(0));
+        console.log('last: ', $test.children('ul').children('li').last().get(0));
+        console.log('children: ', $test.children('ul').children('li').last().children('a').get(0));
+        console.log('prevlink [B]: ', $prevlink);
       }
       else {
         console.log('prevlink null [A]');
