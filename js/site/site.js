@@ -127,9 +127,9 @@ $(document).ready(function() {
   ewf.autoBreadcrumbs('/go-responsive/');
 
   // Narrow phone in portrait mode (e.g. media list page)
-  if ($('.show-for-phone-portrait').length && ewf.$body.width() <= 384 && ewf.$body.width() < ewf.$body.height()) {
+  if (screen.width <= 384 && $('.show-for-phone-portrait').length && ewf.$body.width() <= 384 && ewf.$body.width() < ewf.$body.height()) {
     $('.show-for-phone-portrait').slideDown();
-    ewf.$window.on('orientationchange', ewf.mediaListWatchFor);
+    ewf.$window.on('orientationchange resize', ewf.mediaListWatchFor);
   }
 
   // PNGs for IE8
