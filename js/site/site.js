@@ -14,6 +14,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if (currentUrl.indexOf('#') > -1) {
     currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
   }
+  console.log('currentUrl: ', currentUrl);
 
   // Find the current position in the navigation list
   $current = $('.global-nav').find('a[href="' + currentUrl + '"]').addClass('currentPos');
@@ -28,6 +29,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if ($test.length === 1 && $test.is('li')) {
     // Get the previous sibling
     $prevlink = $test.children('a');
+    console.log('prevlink [A]: ', $prevlink.get(0).href);
   }
   else {
     // Move up to the unordered list
@@ -43,12 +45,15 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       if ($test.length === 1 && $test.is('li')) {
         // Get the last item from the previous top
         $prevlink = $test.children('ul').children('li').last().children('a');
+        console.log('prevlink [B]: ', $prevlink.get(0).href);
       }
       else {
+        console.log('prevlink null [A]');
         $prevlink = $();
       }
     }
     else {
+      console.log('prevlink null [B]');
       $prevlink = $();
     }
   }
@@ -61,10 +66,12 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
         .html('<span class="icon-left-dir"></span>&nbsp;' + $prevlink.text());
     }
     else {
+      console.log('prevlink hide [A]');
       $previous.hide();
     }
   }
   else {
+    console.log('prevlink hide [B]');
     $previous.hide();
   }
 
