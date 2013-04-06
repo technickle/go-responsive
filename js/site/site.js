@@ -6,7 +6,6 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       $prevlink, $nextlink, $parentList, $parentListTopic;
 
   // Check optional sub directory path
-  if (!subdir || typeof subdir !== 'string') { console.log('no subdir given'); subdir = ''; }
 
   // Get the current page url
   currentUrl = window.location.href.split(window.location.host)[1].replace(subdir, '');
@@ -14,7 +13,6 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if (currentUrl.indexOf('#') > -1) {
     currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
   }
-  console.log('currentUrl: ', currentUrl);
 
   // Find the current position in the navigation list
   $current = $('.global-nav').find('a[href="' + currentUrl + '"]').addClass('currentPos');
@@ -29,7 +27,6 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if ($test.length === 1 && $test.is('li')) {
     // Get the previous sibling
     $prevlink = $test.children('a');
-    console.log('prevlink [A]: ', $prevlink.get(0).href);
   }
   else {
     // Move up to the unordered list
@@ -45,22 +42,12 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       if ($test.length === 1 && $test.is('li')) {
         // Get the last item from the previous top
         $prevlink = $test.children('ul').children('li').last().children('a');
-        console.log('parentList: ', $parentList.get(0));
-        console.log('parentListTopic: ', $parentListTopic.get(0));
-        console.log('test: ', $test.get(0));
-        console.log('ul: ', $test.children('ul').get(0));
-        console.log('li: ', $test.children('ul').children('li').get(0));
-        console.log('last: ', $test.children('ul').children('li').last().get(0));
-        console.log('children: ', $test.children('ul').children('li').last().children('a').get(0));
-        console.log('prevlink [B]: ', $prevlink);
       }
       else {
-        console.log('prevlink null [A]');
         $prevlink = $();
       }
     }
     else {
-      console.log('prevlink null [B]');
       $prevlink = $();
     }
   }
@@ -73,12 +60,10 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
         .html('<span class="icon-left-dir"></span>&nbsp;' + $prevlink.text());
     }
     else {
-      console.log('prevlink hide [A]');
       $previous.hide();
     }
   }
   else {
-    console.log('prevlink hide [B]');
     $previous.hide();
   }
 
