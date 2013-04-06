@@ -2,8 +2,8 @@
 ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   var $previous = $('#prev'),
       $next = $('#next'),
-      $current, $currentListItem,
-      currentUrl, $prevlink, $nextlink, $parentList, $parentListTopic;
+      currentUrl, $current, $currentListItem, $test,
+      $prevlink, $nextlink, $parentList, $parentListTopic;
 
   // Check optional sub directory path
   if (!subdir || typeof subdir !== 'string') { console.log('no subdir given'); subdir = ''; }
@@ -24,10 +24,10 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   // Determine if there is a previous and next location
 
   // Find Previous Link first
-  // $prevlink = $currentListItem.prev().children('a');
-  if ($currentListItem.prev().length === 1 && $currentListItem.prev().is('li')) {
+  $test = $currentListItem.prev().children('a');
+  if ($test.length === 1 && $test.is('li')) {
     // Get the previous sibling
-    $prevlink = $currentListItem.prev().children('a');
+    $prevlink = $test.children('a');
   }
   else {
     // Move up to the unordered list
@@ -35,12 +35,14 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
     $parentList = $currentListItem.parent();
 
     // Check to make sure it item is a ul is needed.
-    if ($parentList.parent().length === 1 && $parentList.parent().is('li')) {
-      $parentListTopic = $parentList.parent();
+    $test = $parentList.parent();
+    if ($test.length === 1 && $test.is('li')) {
+      $parentListTopic = $test;
       // Check to see if there is a previous sibling li
-      if ($parentListTopic.prev().length === 1 && $parentListTopic.prev().is('li')) {
+      $test = $parentListTopic.prev();
+      if ($test.length === 1 && $test.is('li')) {
         // Get the last item from the previous top
-        $prevlink = $parentListTopic.prev().children('ul').children('li').last().children('a');
+        $prevlink = $test.children('ul').children('li').last().children('a');
       }
       else {
         $prevlink = $();
@@ -65,20 +67,21 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   }
 
   // Find Next Link
-  if ($currentListItem.next().length === 1 && $currentListItem.next().is('li')) {
+  $test = $currentListItem.next();
+  if ($test.length === 1 && $test.is('li')) {
     // There is a next link
     // Get the previous sibling
-    $nextlink = $currentListItem.next().children('a');
+    $nextlink = $test.children('a');
   }
   else {
     // Move up to the unordered list
     $parentList = $currentListItem.parent();
 
     // Check to make sure it item is a ul is needed.
-    if ($parentList.parent().length === 1 && $parentList.parent().is('li')) {
-
+    $test = $parentList.parent();
+    if ($test.length === 1 && $test.is('li')) {
       // New list item
-      $parentListTopic = $parentList.parent();
+      $parentListTopic = $test;
 
       // Check to see if there is a previous sibling li
       if ($parentListTopic.next().length === 1 && $parentListTopic.next().is('li')) {
