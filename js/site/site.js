@@ -17,9 +17,8 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   // console.log('currentUrl, no hash: ', currentUrl);
 
   // Find the current position in the navigation list
-  $current = $('.global-nav').find('a[href="' + currentUrl + '"]');
+  $current = $('.global-nav').find('a[href="' + currentUrl + '"]').addClass('currentPos');
   // console.log('current link in nav: ', $current);
-  // $current.addClass('currentPos');
 
   // Get all of the previous links
   $currentListItem = $current.parent('li');
@@ -29,7 +28,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
 
   // Find Previous Link first
   // $prevlink = $currentListItem.prev().children('a');
-  if ($currentListItem.length === 1 && $currentListItem.is('li')) {
+  if ($currentListItem.prev().length === 1 && $currentListItem.prev().is('li')) {
     // Get the previous sibling
     $prevlink = $currentListItem.prev().children('a');
     // console.log('previous link [A]: ', $prevlink.get(0));
@@ -120,7 +119,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
 
   // Reveal container
   if ($nextlink.length || $prevlink.length) {
-    console.log('would have displayed breadcrumb row');
+    // console.log('would have displayed breadcrumb row');
     // $('.page .breadcrumbs').animate({opacity:1});
   }
 };
