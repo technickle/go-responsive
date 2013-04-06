@@ -14,6 +14,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if (currentUrl.indexOf('#') > -1) {
     currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
   }
+  console.log('currentUrl: ', currentUrl);
 
   // Find the current position in the navigation list
   $current = $('.global-nav').find('a[href="' + currentUrl + '"]').addClass('currentPos');
@@ -28,6 +29,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if ($test.length === 1 && $test.is('li')) {
     // Get the previous sibling
     $prevlink = $test.children('a');
+    console.log('prevlink [A]: ', $prevlink.get(0).href);
   }
   else {
     // Move up to the unordered list
@@ -43,26 +45,33 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       if ($test.length === 1 && $test.is('li')) {
         // Get the last item from the previous top
         $prevlink = $test.children('ul').children('li').last().children('a');
+        console.log('prevlink [B]: ', $prevlink.get(0).href);
       }
       else {
+        console.log('prevlink null [A]');
         $prevlink = $();
       }
     }
     else {
+      console.log('prevlink null [B]');
       $prevlink = $();
     }
   }
 
   if (currentUrl !== 'carousel.html') {
     if ($prevlink.length) {
-      $previous.attr('href', $prevlink.attr('href'));
-      $previous.addClass('button').html('<span class="icon-left-dir"></span>&nbsp;' + $prevlink.text()); // icon-left-dir
+      $previous
+        .attr('href', $prevlink.attr('href'))
+        .addClass('button')
+        .html('<span class="icon-left-dir"></span>&nbsp;' + $prevlink.text());
     }
     else {
+      console.log('prevlink hide [A]');
       $previous.hide();
     }
   }
   else {
+    console.log('prevlink hide [B]');
     $previous.hide();
   }
 
@@ -98,8 +107,10 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   }
 
   if ($nextlink.length) {
-    $next.attr('href', $nextlink.attr('href'));
-    $next.addClass('button').html($nextlink.text() + '&nbsp;<span class="icon-right-dir"></span>');
+    $next
+      .attr('href', $nextlink.attr('href'))
+      .addClass('button')
+      .html($nextlink.text() + '&nbsp;<span class="icon-right-dir"></span>');
   }
   else {
     $next.hide();
@@ -107,7 +118,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
 
   // Reveal container
   if ($nextlink.length || $prevlink.length) {
-    $('.page .breadcrumbs').animate({opacity:1});
+    $('.page .breadcrumbs').addClass('full-opacity');
   }
 };
 
@@ -116,16 +127,14 @@ $(document).ready(function() {
   ewf.autoBreadcrumbs('/go-responsive/');
 
   // PNGs for IE8
-  try {
-    if (/MSIE\s\d/.test(navigator.userAgent) && parseInt(/MSIE\s(\d+)/.exec(navigator.userAgent)[1], 10) < 9) {
-      $('img').each(function(){
-        var $img, src;
-        if (this.hasAttribute('data-png')) {
-          $img = $(this);
-          src = $img.attr('src');
-          $img.attr('src', src.replace(/\.svg/, '.png'));
-        }
-      });
-    }
-  } catch (e) { }
+  if (ewf.$html.is('.lt-ie9')) {
+    $('img').each(function(){
+      var $img, src;
+      if (this.hasAttribute('data-png')) {
+        $img = $(this);
+        src = $img.attr('src');
+        $img.attr('src', src.replace(/\.svg$/, '.png'));
+      }
+    });
+  }
 });
