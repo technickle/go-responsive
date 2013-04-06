@@ -8,7 +8,7 @@ $(document).ready(function(){
       // Success:
       show_map,
       // Failure:
-      showDefaultMap('Could not find your location.')
+      showDefaultMap()
     );
   }
   else {
@@ -30,7 +30,7 @@ $(document).ready(function(){
     marker = new google.maps.Marker({
       position: latlng,
       map: map,
-      title:"You are here! (at least within a "+position.coords.accuracy+" meter radius)"
+      title:"You are here! (at least within a " + position.coords.accuracy + " meter radius)"
     });
 
     $('.status').html('You are at ' + position.coords.latitude + ', ' + position.coords.longitude);
@@ -39,6 +39,8 @@ $(document).ready(function(){
   function showDefaultMap(msg) {
     msg = msg || 'Your device does not support geolocation.';
     $('.status').html(msg);
+    // Show DTA office instead, using a fake `position` object
+    show_map({coords:{latitude: 42.65163, longitude: -73.7595}});
   }
 
 });
