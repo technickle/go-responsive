@@ -5,6 +5,8 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
       currentUrl, $current, $currentListItem, $test,
       $prevlink, $nextlink, $parentList, $parentListTopic;
 
+  $('.nav-container').find('li').first().remove();
+
   // Check optional sub directory path
   if (!subdir || typeof subdir !== 'string') { console.log('no subdir given'); subdir = ''; }
 
