@@ -261,4 +261,6 @@ $(document).ready(function() {
       });
     }
   } catch (e) { }
+
+  console.log('working code found prev: ' + $('#prev').attr('href') + ' and next: ' + $('#next').attr('href'));
 });
