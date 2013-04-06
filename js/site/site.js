@@ -10,8 +10,10 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   // Get the current page url
   currentUrl = window.location.href.split(window.location.host)[1].replace(subdir, '');
   console.log('currentUrl, with hash: ', currentUrl);
-  // Clear hash
-  currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
+  // Strip hash
+  if (currentUrl.indexOf('#') > -1) {
+    currentUrl = currentUrl.substr(0, currentUrl.indexOf('#'));
+  }
   console.log('currentUrl, no hash: ', currentUrl);
 
   // Find the current position in the navigation list
