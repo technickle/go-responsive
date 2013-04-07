@@ -2,6 +2,7 @@
 var isIE = (/MSIE/.test(navigator.userAgent)),
     isAndroid = (/Android/.test(navigator.userAgent)),
     isChrome = (/Chrome/.test(navigator.userAgent)),
+    isResources = window.parent.location.href.search(/about-rwd.html/i),
     demoBar = function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
@@ -39,7 +40,7 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
     };
 
 $(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE) {
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE && !isResources) {
     demoBar();
 
     window.resbook = {};
