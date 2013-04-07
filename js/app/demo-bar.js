@@ -2,7 +2,7 @@
 var isIE = (/MSIE/.test(navigator.userAgent)),
     isAndroid = (/Android/.test(navigator.userAgent)),
     isChrome = (/Chrome/.test(navigator.userAgent)),
-    isResources = window.parent.location.href.search(/about-rwd.html/i),
+    isResources = window.parent.location.href.search(/about-rwd.html/i) > 0,
     demoBar = function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
