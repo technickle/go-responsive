@@ -71,9 +71,8 @@ html {
   max-width: 100%;
 }
 .home-page .page .button.big {
-  margin:1.5em 0;
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 
@@ -165,7 +164,6 @@ html {
   border-top: 2px groove #CCC;
   border-bottom: 2px groove #BBB;
 }
-
 .nobottomborder {
   border-bottom:0!important;
 }
@@ -175,6 +173,7 @@ html {
 .nobottompadding {
   padding-bottom:0!important;
 }
+
 .ie8 .home-page .page .section.even,
 .ie8 .home-page .page .wrapper,
 .ie8 .home-page .page .section-1 .wrapper,
@@ -316,9 +315,9 @@ h6 {
 
 /* Section 4 */
 .home-page .page .odd p {
-  color: #333;
-  padding-top: 0.5em;
-  margin: 0;
+	color: #333;
+	padding-top: 0.5em;
+	margin: 0;
 }
 
 .breadcrumbs {
@@ -434,7 +433,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   }
   .home-page .page .button.big {
     padding: 1.25em 1.5em;
-    font-size: 1.85em;
+    font-size: 1.5em;
   }
 
   .home-page .page [class*="section-"] h2 {
@@ -457,6 +456,14 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .odd .wrapper h2 {
     font-size: 1.5em;
     color:#09283C;
+  }
+
+  .home-page .row.section-2 .columns:first-child {
+    margin-left: 1em;
+  }
+
+  .home-page .row.section-2 .columns:nth-child(2) {
+    margin-left: -1em;
   }
 
   .home-page .page .section-1 h1 {
