@@ -134,6 +134,13 @@ html {
   padding: 0 0 2em 0;
 }
 
+.home-page .page .section-6 a {
+  display: block;
+  max-width: 8em;
+  margin: 0 auto;
+  min-height: 4em;
+}
+
 .home-page .page .section {
   height: auto;
   width: 100%;
@@ -149,12 +156,6 @@ html {
   background: #ddd url(../../images/farmer.jpg) repeat;
 }
 
-.home-page .page .section.odd,
-.home-page .page .section.even {
-  /*border-top: 1px solid #ddd;*/
-  /*border-bottom: 1px solid #999;*/
-}
-
 .home-page .page .section.even,
 .home-page .page .section-1 .wrapper,
 .home-page .page .section-2 .wrapper,
@@ -162,6 +163,15 @@ html {
   background:rgba(0,0,0,0.2);
   border-top: 2px groove #CCC;
   border-bottom: 2px groove #BBB;
+}
+.nobottomborder {
+  border-bottom:0!important;
+}
+.notopborder {
+  border-top: 0!important;
+}
+.nobottompadding {
+  padding-bottom:0!important;
 }
 
 .ie8 .home-page .page .section.even,
@@ -523,9 +533,6 @@ body.off-canvas.home-page.active-gov-bar .page {
     padding: 0;
   }
 
-  .home-page .page .section-6 {
-    padding: 0em 0 2em 0;
-  }
     .chart-label.chart-label-mobile {
     top: 6%;
     left: 22%;
