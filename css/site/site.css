@@ -150,10 +150,10 @@ html {
   top: 0;
 }
 .page {
-  background-color:#DDD;
+  background-color:#EEE;
 }
 .home-page .content-section, .page .content-section {
-  background: #ddd url(../../images/farmer.jpg) repeat;
+  background: #EEE url(../../images/farmer.jpg) repeat;
 }
 
 .home-page .page .section.even,
@@ -426,7 +426,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   }
 
   #site-bar, #page {
-    background: url(../../images/farmer.jpg) repeat;
+    background: #EEE url(../../images/farmer.jpg) repeat;
   }
   .site-bar a.site-logo {
     color:#222;
