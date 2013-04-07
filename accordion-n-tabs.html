@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Accordions &amp; Tabs
-vendorScripts: ['foundation/foundation.section', 'foundation/foundation.alerts']
+vendorScripts: ['foundation/foundation.section', 'foundation/foundation.alerts', 'foundation/foundation.reveal']
 ---
 
   <div class="row">
@@ -73,9 +73,24 @@ vendorScripts: ['foundation/foundation.section', 'foundation/foundation.alerts']
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <a href="#" data-reveal-id="myModal">Photo Credits</a>
+    </div>
+  </div>
 
   <div class="row">
     <div class="large-4 small-12 columns">
       <a class="button" target="_parent" href="https://github.com/nys-its/excelsior-web-framework/wiki/Accordions-and-Tabs">Developer Documentation</a>
     </div>
   </div>
+    <div id="myModal" class="reveal-modal">
+    <p><b>Photo Credits:</b></p>
+      <ul class="bullets-inside">
+        <li><a target="_parent" href="http://en.wikipedia.org/wiki/File:Albany.jpg">Albany</a></li>
+        <li><a target="_parent" href="http://en.wikipedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg">Saratoga</a></li>
+        <li><a target="_parent" href="http://en.wikipedia.org/wiki/File:Nott_Memorial_Hall,_Union_College,_Schenectady,_NY.jpg">Schenectady</a></li>
+      </ul>
+    <a class="close-reveal-modal">&times;</a>
+  </div>
+

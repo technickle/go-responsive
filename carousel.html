@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Image Carousel
-vendorScripts: ['foundation/foundation.alerts', 'foundation/foundation.orbit']
+vendorScripts: ['foundation/foundation.alerts', 'foundation/foundation.orbit', 'foundation/foundation.reveal']
 customStyles: ['carousel']
 ---
 
@@ -47,9 +47,22 @@ customStyles: ['carousel']
       </ul>
     </div>
   </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <a href="#" data-reveal-id="myModal">Photo Credits</a>
+    </div>
 
   <div class="row">
     <div class="large-4 small-12 columns">
       <a class="button" target="_parent" href="http://foundation.zurb.com/docs/components/orbit.html">Developer Documentation</a>
     </div>
+  </div>
+    <div id="myModal" class="reveal-modal">
+    <p><b>Photo Credits:</b></p>
+      <ul class="bullets-inside">
+        <li><a target="_parent" href="http://www.flickr.com/photos/suewaters/">Statue of Liberty - Sue Walters</a></li>
+        <li><a target="_parent" href="http://www.flickr.com/photos/raresmdutu/">Niagara Falls - Rares M. Dutu</a></li>
+        <li><a target="_parent" href="http://www.flickr.com/photos/31451603@N02/">Capitol Building - PeteDz Photography</a></li>
+      </ul>
+    <a class="close-reveal-modal">&times;</a>
   </div>
