@@ -673,3 +673,12 @@ textarea {
   width: 100%;
   margin-bottom: 2em;
 }
+
+/* Prevents text from being selected (e.g., the Touch demo) */
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
