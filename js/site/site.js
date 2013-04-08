@@ -97,6 +97,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
     }
   }
 
+if (currentUrl !== 'easy-tap-links.html') {
   if ($nextlink.length) {
     $next
       .attr('href', $nextlink.attr('href'))
@@ -105,6 +106,7 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   else {
     $next.hide();
   }
+}
 
   // Reveal container
   if ($nextlink.length || $prevlink.length) {
