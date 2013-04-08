@@ -56,7 +56,6 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
     if ($prevlink.length) {
       $previous
         .attr('href', $prevlink.attr('href'))
-        .addClass('button')
         .html('<span class="icon-left-dir"></span>&nbsp;Previous: ' + $prevlink.text());
     }
     else {
@@ -101,7 +100,6 @@ ewf.autoBreadcrumbs = function _ewf_autoBreadcrumbs (subdir) {
   if ($nextlink.length) {
     $next
       .attr('href', $nextlink.attr('href'))
-      .addClass('button green')
       .html("Next: " + $nextlink.text() + '&nbsp;<span class="icon-right-dir"></span>');
   }
   else {

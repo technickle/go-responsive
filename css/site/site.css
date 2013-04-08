@@ -627,6 +627,12 @@ body.off-canvas.home-page.active-gov-bar .page {
 }
 
 @media only screen and (min-width: 460px) {
+
+  .next-prev a {
+    display: block;
+    width: 100%;
+  }
+
   .chart-label {
     font-size: 28px;
   }
