@@ -90,7 +90,7 @@ html {
 
 .home-page .page .wrapper,
 .home-page .page .section-3 .wrapper {
-  margin: 0 auto 2em auto;
+  margin-bottom: 2em;
   font-size: 1.2em;
   color: #333;
   text-shadow: 0 1px rgba(255,255,255,0.2);
@@ -449,7 +449,7 @@ body.off-canvas.home-page.active-gov-bar .page {
     /*padding: 0 1em;*/
   }
   .home-page .page .section-2 {
-    padding: 0 0 5em 0;
+    padding: 0 0 3em 0;
   }
 
   .home-page .page .even .wrapper h2,
@@ -481,6 +481,34 @@ body.off-canvas.home-page.active-gov-bar .page {
 
   .home-page .page .section-4 .wr2 {
     display: none;
+  }
+  
+  .home-page .page .section .column-wrap-left {
+	text-align: right;
+  }
+  .home-page .page .section .column-wrap-right {
+	text-align: left;
+  }
+  .home-page .page .section .column-wrap-left  .wrap-left-inner{
+	display: inline;
+	text-align: center;
+	margin-right: 2em;
+  }
+
+  .home-page .page .section .column-wrap-left .wrapper .large-img {
+	margin-left: 0;
+	margin-right: 0;
+	display: inline-block;
+  }
+  .home-page .page .section .column-wrap-right .wrap-right-inner{
+	display:inline-block;
+	text-align:center;
+	margin-left: 2em;
+  }
+  .home-page .page .section .column-wrap-left  .wrap-left-inner .wrapper,
+  .home-page .page .section .column-wrap-right  .wrap-right-inner .wrapper{
+	display: inline-block;
+	width: auto;
   }
 
   .footer a {
