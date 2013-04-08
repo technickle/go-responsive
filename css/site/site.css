@@ -626,11 +626,19 @@ body.off-canvas.home-page.active-gov-bar .page {
   background-color: rgba(221, 39, 49, 0.5);
 }
 
-@media only screen and (min-width: 460px) {
-
+@media only screen and (min-width: 240px) {
   .next-prev a {
     display: block;
     width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 460px) {
+
+  .next-prev a {
+    display: inline-block;
+    width: auto;
   }
 
   .chart-label {
