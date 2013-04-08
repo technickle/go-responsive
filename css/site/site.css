@@ -630,7 +630,13 @@ body.off-canvas.home-page.active-gov-bar .page {
   .next-prev a {
     display: block;
     width: 100%;
+    float: none;
   }
+
+  .next-prev a#next {
+    margin-top: 5px;
+  }
+
 }
 
 
@@ -639,6 +645,10 @@ body.off-canvas.home-page.active-gov-bar .page {
   .next-prev a {
     display: inline-block;
     width: auto;
+  }
+
+  .next-prev a#next {
+    margin-top: 0;
   }
 
   .chart-label {
