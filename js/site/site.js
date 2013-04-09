@@ -134,15 +134,9 @@ $(document).ready(function() {
 
   // PNGs for IE8
   if (ewf.$html.is('.no-svg')) {
-    console.log('found ' + $('[data-png]').length + ' svg images...');
     $('[data-png]').each(function(){
       var src = this.src;
-      console.log('img src is currently: ' + src);
-      console.log('changing to ' + src.replace(/\.svg$/, '.png'));
-      this.src = src.replace(/\.svg$/, '.png'));
+      this.src = src.replace(/\.svg$/, '.png');
     });
-  }
-  else {
-    console.log('browser supports svg');
   }
 });
