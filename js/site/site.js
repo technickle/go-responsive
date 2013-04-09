@@ -134,13 +134,12 @@ $(document).ready(function() {
 
   // PNGs for IE8
   if (ewf.$html.is('.lt-ie9')) {
-    $('img').each(function(){
-      var $img, src;
-      if (this.hasAttribute('data-png')) {
-        $img = $(this);
-        src = $img.attr('src');
-        $img.attr('src', src.replace(/\.svg$/, '.png'));
-      }
+    $('[data-png]').each(function(){
+      var $img = $(this),
+          src = $img.attr('src');
+      console.log('img src is currently: ' + src);
+      console.log('changing to ' + src.replace(/\.svg$/, '.png'));
+      $img.attr('src', src.replace(/\.svg$/, '.png'));
     });
   }
 });
