@@ -42,6 +42,14 @@ ewf.init = function _init () {
   ewf.preloader.add('<img src="images/close-x-gray.svg">');
   ewf.preloader.add('<img src="images/hamburger-no-dots.svg">');
   ewf.preloader.init();
+  
+  // PNGs for browsers with no SVG support
+  if (ewf.$html.is('.no-svg')) {
+    $('[data-png]').each(function(){
+      var src = this.src;
+      this.src = src.replace(/\.svg$/, '.png');
+    });
+  }
 };
 
 $(document).ready(function(){ewf.init();});
