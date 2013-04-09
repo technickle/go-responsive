@@ -742,6 +742,17 @@ textarea {
 }
 
 /* Fallback image for chart */
-.chart-fallback { display: none; }
-.no-canvas .chart-fallback { display: block; }
-.no-canvas .chart-box, .no-canvas .chart-label { display: none; }
+.chart-fallback {
+  display: none;
+}
+
+.no-canvas .chart-fallback {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+
+.no-canvas .chart-box,
+.no-canvas .chart-label {
+  display: none;
+}
