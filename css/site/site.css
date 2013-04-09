@@ -374,6 +374,7 @@ body.off-canvas.home-page.active-gov-bar .page {
 
 .gov-bar input[type=submit] {
   line-height: 1.7em;
+  background-color: #505050;
 }
 
 .alert-box {
@@ -383,7 +384,7 @@ body.off-canvas.home-page.active-gov-bar .page {
 }
 
 .alert-box h4{
-  color:#555;
+  color: #555;
 }
 
 .alert-box p {
