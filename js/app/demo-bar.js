@@ -7,7 +7,7 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title +
-        '<\/title><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/styles.css"><\/head>' +
+        '<\/title><link rel="stylesheet" href="http://nys-its.github.com/go-responsive/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/go-responsive/css/demo-bar.css"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
         '<div id="size"><\/div>' +
@@ -26,16 +26,26 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '   <h4>Choose a Device<\/h4>'+
         '   <p>Click any of these buttons to see how this site would look on various devices.<\/p><p><em>Return to Desktop view by clicking "Desktop".<\/em><\/p><p><strong>Go ahead, click one now!<\/strong><\/p>'+
         '  <\/li>'+
-        '  <li data-button="Close">'+
+        '  <li data-button="Next">'+
         '   <h4>New View Activated!<\/h4>'+
         '   <p>You are now viewing the same page at a new size.<\/p>'+
+        '  <\/li>'+
+        '  <li data-button="Next">'+
+        '   <h4>What to Watch For<\/h4>'+
+        '   <p>At the top of every page, the "What to watch for" section will tell you what to observe as you resize the page.<\/p>'+
+        '   <p><img src="http://nys-its.github.com/go-responsive/images/watchfor.jpg"><\/p>'+
+        '  <\/li>'+
+        '  <li data-button="Close">'+
+        '   <h4>Next Demo Buttons<\/h4>'+
+        '   <p>The green button at the bottom of each page will take you to the next demo. You can also use the navigation to move around.<\/p>'+
+        '   <p><img src="http://nys-its.github.com/go-responsive/images/next.jpg"><\/p>'+
         '   <p><strong>Go explore the responsive demos now!<\/strong><\/p>'+
         '  <\/li>'+
         '  </ol>  ' +
-        '<script src="http://nys-its.github.com/RWD-Demo/js/vendor/jquery.js">' + '</sc' + 'ript>'+
-        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.js">' + '</script>'+
-        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.joyride.js">' + '</script>'+
-        '<script src="http://nys-its.github.com/RWD-Demo/js/app/demo-bar-post.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/go-responsive/js/vendor/jquery.js">' + '</sc' + 'ript>'+
+        '<script src="http://nys-its.github.com/go-responsive/js/foundation/foundation.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/go-responsive/js/foundation/foundation.joyride.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/go-responsive/js/app/demo-bar-post.js">' + '</script>'+
         '<\/body><\/html>');
     };
 

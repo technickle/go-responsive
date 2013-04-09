@@ -131,16 +131,4 @@ $(document).ready(function() {
     $('.show-for-phone-portrait').slideDown();
     ewf.$window.on('orientationchange resize', ewf.mediaListWatchFor);
   }
-
-  // PNGs for IE8
-  if (ewf.$html.is('.lt-ie9')) {
-    $('img').each(function(){
-      var $img, src;
-      if (this.hasAttribute('data-png')) {
-        $img = $(this);
-        src = $img.attr('src');
-        $img.attr('src', src.replace(/\.svg$/, '.png'));
-      }
-    });
-  }
 });

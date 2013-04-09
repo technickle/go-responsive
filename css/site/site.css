@@ -434,6 +434,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .button.big {
     padding: 1.25em 1.5em;
     font-size: 1.5em;
+    margin-top:2.35em;
   }
 
   .home-page .page [class*="section-"] h2 {
@@ -714,7 +715,7 @@ body.off-canvas.home-page.active-gov-bar .page {
 .logo-button img {
   max-width: 100%;
   max-height: 40px;
-  margin: 0.5em auto;
+  margin: 1.5em auto;
 }
 
 .section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
@@ -738,4 +739,27 @@ textarea {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+/* Fallback image for chart */
+.chart-fallback {
+  display: none;
+}
+
+.no-canvas .chart-fallback {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+
+.no-canvas .chart-box,
+.no-canvas .chart-label {
+  display: none;
+}
+
+/* Yellow look for alert... why isn't this being inherited from .alert-box? */
+.unsupported-browser-message .alert-box {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
 }
