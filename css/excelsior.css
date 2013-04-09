@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "IBM437";
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -7189,6 +7189,15 @@ section .title a:hover,
   padding-bottom: 1em;
 }
 
+/* line 45, ../scss/excelsior/components/_global.scss */
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* line 2, ../scss/excelsior/components/_visibility.scss */
 .show-for-no-touch {
   display: none !important;
@@ -9390,88 +9399,86 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
   background-color: white;
 }
 
-@media only screen {
-  /* Footer */
-  /* line 4, ../scss/excelsior/components/_footer.scss */
-  .footer {
-    width: 100%;
-    background: #282828;
-    bottom: 0;
-    padding: 1em 0;
-    position: relative;
-    z-index: 5;
-  }
-
-  /* line 13, ../scss/excelsior/components/_footer.scss */
-  .footer .footer-links, .footer .footer-images {
-    overflow: hidden;
-  }
-
-  /* line 17, ../scss/excelsior/components/_footer.scss */
-  .footer .footer-images {
-    padding: 0 1.1em;
-  }
-
-  /* line 21, ../scss/excelsior/components/_footer.scss */
-  .footer ul {
-    overflow: hidden;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-  }
-
-  /* line 29, ../scss/excelsior/components/_footer.scss */
-  .footer li {
-    overflow: hidden;
-    padding: 0 2.9em 1.1em 1.1em;
-    font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    float: left;
-  }
-
-  /* line 36, ../scss/excelsior/components/_footer.scss */
-  .footer h4 {
-    font-size: 1.1em;
-    margin-bottom: 0.2em;
-    font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    color: #fff;
-  }
-
-  /* line 43, ../scss/excelsior/components/_footer.scss */
-  .footer li h4 a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  /* line 48, ../scss/excelsior/components/_footer.scss */
-  .footer li a {
-    font-size: 1em;
-    color: #aaa;
-    text-decoration: none;
-  }
-
-  /* line 54, ../scss/excelsior/components/_footer.scss */
-  .footer li :hover {
-    color: #2ba6cb;
-  }
-
-  /* line 58, ../scss/excelsior/components/_footer.scss */
-  .footer ul li ul li {
-    float: none;
-    padding: 0;
-    margin: 0;
-    line-height: 1.4em;
-  }
-
-  /* line 65, ../scss/excelsior/components/_footer.scss */
-  .footer-line {
-    border-top: 1px solid #333;
-    height: 1px;
-    margin: 0 0 1em 0;
-  }
+/* line 1, ../scss/excelsior/components/_footer.scss */
+.footer {
+  width: 100%;
+  background: #282828;
+  bottom: 0;
+  padding: 1em 0;
+  position: relative;
+  z-index: 5;
 }
+
+/* line 10, ../scss/excelsior/components/_footer.scss */
+.footer .footer-links, .footer .footer-images {
+  overflow: hidden;
+}
+
+/* line 14, ../scss/excelsior/components/_footer.scss */
+.footer .footer-images {
+  padding: 0 1.1em;
+}
+
+/* line 18, ../scss/excelsior/components/_footer.scss */
+.footer ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+/* line 26, ../scss/excelsior/components/_footer.scss */
+.footer li {
+  overflow: hidden;
+  padding: 0 2.9em 1.1em 1.1em;
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  float: left;
+}
+
+/* line 33, ../scss/excelsior/components/_footer.scss */
+.footer h4 {
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+/* line 40, ../scss/excelsior/components/_footer.scss */
+.footer li h4 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 45, ../scss/excelsior/components/_footer.scss */
+.footer li a {
+  font-size: 1em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* line 51, ../scss/excelsior/components/_footer.scss */
+.footer li :hover {
+  color: #2ba6cb;
+}
+
+/* line 55, ../scss/excelsior/components/_footer.scss */
+.footer ul li ul li {
+  float: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+/* line 62, ../scss/excelsior/components/_footer.scss */
+.footer-line {
+  border-top: 1px solid #333;
+  height: 1px;
+  margin: 0 0 1em 0;
+}
+
 @media only screen and (min-width: 48em) {
-  /* line 74, ../scss/excelsior/components/_footer.scss */
+  /* line 70, ../scss/excelsior/components/_footer.scss */
   .footer .footer-links, .footer .footer-images {
     overflow: hidden;
     margin: 0 auto;
@@ -10404,7 +10411,7 @@ a:focus {
 
   /* line 594, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul li:first-child a {
-    padding: 11px 12px 9px 14px;
+    padding: 13px 12px 9px 14px;
   }
 
   /* line 598, ../scss/excelsior/components/_navigation.scss */
@@ -10412,20 +10419,21 @@ a:focus {
     background: #666;
     font-size: 1em;
     text-shadow: none;
+    padding-top: 13px;
   }
 
-  /* line 604, ../scss/excelsior/components/_navigation.scss */
+  /* line 605, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a.active {
     border: none;
     background-color: #888;
   }
 
-  /* line 609, ../scss/excelsior/components/_navigation.scss */
+  /* line 610, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a:hover {
     background: #888;
   }
 
-  /* line 613, ../scss/excelsior/components/_navigation.scss */
+  /* line 614, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a.active:after {
     content: "\e760";
     width: 0;
@@ -10438,38 +10446,38 @@ a:focus {
     border-left: 10px solid transparent;
   }
 
-  /* line 625, ../scss/excelsior/components/_navigation.scss */
+  /* line 626, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul ul li {
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
     border-bottom: none;
   }
 
-  /* line 631, ../scss/excelsior/components/_navigation.scss */
+  /* line 632, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul ul li a:hover {
     background-color: #393939 !important;
   }
 
-  /* line 635, ../scss/excelsior/components/_navigation.scss */
+  /* line 636, ../scss/excelsior/components/_navigation.scss */
   .page {
     background: #FFF;
     position: relative;
     top: -23px;
   }
 
-  /* line 641, ../scss/excelsior/components/_navigation.scss */
+  /* line 642, ../scss/excelsior/components/_navigation.scss */
   .page .content-section {
     padding: 2em 0;
   }
 }
 /* Page Lock at 960px */
 @media only screen and (min-width: 60em) {
-  /* line 650, ../scss/excelsior/components/_navigation.scss */
+  /* line 651, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
   }
 
-  /* line 658, ../scss/excelsior/components/_navigation.scss */
+  /* line 659, ../scss/excelsior/components/_navigation.scss */
   .gov-bar .gov-wrap,
   .site-bar .site-wrap,
   .global-nav,
@@ -10481,17 +10489,17 @@ a:focus {
     width: 60em !important;
   }
 
-  /* line 665, ../scss/excelsior/components/_navigation.scss */
+  /* line 666, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-wrap {
     position: relative;
   }
 
-  /* line 669, ../scss/excelsior/components/_navigation.scss */
+  /* line 670, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions {
     position: relative;
   }
 
-  /* line 674, ../scss/excelsior/components/_navigation.scss */
+  /* line 675, ../scss/excelsior/components/_navigation.scss */
   .global-nav,
   .global-nav .nav-container {
     border-radius: 5px;
@@ -10499,14 +10507,14 @@ a:focus {
 }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
-  /* line 683, ../scss/excelsior/components/_navigation.scss */
+  /* line 684, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
   }
 }
 /* X-Large Displays: 1400px and up */
 @media only screen and (min-width: 90em) {
-  /* line 690, ../scss/excelsior/components/_navigation.scss */
+  /* line 691, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
   }
