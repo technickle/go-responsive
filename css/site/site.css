@@ -484,7 +484,7 @@ body.off-canvas.home-page.active-gov-bar .page {
   .home-page .page .section-4 .wr2 {
     display: none;
   }
-  
+
   .home-page .page .section .column-wrap-left {
 	text-align: right;
   }
@@ -763,4 +763,21 @@ textarea {
   color: #c09853;
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
+}
+
+/* Bring these changes back to EWF! */
+/* line 377, ../scss/excelsior/components/_navigation.scss */
+.no-svg .active-gov-bar .gov-pull-down {
+  background-image: url(../../images/close.png);
+}
+
+/* line 383, ../scss/excelsior/components/_navigation.scss */
+.no-svg .active-site-search .site-bar .mobile-functions .mobile-icons.active {
+  background-image: url(../../images/close-x-gray.png);
+}
+
+/* Active Menu */
+/* line 389, ../scss/excelsior/components/_navigation.scss */
+.no-svg .active-site-menu .site-bar .mobile-functions .mobile-icons.active {
+  background-image: url(../../images/close.png);
 }
