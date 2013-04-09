@@ -756,3 +756,10 @@ textarea {
 .no-canvas .chart-label {
   display: none;
 }
+
+/* Yellow look for alert... why isn't this being inherited from .alert-box? */
+.unsupported-browser-message .alert-box {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+}
