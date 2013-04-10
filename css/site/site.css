@@ -785,6 +785,10 @@ textarea {
   background-image: url(../../images/search.png);
 }
 
+.no-svg .site-bar .mobile-functions .mobile-menu-button {
+  background-image: url(../../images/hanmburger.png);
+}
+
 /* line 383, ../scss/excelsior/components/_navigation.scss */
 .no-svg .active-site-search .site-bar .mobile-functions .mobile-icons.active {
   background-image: url(../../images/close-x-gray.png);
