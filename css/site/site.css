@@ -800,10 +800,6 @@ textarea {
   background-image: url(../../images/close.png);
 }
 
-.off-canvas.ie .page {
-  top: -132px;  
-}
-
 .off-canvas.ie .gov-pull-down {
   background-position: -3px 0px;
 }
