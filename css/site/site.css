@@ -35,6 +35,14 @@ html {
   margin-top: 2em;
 }
 
+/* fixing media list clearing from excelsior.css */
+.image-to-list li.large-3:nth-child(5n), .image-to-list li.small-3:nth-child(5n) {
+  clear:none!important; /* originally hacked to clear both to fix a bug, should be reverted */
+}
+.image-to-list a span {
+  margin-top:-39px; /* there was a 1px of image showing under teh caption, this fixes it */
+}
+
 @media only screen and (max-width: 400px) {
   .home-page .page .large-img {
     width: 200px;
