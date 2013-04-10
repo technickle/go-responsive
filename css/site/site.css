@@ -792,6 +792,6 @@ textarea {
   background-image: url(../../images/close.png);
 }
 
-.ie .off-canvas .page {
-  top: -132px;
+.off-canvas.ie .page {
+  top: -132px;  
 }
