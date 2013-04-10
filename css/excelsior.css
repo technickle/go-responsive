@@ -10205,16 +10205,17 @@ a:focus {
   height: 343px;
 }
 
-@media only screen and (min-width: 47em) {
+@media only screen and (min-width: 48em) {
   /* line 409, ../scss/excelsior/components/_navigation.scss */
   .gov-bar input[type=search] {
-    height: 25px;
+    margin-top:3px;
+    height: 23px;
   }
   /* line 414, ../scss/excelsior/components/_navigation.scss */
   .gov-bar input[type=submit] {
     height: 23px;
     line-height: 2em;
-    margin-top: 1px;
+    margin-top: 3px;
   }
 }
 /* Medium Displays: 768px - 1279px */
