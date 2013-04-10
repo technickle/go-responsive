@@ -185,7 +185,6 @@
   /* line 202, ../scss/off-canvas.scss */
   .off-canvas .global-nav {
     height: 46px;
-    overflow: visible;
     z-index: 30;
   }
   /* line 208, ../scss/off-canvas.scss */
