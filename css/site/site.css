@@ -781,6 +781,10 @@ textarea {
   background-image: url(../../images/close.png);
 }
 
+.no-svg .site-bar .mobile-functions .mobile-search-button {
+  background-image: url(../../images/search.png);
+}
+
 /* line 383, ../scss/excelsior/components/_navigation.scss */
 .no-svg .active-site-search .site-bar .mobile-functions .mobile-icons.active {
   background-image: url(../../images/close-x-gray.png);
@@ -794,4 +798,8 @@ textarea {
 
 .off-canvas.ie .page {
   top: -132px;  
+}
+
+.off-canvas.ie .gov-pull-down {
+  background-position: -3px 0px;
 }
