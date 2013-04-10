@@ -791,3 +791,7 @@ textarea {
 .no-svg .active-site-menu .site-bar .mobile-functions .mobile-icons.active {
   background-image: url(../../images/close.png);
 }
+
+.ie .off-canvas .page {
+  top: -132px;
+}
