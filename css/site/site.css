@@ -800,7 +800,7 @@ textarea {
   background-image: url(../../images/close.png);
 }
 
-.off-canvas.ie .gov-pull-down {
+.off-canvas.ie8 .gov-pull-down {
   background-position: -3px 0px;
 }
 
