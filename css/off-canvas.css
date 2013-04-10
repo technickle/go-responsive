@@ -159,8 +159,8 @@
     border-radius: 4px;
   }
 }
-/* Medium Displays: 768px - 1279px */
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 48em) {
   /* line 178, ../scss/off-canvas.scss */
   body.off-canvas {
     padding-top: 0;
@@ -185,6 +185,7 @@
   /* line 202, ../scss/off-canvas.scss */
   .off-canvas .global-nav {
     height: 46px;
+    overflow: visible;
     z-index: 30;
   }
   /* line 208, ../scss/off-canvas.scss */
@@ -213,6 +214,7 @@
     /* M */
     border-radius: 4px !important;
     top: 50px !important;
+    left:0;
     position: absolute;
     overflow: hidden;
     visibility: hidden;
