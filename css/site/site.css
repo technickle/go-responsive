@@ -807,3 +807,7 @@ textarea {
 .off-canvas.ie .gov-pull-down {
   background-position: -3px 0px;
 }
+
+.off-canvas.ie9 .page {
+  border-collapse: separate;
+}
