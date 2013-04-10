@@ -595,6 +595,17 @@ body.off-canvas.home-page.active-gov-bar .page {
   margin-bottom: 0 !important;
 }
 
+.int-trends figcaption {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.int-trends figcaption a {
+  margin-left: 1em;
+  font-style: italic;
+  font-size: 90%;
+}
+
 .chart-label {
   position: absolute;
   font-size: 20px;
@@ -640,7 +651,6 @@ body.off-canvas.home-page.active-gov-bar .page {
   }
 
 }
-
 
 @media only screen and (min-width: 460px) {
 
