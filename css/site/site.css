@@ -811,3 +811,11 @@ textarea {
 .off-canvas.ie9 .page {
   border-collapse: separate;
 }
+
+#unsupported-browser-message {
+  display: none;
+}
+
+.ie #unsupported-browser-message {
+  display: block !important;
+}
