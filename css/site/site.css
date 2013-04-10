@@ -789,6 +789,14 @@ textarea {
   background-image: url(../../images/close.png);
 }
 
+.no-svg .site-bar .mobile-functions .mobile-search-button {
+  background-image: url(../../images/search.png);
+}
+
+.no-svg .site-bar .mobile-functions .mobile-menu-button {
+  background-image: url(../../images/hamburger.png);
+}
+
 /* line 383, ../scss/excelsior/components/_navigation.scss */
 .no-svg .active-site-search .site-bar .mobile-functions .mobile-icons.active {
   background-image: url(../../images/close-x-gray.png);
@@ -798,4 +806,20 @@ textarea {
 /* line 389, ../scss/excelsior/components/_navigation.scss */
 .no-svg .active-site-menu .site-bar .mobile-functions .mobile-icons.active {
   background-image: url(../../images/close.png);
+}
+
+.off-canvas.ie8 .gov-pull-down {
+  background-position: -3px 0px;
+}
+
+.off-canvas.ie9 .page {
+  border-collapse: separate;
+}
+
+#unsupported-browser-message {
+  display: none;
+}
+
+.ie #unsupported-browser-message {
+  display: block !important;
 }

@@ -141,72 +141,74 @@
   /* line 149, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .mobile-menu-button {
     -webkit-box-shadow: inset 6px 0px 8px -2px #000;
+    box-shadow: inset 6px 0px 8px -2px #000;
   }
-  /* line 153, ../scss/off-canvas.scss */
+  /* line 154, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .page {
     -webkit-box-shadow: 5px 49px 8px #000;
+    box-shadow: 5px 49px 8px #000;
   }
-  /* line 157, ../scss/off-canvas.scss */
+  /* line 160, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .footer {
     left: -82%;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 167, ../scss/off-canvas.scss */
+  /* line 170, ../scss/off-canvas.scss */
   .global-nav .nav-container {
     border-radius: 4px;
   }
 }
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 768px) {
-  /* line 175, ../scss/off-canvas.scss */
+  /* line 178, ../scss/off-canvas.scss */
   body.off-canvas {
     padding-top: 0;
   }
 
-  /* line 183, ../scss/off-canvas.scss */
+  /* line 186, ../scss/off-canvas.scss */
   .off-canvas .gov-bar,
   .off-canvas .site-bar,
   .off-canvas .global-nav,
   .off-canvas .page {
     position: relative;
   }
-  /* line 190, ../scss/off-canvas.scss */
+  /* line 193, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .gov-bar, .off-canvas.active-site-menu .site-bar, .off-canvas.active-site-menu .global-nav, .off-canvas.active-site-menu .page {
     left: auto;
     position: relative;
   }
-  /* line 195, ../scss/off-canvas.scss */
+  /* line 198, ../scss/off-canvas.scss */
   .off-canvas.active-gov-bar .site-bar {
     top: 0;
   }
-  /* line 199, ../scss/off-canvas.scss */
+  /* line 202, ../scss/off-canvas.scss */
   .off-canvas .global-nav {
     height: 46px;
     overflow: visible;
     z-index: 30;
   }
-  /* line 205, ../scss/off-canvas.scss */
+  /* line 208, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul li {
     padding-left: 0;
   }
-  /* line 209, ../scss/off-canvas.scss */
+  /* line 212, ../scss/off-canvas.scss */
   .off-canvas .global-nav .menu-controls {
     display: none;
   }
-  /* line 214, ../scss/off-canvas.scss */
+  /* line 217, ../scss/off-canvas.scss */
   .off-canvas .global-nav .nav-container, .off-canvas.active-site-menu .global-nav .nav-container {
     overflow: hidden;
   }
-  /* line 219, ../scss/off-canvas.scss */
+  /* line 222, ../scss/off-canvas.scss */
   .off-canvas .global-nav .nav-container > ul, .off-canvas.active-site-menu .global-nav .nav-container ul {
     min-height: auto;
   }
-  /* line 224, ../scss/off-canvas.scss */
+  /* line 227, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul, .off-canvas.active-site-menu .global-nav ul {
     margin-left: 0;
   }
-  /* line 228, ../scss/off-canvas.scss */
+  /* line 231, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul {
     background: #454545 !important;
     /* M */
@@ -218,25 +220,25 @@
     -webkit-transition: left 0;
     transition: left 0s;
   }
-  /* line 239, ../scss/off-canvas.scss */
+  /* line 242, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu {
     visibility: visible;
   }
-  /* line 243, ../scss/off-canvas.scss */
+  /* line 246, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu li {
     padding: 0 !important;
   }
-  /* line 247, ../scss/off-canvas.scss */
+  /* line 250, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li {
     padding-left: 0;
     border-bottom: 0;
   }
-  /* line 252, ../scss/off-canvas.scss */
+  /* line 255, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li a {
     border-radius: 4px;
     background: #454545 !important;
   }
-  /* line 257, ../scss/off-canvas.scss */
+  /* line 260, ../scss/off-canvas.scss */
   .off-canvas .page {
     min-height: auto;
     top: -23px;
