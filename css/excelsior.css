@@ -3539,7 +3539,7 @@ fieldset {
 /* line 204, ../scss/foundation/components/_forms.scss */
 fieldset legend {
   font-weight: bold;
-  background: white;
+  background: transparent;
   padding: 0 0.1875em;
   margin: 0;
   margin-left: -0.1875em;
