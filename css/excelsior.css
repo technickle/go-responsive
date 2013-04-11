@@ -8933,6 +8933,10 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     position: relative;
     margin-top: -39px;
   }
+  
+  .image-to-list .has-video a {
+    display: none;
+  }
 
   /* line 55, ../scss/excelsior/components/_lists.scss */
   .image-to-list li.large-3:nth-child(5n),
