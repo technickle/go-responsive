@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<title>About Responsive Web Design</title>
+		<link rel="stylesheet" href="css/excelsior.css">
+		<link rel="stylesheet" href="css/off-canvas.css">
+		<link rel="stylesheet" href="css/site/site.css">
+
+		
+
+		<!-- Fav icon -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="icon" href="images/favicon.ico">
+
+		<script src="js/vendor/custom.modernizr.js"></script>
+    </head>
+
+	<!--[if IE 8 ]>    <body class="off-canvas ie ie8 "> <![endif]-->
+	<!--[if IE 9 ]>    <body class="off-canvas ie ie9 "> <![endif]-->
+	<!--[if gt IE 9 ]>    <body class="off-canvas ie ie10 "> <![endif]-->
+	<!--[if !(IE)]><!--> 
+    <body class="off-canvas">
+    <!--<![endif]-->
+
+		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
+		<a href="#page" class="skip-to">Skip to Content</a>
+		<div class="gov-pull-down-container show-for-small">
+		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+		  Open New York State Search
+		</a>
+		</div>
+		<div id="gov-bar" class="gov-bar">
+			<div class="gov-wrap">
+			  <div class="state-links">
+			    <a href="http://www.ny.gov/" class="gov-link-1">
+			      New York State
+			    </a>
+			    <a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" class="gov-link-2">
+			      State Agencies
+			    </a>
+			  </div>
+			  <a href="#" id="gov-link-3" class="gov-link-3">
+			    Search all of NY.gov
+			  </a>
+			  <form action="http://www.search.cio.ny.gov/search" target="_blank">
+			    <fieldset>
+			      <legend>Legend</legend>
+			      <label for="site-search-box">Search</label>
+			      <div class="search-container">
+			        <input type="search" name="q" />
+			        <input type="submit" value="Search NY"  />
+			      </div>
+			      <input type="hidden" name="sort" value="date:D:L:d1">
+		          <input type="hidden" name="output" value="xml_no_dtd">
+		          <input type="hidden" name="ie" value="UTF-8">
+		          <input type="hidden" name="oe" value="UTF-8">
+		          <input type="hidden" name="client" value="default_frontend">
+		          <input type="hidden" name="proxystylesheet" value="default_frontend">
+		          <input type="hidden" name="site" value="default_collection">
+			    </fieldset>
+			  </form>
+			</div>
+		</div>
+		<div id="site-bar" class="site-bar">
+			<div class="site-wrap">
+			  <a href="./" target="_parent" class="site-logo">
+			    <span class="go-responsive-logo-small">Go Responsive</span>
+			  </a>
+			  <div class="site-functions">
+			    <ul class="mobile-functions">
+			      <li><a href="#" id="mobile-site-search" class="mobile-icons mobile-search-button" data-active="active-site-search">Search Toggle</a></li>
+			      <li><a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">Menu Toggle</a></li>
+			    </ul>
+			    <!-- Link to show the menu -->
+			    <div class="site-search">
+			      <form action="#">
+			        <fieldset>
+			          <legend>Legend</legend>
+			          <label for="site-search-box">Search</label>
+			          <div class="search-container">
+			            <input type="search" id="site-search-box" class="site-search-box" />
+			            <div class="site-button">
+			              <input type="submit" class="site-search-button" value="Search Agency"  />
+			            </div>
+			          </div>
+			        </fieldset>
+			      </form>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<nav id="global-nav" class="global-nav">
+			<div class="nav-container">
+			  <ul>
+			  	<li>
+			  		<a href="./" target="_parent">Home</a>
+			  	</li>
+			    <li><a href="#" class="icon-sub-menu">Media</a>
+			      <ul>
+			        <li><a href="carousel.html">Image Carousel</a></li>
+			        <li><a href="media-list.html">Media List</a></li>
+                    <li><a href="lightbox.html">Image Gallery</a></li>
+			        <li><a href="thumbnail-list.html">Thumbnails</a></li>
+			      </ul>
+			    </li>
+			    <li><a href="#" class="icon-sub-menu">Interaction</a>
+			      <ul>
+			        <li><a href="adaptive-tables.html">Adaptive Tables</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+			        <li><a href="overlay-windows.html">Overlay Windows</a></li>
+                      <li><a href="touch-actions.html">Touch Actions</a></li>
+			      </ul>
+			    </li>
+			    <li><a href="#" class="icon-sub-menu">Flexibility</a>
+			      <ul>
+			        <li><a href="accordion-n-tabs.html">Accordions and Tabs</a></li>
+                    <li><a href="geo-location.html">Mapping</a></li>
+			        <li><a href="charting.html">Line Charts</a></li>
+			        <li><a href="charting-pie.html">Pie Charts</a></li>
+                    <li><a href="block-to-stack.html">Tiled List</a></li>
+			      
+			      </ul>
+			    </li>
+			    <li><a href="#" class="icon-sub-menu">Navigation</a>
+			      <ul>
+			        <li><a href="off-canvas.html">Slide-Out Menu</a></li>
+                     <li><a href="buttons.html">Buttons</a></li>
+                     <li><a href="easy-tap-links.html">Easy-Tap Links</a></li>
+			      </ul>
+			    </li>
+			    <li>
+			    	<a href="about-rwd.html" target="_parent">Responsive Resources</a>
+			    </li>
+			  </ul>
+			</div>
+		</nav>
+		<div id="page" class="page">
+			<div class="content-section">
+				<div class="row" id="unsupported-browser-message">
+					<div class="large-8 small-centered columns">
+						<div class="alert-box radius" data-alert>
+							<h4>Non-Optimal Browser Detected</h4>
+							<p>To get the best demo experience, it\'s recommended that you use <a target="_parent" href="https://www.google.com/chrome/">Google Chrome</a><br>If you cannot upgrade your browser, you can resize your browser to experience it.
+						</div>
+					</div>
+				</div>
+
+        		<div class="row">
+  <div class="large-12 columns">
+    <h1>Responsive Web Design Resources</h1>
+  </div>
+  <div class="large-4 small-12 columns">
+    <div class="block">
+      <h4 style="color:#222">Getting Started</h4>
+      <dl>
+        <dd><a href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a></dd>
+        <dd><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design Book</a></dd>
+        <dd><a href="http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design">Beginner's Guide to Responsive Design</a></dd>
+        <dd><a href="http://bradfrost.github.com/this-is-responsive/resources.html">Brad Frost's Responsive Resources</a></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="large-4 small-12 columns">
+    <div class="block">
+      <h4 style="color:#222">Broader Concepts</h4>
+      <dl>
+        <dd><a href="http://mobilewebbestpractices.com/">Mobile Web Best Practices</a></dd>
+        <dd><a href="http://rwd.paulstonier.com/">Responsive Best Practices</a></dd>
+        <dd><a href="http://en.wikipedia.org/wiki/Responsive_Web_Design">Responsive Web Design on Wikipedia</a></dd>
+        <dd><a href="http://bradfrostweb.com/blog/web/responsive-web-design-missing-the-point/">Responsive - Missing the Point</a></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="large-4 small-12 columns">
+    <div class="block">
+      <h4 style="color:#222">Approach</h4>
+        <dl><dd><a href="http://responsive.rga.com/tagged/strategy">Responsive Tagged 'Strategy'</a></dd>
+        <dd><a href="http://99designs.com/designer-blog/2012/12/03/responsive-web-design-key-tips-and-approaches/">Key Tips and Approaches</a></dd>
+        <dd><a href="http://stephanierieger.com/responsiveness-is-a-characteristic/">Responsive is a Characteristic</a></dd>
+        <dd><a href="http://mobiforge.com/starting/story/mobile-web-content-adaptation-techniques">Mobile Web Adaptation Techniques</a></dd></dl>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Great Responsive Sites</h2>
+    <p>Take a look at these sites that have implemented responsiveness well.</p>
+    <ul class="small-block-grid-2 large-block-grid-4 image-to-list">
+      <li class="large-3 small-6 columns">
+        <a href="http://thethemefoundry.com/">
+          <img src="images/about-rwd/theme-foundry.jpg" alt="Screenshot of The Theme Foundry" />
+          <span>The Theme Foundry</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://www.aids.gov/">
+          <img src="images/about-rwd/aids-gov.jpg" alt="Screenshot of AIDS" />
+          <span>AIDS.gov</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://www.ri.gov/">
+          <img src="images/about-rwd/rhode-island.jpg" alt="Screenshot of Rhode Island hompage." />
+          <span>Rhode Island</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://www.ucla.edu/">
+          <img src="images/about-rwd/ucla.jpg" alt="Screenshot of UCLA hompage." />
+          <span>UCLA</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://html.adobe.com/">
+          <img src="images/about-rwd/adobe-html.jpg" alt="Screenshot of the Adobe HTML." />
+          <span>Adobe and HTML</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://choiceresponse.com/">
+          <img src="images/about-rwd/choice-response.jpg" alt="Screenshot of the Choice Response homepage." />
+          <span>ChoiceResponse</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://www.microsoft.com">
+          <img src="images/about-rwd/microsoft.jpg" alt="Screenshot of the Microsoft homepage." />
+          <span>Microsoft</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://www.smashingmagazine.com">
+          <img src="images/about-rwd/smashing-magazine.jpg" alt="Screenshot of the Smashing Magazine homepage." />
+          <span>Smashing Magazine</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://www.starbucks.com/">
+          <img src="images/about-rwd/starbucks.jpg" alt="Screenshot of the Starbuck homepage." />
+          <span>Starbucks</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://bostonglobe.com/">
+          <img src="images/about-rwd/boston.jpg" alt="Screenshot of the Boston Globe Homepage." />
+          <span>The Boston Globe</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://utah.gov/">
+          <img src="images/about-rwd/utah.jpg" alt="Screenshot of the Utah Homepage." />
+          <span>Utah</span>
+        </a>
+      </li>
+      <li class="large-3 small-6 columns">
+        <a href="http://webpop.com/">
+          <img src="images/about-rwd/webpop.jpg" alt="Screenshot of the Webpop Homepage." />
+          <span>Webpop</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Page Components</h2>
+    <div class="section-container auto" data-section="" data-options="deep_linking: true">
+      <section class="section active">
+        <p class="title">
+          <a href="#section1">Grids</a>
+        </p>
+        <div class="content" data-slug="section1">
+          <dl>
+            <dd><a href="http://alistapart.com/article/fluidgrids">Fluid Grids</a></dd>
+            <dd><a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-5">5 Simple Steps to Designing Grid Systems</a></dd>
+            <dd><a href="http://www.flexiblewebbook.com/">Flexible Web Design - Creating Liquid and Elastic Layouts</a></dd>
+          </dl>
+        </div>
+      </section>
+      <section class="section">
+        <p class="title">
+          <a href="#section2">Navigation</a>
+        </p>
+        <div class="content" data-slug="section2">
+          <dl>
+            <dd><a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns">Responsive Navigation Patterns</a></dd>
+            <dd><a href="http://responsivenavigation.net/">Adventures in Responsive Navigation</a></dd>
+            <dd><a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/examining-responsive-navigation-off-canvas-patterns/">Off Canvas Patterns</a></dd>
+          </dl>
+        </div>
+      </section>
+      <section class="section">
+        <p class="title">
+          <a href="#section3">Tables</a>
+        </p>
+        <div class="content" data-slug="section3">
+          <dl>
+            <dd><a href="http://elvery.net/demo/responsive-tables/">Responsive Tables Demo</a></dd>
+            <dd><a href="http://www.thinkmobilefirst.net/table/">Mobile Tables</a></dd>
+          </dl>
+        </div>
+      </section>
+      <section class="section">
+        <p class="title">
+          <a href="#section4">Images</a>
+        </p>
+        <div class="content" data-slug="section4">
+          <dl>
+            <dd><a href="http://adaptive-images.com/">Adaptive Images</a></dd>
+            <dd><a href="http://decodize.com/html/simple-responsive-image-technique/">Simple Responsive Image Techniques </a></dd>
+            <dd><a href="http://alistapart.com/article/responsive-images-how-they-almost-worked-and-what-we-need">Mobile-First Responsive Images Approach</a></dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Digging Deeper</h2>
+    <div class="section-container auto" data-section="" data-options="deep_linking: true">
+      <section class="section active">
+        <p class="title">
+          <a href="#section6">Responsive Design News</a>
+        </p>
+        <div class="content" data-slug="section6">
+          <dl>
+            <dd><a href="http://mobile.smashingmagazine.com/tag/responsive-design/">Smashing Responsive Blog</a></dd>
+            <dd><a href="http://bradfrostweb.com/responsive-web-design-newsletter/">Responsive Web Design Newsletter</a></dd>
+          </dl>
+        </div>
+      </section>
+      <section class="section">
+        <p class="title">
+          <a href="#section7">Further Learning</a>
+        </p>
+        <div class="content" data-slug="section7">
+          <dl>
+            <dd><a href="http://www.implementingresponsivedesign.com/">Book: Implementing Responsive Design - Tim Kadlec</a></dd>
+            <dd><a href="http://www.abookapart.com/products/responsive-web-design">Book: Responsive Web Design - Ethan Marcotte</a></dd>
+            <dd><a href="http://www.packtpub.com/responsive-web-design-with-html-5-and-css3/book">Book: Responsive Web Design with HTML5 and CSS3 - Ben Frain</a></dd>
+            <dd><a href="http://responsiveconf.com/">Audio: Responsive Day Out Conference</a></dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+			</div>
+			<footer role="contentinfo" class="footer">
+				<div class="footer-contents">
+					<div class="row">
+	<div class="large-5 columns">
+		<a href="http://www.its.ny.gov/" class="its-footer">Office of Information Technology Services</a>
+	</div>
+	<div class="large-4 columns">
+		<a href="https://github.com/nys-its/excelsior-web-framework" class="ewf-footer">Excelsior Web Framework</a>
+	</div>
+	<div class="large-3 columns">
+		<a href="https://github.com/nys-its/excelsior-web-framework/wiki" class="dev-footer">EWF Development Docs</a>
+	</div>
+</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/app/app.js"></script>
+		<script src="js/app/off-canvas.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+
+		
+			<script src="js/foundation/foundation.section.js"></script>
+		
+			<script src="js/foundation/foundation.alerts.js"></script>
+		
+
+		
+
+		<script src="js/site/site.js"></script>
+		<script>$(document).foundation();</script>
+
+		<script src="js/app/demo-bar.js"></script>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-39880511-1']);
+		  _gaq.push(['_trackPageview']);
+		  _gaq.push(['_setDomainName', window.location.host ]);
+		  
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+    </body>
+</html>

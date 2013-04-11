@@ -1,0 +1,825 @@
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.footer {
+  padding-top:2em;
+}
+.home-page .page .footer a,
+.footer a {
+  color: #797979;
+  display: inline-block;
+  height: 37px;
+  text-decoration: none;
+  margin: 10px 0;
+  padding-top: 13px;
+  padding-bottom:5px;
+}
+
+.its-footer {
+  background: url(../../images/its-logo-small.png) no-repeat 0 0 transparent;
+  padding-left: 51px;
+}
+
+.ewf-footer {
+  background: url(../../images/octocat-dark.png) no-repeat 0 0 transparent;
+  padding-left: 40px;
+}
+
+.dev-footer {
+  background: url(../../images/code.svg) no-repeat 0 0 transparent;
+  background-size: 34px;
+  padding-left: 40px;
+}
+
+#go-responsive-logo {
+  margin-top: 2em;
+}
+
+/* fixing media list clearing from excelsior.css */
+.image-to-list li.large-3:nth-child(5n), .image-to-list li.small-3:nth-child(5n) {
+  clear:none!important; /* originally hacked to clear both to fix a bug, should be reverted */
+}
+.image-to-list a span {
+  margin-top:-39px; /* there was a 1px of image showing under teh caption, this fixes it */
+}
+
+@media only screen and (max-width: 400px) {
+  .home-page .page .large-img {
+    width: 200px;
+  }
+}
+
+.home-page .page .large-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.home-page .page .tagline {
+  padding: 0 0 0.6em 0;
+  margin: 0 auto 0.3em auto;
+  font-size: 1.0em;
+  line-height: 1.3em;
+  color: #282828;
+  max-width: 42em;
+  text-align: center;
+  text-shadow: 0 1px rgba(255,255,255,0.4);
+}
+
+.home-page .page .section-2 {
+  padding: 0 0 2em 0;
+}
+
+.home-page .page .section-3 .wrapper {
+  padding:0;
+  margin: 0 auto;
+}
+
+.home-page .row,
+.home-page .columns {
+  max-width: 100%;
+}
+.home-page .page .button.big {
+  padding: 1em;
+  font-size: 1.25em;
+}
+
+
+.home-page .page .odd .wrapper {
+  margin: 0 auto 0.5em auto;
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #333;
+  text-shadow: 0 1px rgba(255,255,255,0.2);
+}
+
+.home-page .row.section-5 {
+  padding-bottom:3em;
+}
+
+.home-page .page .wrapper,
+.home-page .page .section-3 .wrapper {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  color: #333;
+  text-shadow: 0 1px rgba(255,255,255,0.2);
+}
+
+
+.home-page .page .even .wrapper h2,
+.home-page .page .odd .wrapper h2 {
+  font-size: 1.3em;
+}
+
+.home-page .page [class*="section-"] h2 {
+  color: #3f3f3f;
+  font-family: "SourceSansProBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0.5em auto 0 auto;
+  text-shadow: 0 1px rgba(255,255,255,0.6);
+}
+
+.home-page .page .section-8 .wrapper {
+  padding: 0;
+}
+
+.home-page .page .section-8 h2 {
+  margin: 0.5em 0 1em 0;
+}
+
+.home-page .page .section-8 p {
+  margin: auto 0.8em 1.5em 0.8em !important;
+}
+
+.home-page .page .section-8 a {
+  padding: 0.5em 0 0 0 !important;
+  display: inline-block;
+}
+
+.home-page .page .section-6 {
+  padding: 0 0 2em 0;
+}
+
+.home-page .page .section-6 a {
+  display: block;
+  max-width: 8em;
+  margin: 0 auto;
+  min-height: 4em;
+}
+
+.home-page .page .section {
+  height: auto;
+  width: 100%;
+}
+
+.home-page .page {
+  top: 0;
+}
+.page {
+  background-color:#EEE;
+}
+.home-page .content-section, .page .content-section {
+  background: #EEE url(../../images/farmer.jpg) repeat;
+}
+
+.home-page .page .section.even,
+.home-page .page .section-1 .wrapper,
+.home-page .page .section-2 .wrapper,
+.home-page .page .section-3 {
+  background:rgba(0,0,0,0.2);
+  border-top: 2px groove #CCC;
+  border-bottom: 2px groove #BBB;
+}
+.nobottomborder {
+  border-bottom:0!important;
+}
+.notopborder {
+  border-top: 0!important;
+}
+.nobottompadding {
+  padding-bottom:0!important;
+}
+
+.ie8 .home-page .page .section.even,
+.ie8 .home-page .page .wrapper,
+.ie8 .home-page .page .section-1 .wrapper,
+.ie8 .home-page .page .section-2 .wrapper,
+.ie8 .home-page .page .section-3 .wrapper {
+  /*background: url(../../images/shade.png) repeat;*/
+}
+
+.home-page .page .content-section {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+.home-page .page .title,
+.home-page .page .wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.home-page .page h1,
+.home-page .page h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.home-page .page h2 {
+  text-transform: uppercase;
+}
+
+.home-page .page h1 {
+  text-shadow: 0 1px rgba(255,255,255,0.6);
+}
+
+.home-page .page .button {
+  min-width:8em;
+  margin: 0.4em 0;
+}
+
+.home-page .page a {
+  text-decoration: none;
+}
+
+.home-page .page a:hover {
+  text-decoration: underline;
+}
+
+.home-page .page a.button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Section 1 */
+.home-page .page .section-1 h1 {
+  font-family: "SourceSansProBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 2em;
+  color: #444;
+  text-shadow: 0 1px rgba(0,0,0,0.8);
+  padding-top: 0.3em;
+}
+
+.home-page .page .section-1 .wrapper .text {
+  height: 3em;
+}
+
+/* Section 2 */
+.home-page .page .section-2 .wrapper {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin-top: 1.5em;
+  margin-bottom:1em;
+}
+
+.home-page .page .section-2 .wrapper p {
+  font-size: 1.1em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  line-height: 1.1em;
+  margin-bottom: 0.25em;
+}
+
+.home-page .page .section-3 p,
+.home-page .page .section-4 p,
+.home-page .page .section-8 p {
+  color: #222;
+  margin: 0.3em auto 0.5em auto;
+  line-height: 1.15em;
+}
+
+.home-page .page .section-2 p,
+.home-page .page .section-8 p {
+  text-align: left;
+}
+
+.home-page .page .odd p {
+  color: #333;
+  padding-top: 0.5em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.home-page .page [class*="section-"] p {
+  color: #222;
+  margin: 0.3em auto 0.5em auto;
+  line-height: 1.15em;
+}
+
+.home-page .page .section-3 .wrapper p {
+  min-height: 2.5em;
+}
+
+/* Section 4 */
+.home-page .page .odd p {
+	color: #333;
+	padding-top: 0.5em;
+	margin: 0;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+          transition: opacity 0.2s ease;
+}
+
+.breadcrumbs.full-opacity {
+  opacity: 1;
+}
+
+.breadcrumbs a {
+  display: inline-block;
+}
+
+.home-page .page .section-4 .wr1 {
+  display: none;
+  margin: auto;
+}
+
+.home-page .page .section-4 .wr2 {
+  display: block;
+  margin: auto;
+}
+
+/* Overwrites section-3 bottom border so section-4 doesn't look weird since it has a blue background */
+.home-page .page .section-3 {
+  border-bottom: 1px solid #CCC !important;
+}
+
+.breadcrumbs #prev {
+  float: left;
+  padding: 6px 12px 4px 3px;
+}
+
+.breadcrumbs #next {
+  float: right;
+  padding: 6px 3px 4px 12px;
+}
+
+
+body.off-canvas.home-page {
+  padding-top: 0;
+}
+
+body.off-canvas.home-page.active-gov-bar .page {
+  top: 88px;
+}
+
+.gov-bar input[type=submit] {
+  line-height: 1.7em;
+  background-color: #505050;
+}
+
+.alert-box {
+  background-color: rgb(231, 235, 247);
+  border-color: #d0d0d0;
+  color: #777;
+}
+
+.alert-box h4{
+  color: #555;
+}
+
+.alert-box p {
+  margin-bottom:0.25em;
+}
+
+.alert-box ul {
+  padding-left:1.5em;
+}
+
+.home-page .page .section-4 {
+  background: #182F41;
+}
+
+.home-page .page .section-4 h2 {
+  color: #fff;
+  text-shadow: 0 2px rgba(0,0,0,0.6);
+}
+
+@media only screen and (min-width: 48em) {
+  #go-responsive-logo {
+    margin-top: 3em;
+  }
+
+  .site-bar a.site-logo {
+    margin-left:0;
+  }
+  .site-bar .site-functions .site-search form {
+    /*padding-right:0!important;*/
+  }
+  .site-bar .site-functions .site-search .search-container {
+    /*padding-right:0!important;*/
+  }
+  .go-responsive-logo-small {
+    text-indent:-9999px;
+    background:transparent url(../../images/go-responsive-small.png) no-repeat;
+    display: block;
+    min-width: 8em;
+    margin-left:0.5em;
+  }
+
+  #site-bar, #page {
+    background: #EEE url(../../images/farmer.jpg) repeat;
+  }
+  .site-bar a.site-logo {
+    color:#222;
+  }
+  .home-page .page .button.big {
+    padding: 1.25em 1.5em;
+    font-size: 1.5em;
+    margin-top:2.35em;
+  }
+
+  .home-page .page [class*="section-"] h2 {
+    font-size: 2.5em;
+    color:#333;
+  }
+
+  .home-page .page .section-4 h2 {
+    color: #fff;
+  }
+
+  .home-page .page .section-3 {
+    /*padding: 0 1em;*/
+  }
+  .home-page .page .section-2 {
+    padding: 0 0 3em 0;
+  }
+
+  .home-page .page .even .wrapper h2,
+  .home-page .page .odd .wrapper h2 {
+    font-size: 1.5em;
+    color:#09283C;
+  }
+
+  .home-page .row.section-2 .columns:first-child {
+    margin-left: 1em;
+  }
+
+  .home-page .row.section-2 .columns:nth-child(2) {
+    margin-left: -1em;
+  }
+
+  .home-page .page .section-1 h1 {
+    font-size: 3.3em;
+  }
+
+  .home-page .page .section-8 h2 {
+    font-size: 2.5em;
+    margin: 0.3em auto 0.4em auto;
+  }
+
+  .home-page .page .section-4 .wr1 {
+    display: block;
+  }
+
+  .home-page .page .section-4 .wr2 {
+    display: none;
+  }
+
+  .home-page .page .section .column-wrap-left {
+	text-align: right;
+  }
+  .home-page .page .section .column-wrap-right {
+	text-align: left;
+  }
+  .home-page .page .section .column-wrap-left  .wrap-left-inner{
+	display: inline;
+	text-align: center;
+	margin-right: 2em;
+  }
+
+  .home-page .page .section .column-wrap-left .wrapper .large-img {
+	margin-left: 0;
+	margin-right: 0;
+	display: inline-block;
+  }
+  .home-page .page .section .column-wrap-right .wrap-right-inner{
+	display:inline-block;
+	text-align:center;
+	margin-left: 2em;
+  }
+  .home-page .page .section .column-wrap-left  .wrap-left-inner .wrapper,
+  .home-page .page .section .column-wrap-right  .wrap-right-inner .wrapper{
+	display: inline-block;
+	width: auto;
+  }
+
+  .footer a {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 1.125em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  .home-page .page .tagline {
+    font-size: 1.28em;
+  }
+
+  .home-page .page .odd .wrapper {
+    margin: 0 auto 2em auto;
+    padding: 2em 0 0 0;
+  }
+
+  .home-page .page .section-2 .wrapper {
+    margin: 1em auto 1em auto;
+    padding: 0;
+  }
+  .home-page .page .section-4 .wrapper {
+    margin: 1em auto 1.5em auto;
+    padding: 0;
+  }
+
+  .home-page .page .section-8 .wrapper {
+    padding: 0;
+  }
+
+    .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 22%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 18%;
+    left: 22%;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 15%;
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 17%;
+    left: 15%;
+  }
+
+}
+
+.home-page .page .column.small-centered,
+.home-page .page .columns.small-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.int-trends figcaption {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.int-trends figcaption a {
+  margin-left: 1em;
+  font-style: italic;
+  font-size: 90%;
+}
+
+.chart-label {
+  position: absolute;
+  font-size: 20px;
+}
+
+.chart-label.chart-label-mobile {
+  top: 6%;
+  left: 33%;
+}
+
+.chart-label.chart-label-desktop {
+  top: 21%;
+  left: 33%;
+}
+
+.chart-box {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+.chart-box.chart-box-mobile {
+  top: 5%;
+  left: 25%;
+  background-color: rgba(0, 71, 204, 0.5);
+}
+
+.chart-box.chart-box-desktop {
+  top: 20%;
+  left: 25%;
+  background-color: rgba(221, 39, 49, 0.5);
+}
+
+@media only screen and (min-width: 240px) {
+  .next-prev a {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  .next-prev a#next {
+    margin-top: 5px;
+  }
+
+}
+
+@media only screen and (min-width: 460px) {
+
+  .next-prev a {
+    display: inline-block;
+    width: auto;
+  }
+
+  .next-prev a#prev {
+    float: left;
+  }
+
+  .next-prev a#next {
+    margin-top: 0;
+    float: right;
+  }
+
+  .chart-label {
+    font-size: 28px;
+  }
+
+  .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 25%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 19%;
+    left: 25%;
+  }
+
+  .chart-box {
+    height: 28px;
+    width: 28px;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 17%;
+    background-color: rgba(0, 71, 204, 0.5);
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 18%;
+    left: 17%;
+    background-color: rgba(221, 39, 49, 0.5);
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .chart-label.chart-label-mobile {
+    top: 6%;
+    left: 18%;
+  }
+
+  .chart-label.chart-label-desktop {
+    top: 15%;
+    left: 18%;
+  }
+
+  .chart-box.chart-box-mobile {
+    top: 5%;
+    left: 12%;
+  }
+
+  .chart-box.chart-box-desktop {
+    top: 14%;
+    left: 12%;
+  }
+}
+
+.logo-button img {
+  max-width: 100%;
+  max-height: 40px;
+  margin: 1.5em auto;
+}
+
+.section-container section.active .content, .section-container .section.active .content, .section-container.auto section.active .content, .section-container.auto .section.active .content {
+  background: #FFF;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#mapcanvas {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* Prevents text from being selected (e.g., the Touch demo) */
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Fallback image for chart */
+.chart-fallback {
+  display: none;
+}
+
+.no-canvas .chart-fallback {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+
+.no-canvas .chart-box,
+.no-canvas .chart-label {
+  display: none;
+}
+
+/* Yellow look for alert... why isn't this being inherited from .alert-box? */
+.unsupported-browser-message .alert-box {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+}
+
+/* Bring these changes back to EWF! */
+/* line 377, ../scss/excelsior/components/_navigation.scss */
+.no-svg .active-gov-bar .gov-pull-down {
+  background-image: url(../../images/close.png);
+}
+
+.no-svg .site-bar .mobile-functions .mobile-search-button {
+  background-image: url(../../images/search.png);
+}
+
+.no-svg .site-bar .mobile-functions .mobile-menu-button {
+  background-image: url(../../images/hamburger.png);
+}
+
+/* line 383, ../scss/excelsior/components/_navigation.scss */
+.no-svg .active-site-search .site-bar .mobile-functions .mobile-icons.active {
+  background-image: url(../../images/close-x-gray.png);
+}
+
+/* Active Menu */
+/* line 389, ../scss/excelsior/components/_navigation.scss */
+.no-svg .active-site-menu .site-bar .mobile-functions .mobile-icons.active {
+  background-image: url(../../images/close.png);
+}
+
+.off-canvas.ie8 .gov-pull-down {
+  background-position: -3px 0px;
+}
+
+.off-canvas.ie9 .page {
+  border-collapse: separate;
+}
+
+#unsupported-browser-message {
+  display: none;
+}
+
+.ie #unsupported-browser-message {
+  display: block !important;
+}

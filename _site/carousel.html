@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<title>Image Carousel</title>
+		<link rel="stylesheet" href="css/excelsior.css">
+		<link rel="stylesheet" href="css/off-canvas.css">
+		<link rel="stylesheet" href="css/site/site.css">
+
+		
+			<link rel="stylesheet" href="css/site/carousel.css">
+		
+
+		<!-- Fav icon -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="icon" href="images/favicon.ico">
+
+		<script src="js/vendor/custom.modernizr.js"></script>
+    </head>
+
+	<!--[if IE 8 ]>    <body class="off-canvas ie ie8 "> <![endif]-->
+	<!--[if IE 9 ]>    <body class="off-canvas ie ie9 "> <![endif]-->
+	<!--[if gt IE 9 ]>    <body class="off-canvas ie ie10 "> <![endif]-->
+	<!--[if !(IE)]><!--> 
+    <body class="off-canvas">
+    <!--<![endif]-->
+
+		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
+		<a href="#page" class="skip-to">Skip to Content</a>
+		<div class="gov-pull-down-container show-for-small">
+		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+		  Open New York State Search
+		</a>
+		</div>
+		<div id="gov-bar" class="gov-bar">
+			<div class="gov-wrap">
+			  <div class="state-links">
+			    <a href="http://www.ny.gov/" class="gov-link-1">
+			      New York State
+			    </a>
+			    <a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" class="gov-link-2">
+			      State Agencies
+			    </a>
+			  </div>
+			  <a href="#" id="gov-link-3" class="gov-link-3">
+			    Search all of NY.gov
+			  </a>
+			  <form action="http://www.search.cio.ny.gov/search" target="_blank">
+			    <fieldset>
+			      <legend>Legend</legend>
+			      <label for="site-search-box">Search</label>
+			      <div class="search-container">
+			        <input type="search" name="q" />
+			        <input type="submit" value="Search NY"  />
+			      </div>
+			      <input type="hidden" name="sort" value="date:D:L:d1">
+		          <input type="hidden" name="output" value="xml_no_dtd">
+		          <input type="hidden" name="ie" value="UTF-8">
+		          <input type="hidden" name="oe" value="UTF-8">
+		          <input type="hidden" name="client" value="default_frontend">
+		          <input type="hidden" name="proxystylesheet" value="default_frontend">
+		          <input type="hidden" name="site" value="default_collection">
+			    </fieldset>
+			  </form>
+			</div>
+		</div>
+		<div id="site-bar" class="site-bar">
+			<div class="site-wrap">
+			  <a href="./" target="_parent" class="site-logo">
+			    <span class="go-responsive-logo-small">Go Responsive</span>
+			  </a>
+			  <div class="site-functions">
+			    <ul class="mobile-functions">
+			      <li><a href="#" id="mobile-site-search" class="mobile-icons mobile-search-button" data-active="active-site-search">Search Toggle</a></li>
+			      <li><a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">Menu Toggle</a></li>
+			    </ul>
+			    <!-- Link to show the menu -->
+			    <div class="site-search">
+			      <form action="#">
+			        <fieldset>
+			          <legend>Legend</legend>
+			          <label for="site-search-box">Search</label>
+			          <div class="search-container">
+			            <input type="search" id="site-search-box" class="site-search-box" />
+			            <div class="site-button">
+			              <input type="submit" class="site-search-button" value="Search Agency"  />
+			            </div>
+			          </div>
+			        </fieldset>
+			      </form>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<nav id="global-nav" class="global-nav">
+			<div class="nav-container">
+			  <ul>
+			  	<li>
+			  		<a href="./" target="_parent">Home</a>
+			  	</li>
+			    <li><a href="#" class="icon-sub-menu">Media</a>
+			      <ul>
+			        <li><a href="carousel.html">Image Carousel</a></li>
+			        <li><a href="media-list.html">Media List</a></li>
+                    <li><a href="lightbox.html">Image Gallery</a></li>
+			        <li><a href="thumbnail-list.html">Thumbnails</a></li>
+			      </ul>
+			    </li>
+			    <li><a href="#" class="icon-sub-menu">Interaction</a>
+			      <ul>
+			        <li><a href="adaptive-tables.html">Adaptive Tables</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+			        <li><a href="overlay-windows.html">Overlay Windows</a></li>
+                      <li><a href="touch-actions.html">Touch Actions</a></li>
+			      </ul>
+			    </li>
+			    <li><a href="#" class="icon-sub-menu">Flexibility</a>
+			      <ul>
+			        <li><a href="accordion-n-tabs.html">Accordions and Tabs</a></li>
+                    <li><a href="geo-location.html">Mapping</a></li>
+			        <li><a href="charting.html">Line Charts</a></li>
+			        <li><a href="charting-pie.html">Pie Charts</a></li>
+                    <li><a href="block-to-stack.html">Tiled List</a></li>
+			      
+			      </ul>
+			    </li>
+			    <li><a href="#" class="icon-sub-menu">Navigation</a>
+			      <ul>
+			        <li><a href="off-canvas.html">Slide-Out Menu</a></li>
+                     <li><a href="buttons.html">Buttons</a></li>
+                     <li><a href="easy-tap-links.html">Easy-Tap Links</a></li>
+			      </ul>
+			    </li>
+			    <li>
+			    	<a href="about-rwd.html" target="_parent">Responsive Resources</a>
+			    </li>
+			  </ul>
+			</div>
+		</nav>
+		<div id="page" class="page">
+			<div class="content-section">
+				<div class="row" id="unsupported-browser-message">
+					<div class="large-8 small-centered columns">
+						<div class="alert-box radius" data-alert>
+							<h4>Non-Optimal Browser Detected</h4>
+							<p>To get the best demo experience, it\'s recommended that you use <a target="_parent" href="https://www.google.com/chrome/">Google Chrome</a><br>If you cannot upgrade your browser, you can resize your browser to experience it.
+						</div>
+					</div>
+				</div>
+
+        		  <div class="row">
+    <div class="large-12 columns">
+      <h1>Image Carousel</h1>
+    </div>
+  </div>
+
+  <div class="row hide-for-ie9 hide-for-lt-ie9">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li class="show-for-screen-max-large">At tablet size, the second line of the caption is dropped to show more of the image.</li>
+          <li class="show-for-screen-max-large">At mobile sizes, the arrow buttons remaing large and tappable.</li>
+          <li class="show-for-touch">Go ahead and swipe through the images!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-9 small-centered columns">
+      <ul data-orbit>
+        <li data-orbit-slide="statue">
+          <img src="images/carousel/demo1.jpg">
+          <div class="orbit-caption"><h4>Statue of Liberty</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/suewaters/">Sue Walters</a></span></div>
+        </li>
+        <li data-orbit-slide="falls">
+          <img src="images/carousel/demo2.jpg">
+          <div class="orbit-caption"><h4>Niagara Falls</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/raresmdutu/">Rares M. Dutu</a></span></div>
+        </li>
+        <li data-orbit-slide="capitol">
+          <img src="images/carousel/demo3.jpg">
+          <div class="orbit-caption"><h4>Capitol Building</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/31451603@N02/">PeteDz Photography</a></span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <a href="#" data-reveal-id="myModal">Photo Credits</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 small-12 columns">
+      <a class="button" target="_parent" href="http://foundation.zurb.com/docs/components/orbit.html">Developer Documentation</a>
+    </div>
+  </div>
+
+  <div class="row next-prev">
+    <div class="large-12 columns">
+        <a href="#" class="button" id="prev">Previous</a>
+        <a href="#" class="button green" id="next">Next</a>
+    </div>
+  </div>
+
+    <div id="myModal" class="reveal-modal">
+    <p><b>Photo Credits:</b></p>
+      <ul class="bullets-inside">
+        <li><a target="_parent" href="http://www.flickr.com/photos/suewaters/">Statue of Liberty - Sue Walters</a></li>
+        <li><a target="_parent" href="http://www.flickr.com/photos/raresmdutu/">Niagara Falls - Rares M. Dutu</a></li>
+        <li><a target="_parent" href="http://www.flickr.com/photos/31451603@N02/">Capitol Building - PeteDz Photography</a></li>
+      </ul>
+    <a class="close-reveal-modal">&times;</a>
+  </div>
+
+			</div>
+			<footer role="contentinfo" class="footer">
+				<div class="footer-contents">
+					<div class="row">
+	<div class="large-5 columns">
+		<a href="http://www.its.ny.gov/" class="its-footer">Office of Information Technology Services</a>
+	</div>
+	<div class="large-4 columns">
+		<a href="https://github.com/nys-its/excelsior-web-framework" class="ewf-footer">Excelsior Web Framework</a>
+	</div>
+	<div class="large-3 columns">
+		<a href="https://github.com/nys-its/excelsior-web-framework/wiki" class="dev-footer">EWF Development Docs</a>
+	</div>
+</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/app/app.js"></script>
+		<script src="js/app/off-canvas.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+
+		
+			<script src="js/foundation/foundation.alerts.js"></script>
+		
+			<script src="js/foundation/foundation.orbit.js"></script>
+		
+			<script src="js/foundation/foundation.reveal.js"></script>
+		
+
+		
+
+		<script src="js/site/site.js"></script>
+		<script>$(document).foundation();</script>
+
+		<script src="js/app/demo-bar.js"></script>
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-39880511-1']);
+		  _gaq.push(['_trackPageview']);
+		  _gaq.push(['_setDomainName', window.location.host ]);
+		  
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+    </body>
+</html>
