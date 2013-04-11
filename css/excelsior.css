@@ -8905,10 +8905,6 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
 }
 
 @media only screen and (min-width: 24em) {
-  /* line 26, ../scss/excelsior/components/_lists.scss */
-  .image-to-list li {
-    float: none;
-  }
 
   /* line 30, ../scss/excelsior/components/_lists.scss */
   .image-to-list a {
