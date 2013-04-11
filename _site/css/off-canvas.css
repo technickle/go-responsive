@@ -214,6 +214,7 @@
     /* M */
     border-radius: 4px !important;
     top: 50px !important;
+    left:0; /* without left:0, the nav sits off screena dn brings up a big horizontal scroll bar */ 
     position: absolute;
     overflow: hidden;
     visibility: hidden;
