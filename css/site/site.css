@@ -55,8 +55,8 @@ html {
 }
 
 .home-page .page .tagline {
-  padding: 0 0 0.6em 0;
-  margin: 0 auto 0.3em auto;
+  padding: 0.3em 0 0!important;
+  margin: 0 auto!important;
   font-size: 1.0em;
   line-height: 1.3em;
   color: #282828;
@@ -255,8 +255,8 @@ html {
   border: none;
   background: none;
   box-shadow: none;
-  margin-top: 1.5em;
-  margin-bottom:1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .home-page .page .section-2 .wrapper p {
@@ -420,12 +420,6 @@ body.off-canvas.home-page.active-gov-bar .page {
   .site-bar a.site-logo {
     margin-left:0;
   }
-  .site-bar .site-functions .site-search form {
-    /*padding-right:0!important;*/
-  }
-  .site-bar .site-functions .site-search .search-container {
-    /*padding-right:0!important;*/
-  }
   .go-responsive-logo-small {
     text-indent:-9999px;
     background:transparent url(../../images/go-responsive-small.png) no-repeat;
@@ -440,6 +434,11 @@ body.off-canvas.home-page.active-gov-bar .page {
   .site-bar a.site-logo {
     color:#222;
   }
+  .home-page .page .tagline {
+    padding: 0 0 0.6em 0;
+    margin: 0 auto 0.3em auto;
+  }
+
   .home-page .page .button.big {
     padding: 1.25em 1.5em;
     font-size: 1.5em;
@@ -460,6 +459,11 @@ body.off-canvas.home-page.active-gov-bar .page {
   }
   .home-page .page .section-2 {
     padding: 0 0 3em 0;
+  }
+
+  .home-page .page .section-2 .wrapper {
+    margin-top: 1.5em;
+    margin-bottom:1em;
   }
 
   .home-page .page .even .wrapper h2,
