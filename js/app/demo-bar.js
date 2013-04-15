@@ -47,7 +47,14 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '<script src="http://nys-its.github.com/go-responsive/js/foundation/foundation.joyride.js">' + '</script>'+
         '<script src="http://nys-its.github.com/go-responsive/js/app/demo-bar-post.js">' + '</script>'+
         '<\/body><\/html>');
-window.resbook = {};
+    };
+
+$(function(){
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE && !isResources) {
+    demoBar();
+  }
+});
+    window.resbook = {};
 
     (function (rb) {
         var d = document,
@@ -185,15 +192,6 @@ window.resbook = {};
             size.style.minWidth = 0;
         });
     })(window.resbook);
-  }
-    };
-
-$(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE && !isResources) {
-    demoBar();
-
-    
   /*else if (isIE || (isAndroid && !isChrome) ) {
     $("body").prepend('<div class="row hide-for-oldie"><div class="large-8 small-centered columns"><div class="alert-box radius" data-alert><h4>Non-Optimal Browser Detected</h4><p>To get the best demo experience, it\'s recommended that you use <a target="_parent" href="https://www.google.com/chrome/">Google Chrome</a><br>If you cannot upgrade your browser, you can resize your browser to experience it.</div></div></div>');
   }*/
-});
