@@ -122,6 +122,11 @@ ewf.mediaListWatchFor = function () {
   }
 };
 
+$("#load-demo-bar").on("click", function(){
+  e.preventDefault();
+    $.getScript("../../js/app/demo-bar.js"); // we're loading in the demo bar from the sub-navigation. we don't want to load it automatically on page load like we do for the rest of the other demos.
+});
+
 $(document).ready(function() {
   // Create breadcrumb links
   ewf.autoBreadcrumbs('/go-responsive/');
