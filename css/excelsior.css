@@ -6477,6 +6477,7 @@ section .title a:hover,
 /* line 25, ../scss/excelsior/components/_global.scss */
 .scrollable-x {
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* line 29, ../scss/excelsior/components/_global.scss */
@@ -8933,7 +8934,7 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     position: relative;
     margin-top: -39px;
   }
-  
+
   .image-to-list .has-video a {
     display: none;
   }
