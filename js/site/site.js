@@ -122,7 +122,7 @@ ewf.mediaListWatchFor = function () {
   }
 };
 
-$("#load-resize-bar").on("click", function(){
+$("#load-resize-bar").on("click", function(e){
   e.preventDefault();
     demoBar();
 });
