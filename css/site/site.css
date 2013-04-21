@@ -828,6 +828,15 @@ textarea {
   display: block !important;
 }
 
+@media only screen and (max-width: 22.5em) {
+  .no-padding-at-tiny {
+    padding: 0 !important;
+  }
+  .video-column {
+    padding: 0 !important;
+  }
+}
+
 /* Videos on the home page need to break earlier than the `small-` classes kick in */
 @media only screen and (max-width: 60em) {
   .video-column {
