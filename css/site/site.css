@@ -827,3 +827,14 @@ textarea {
 .ie #unsupported-browser-message {
   display: block !important;
 }
+
+/* Videos on the home page need to break earlier than the `small-` classes kick in */
+@media only screen and (max-width: 60em) {
+  .video-column {
+    position: relative !important;
+    float: left !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 0 0.9375em 0 0.9375em;
+  }
+}
