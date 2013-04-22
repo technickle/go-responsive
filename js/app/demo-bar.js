@@ -7,7 +7,8 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title +
-        '<\/title><link rel="stylesheet" href="http://nys-its.github.com/go-responsive/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/go-responsive/css/demo-bar.css"><\/head>' +
+        '<\/title><link rel="stylesheet" href="http://nys-its.github.com/go-responsive/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/go-responsive/css/demo-bar.css">'+
+        '<meta name="description" content="Responsive web design demos and resources">    <meta name="apple-mobile-web-app-title" content="GoResponsive">    <meta property="og:title" content="Go Responsive">    <meta property="og:url" content="http://nys-its.github.io/go-responsive/">    <meta property="og:description" content="Responsive web design demos and resources">    <meta property="og:image" content="http://nys-its.github.io/go-responsive/images/go-responsive-social.png">    <meta property="og:type" content="government">    <meta property="og:site_name" content="Go Responsive">    <link rel="apple-touch-icon" sizes="144x144" href="http://nys-its.github.io/go-responsive/images/apple-touch-icon-144x144.png">    <link rel="apple-touch-icon" sizes="114x114" href="http://nys-its.github.io/go-responsive/images/apple-touch-icon-114x114.png">    <link rel="apple-touch-icon" sizes="72x72" href="http://nys-its.github.io/go-responsive/images/apple-touch-icon-72x72.png">    <link rel="apple-touch-icon" href="http://nys-its.github.io/go-responsive/images/apple-touch-icon-57x57.png">    <link rel="shortcut icon" href="http://nys-its.github.io/go-responsive/images/apple-touch-icon.png">    <link rel="icon" href="http://nys-its.github.io/go-responsive/images/favicon.ico"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
         '<div id="size"><\/div>' +
