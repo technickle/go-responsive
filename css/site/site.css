@@ -35,6 +35,10 @@ html {
   margin-top: 2em;
 }
 
+#getting-started {
+  margin-bottom: 1em;
+}
+
 /* fixing media list clearing from excelsior.css */
 .image-to-list li.large-3:nth-child(5n), .image-to-list li.small-3:nth-child(5n) {
   clear:none!important; /* originally hacked to clear both to fix a bug, should be reverted */
